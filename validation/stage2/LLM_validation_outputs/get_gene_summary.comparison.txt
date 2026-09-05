@@ -1,0 +1,12 @@
+MCP/direct R gene summary comparison
+MCP rows: 16686; columns: 13
+Direct R rows: 16686; columns: 13
+Column names identical: TRUE
+Full table identical: TRUE
+Top 5 representative rows:
+ Hugo_Symbol total MutatedSamples AlteredSamples
+      PIK3CA   393            352            352
+        TP53   356            350            350
+         TTN   321            193            193
+        CDH1   132            130            130
+       GATA3   131            128            128

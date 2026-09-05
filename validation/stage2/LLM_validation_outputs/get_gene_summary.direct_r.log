@@ -1,0 +1,10 @@
+-Reading
+-Validating
+-Summarizing
+--Possible FLAGS among top ten genes:
+  TTN
+  MUC16
+  FLG
+-Processing clinical data
+--Missing clinical data
+-Finished in 2.646s elapsed (2.625s cpu) 

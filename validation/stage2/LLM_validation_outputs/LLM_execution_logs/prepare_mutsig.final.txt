@@ -1,0 +1,32 @@
+Selected analytical tool: `prepare_mutsig`
+
+Selected parameters:
+- `maf_path`: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA.maf`
+- `output_maf`: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/BRCA.prepare_mutsig.maf`
+
+MCP execution status: succeeded using absolute paths. The tool produced:
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/BRCA.prepare_mutsig.maf.mutSig.maf`
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/BRCA.prepare_mutsig.maf.correctedSymbols.tsv`
+
+Observed MCP output:
+- MutSig-prepared MAF: 85,864 rows, 24 columns
+- Corrected-symbol table: 782 rows, 3 columns
+- Top corrected symbols:
+  - `KMT2C -> MLL3`, N=116
+  - `KMT2D -> MLL2`, N=41
+  - `SZT2 -> KIAA0467`, N=29
+  - `AK9 -> AKD1`, N=27
+  - `KMT2A -> MLL`, N=27
+
+Preserved MCP copies:
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/BRCA.prepare_mutsig.mcp.mutSig.maf`
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/BRCA.prepare_mutsig.mcp.correctedSymbols.tsv`
+
+Exported R script:
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/prepare_mutsig_brca.R`
+
+Direct R execution status: succeeded. It produced:
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/BRCA.prepare_mutsig.direct_r.maf.mutSig.maf`
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/BRCA.prepare_mutsig.direct_r.maf.correctedSymbols.tsv`
+
+Consistency assessment: consistent. Row counts, column counts, column names, and table contents matched exactly between MCP and direct R outputs. SHA-256 hashes were identical for both the prepared MutSig MAF and corrected-symbol TSV. Comparison details were saved to `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/prepare_mutsig.comparison.txt`.

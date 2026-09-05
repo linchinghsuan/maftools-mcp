@@ -1,0 +1,38 @@
+**Stage 2 Validation Result**
+
+Selected analytical tool: `load_pcawg_data`
+
+Selected analytical parameters:
+```json
+{"cancer_name":"Biliary-AdenoCA"}
+```
+
+MCP execution status: succeeded
+
+Observed MCP output:
+- RDS: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/mcp_preserved_outputs/Biliary-AdenoCA.mcp.rds`
+- MAF: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/mcp_preserved_outputs/Biliary-AdenoCA.mcp.maf`
+- Original MCP paths were under the Maftools MCP package `pcawg_data/`.
+
+Exported R script:
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/load_pcawg_biliary_adenoca.R`
+
+Direct R execution status: succeeded
+
+Direct R outputs:
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/direct_r_outputs/Biliary-AdenoCA.direct_r.rds`
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/direct_r_outputs/Biliary-AdenoCA.direct_r.maf`
+- Log: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/direct_r_outputs/load_pcawg_biliary_adenoca.direct_r.log`
+- Comparison: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/direct_r_outputs/load_pcawg_biliary_adenoca.comparison.txt`
+
+Key comparison:
+- RDS class: `MAF` vs `MAF`
+- MAF object data dimensions: `4215x13` vs `4215x13`
+- MAF table dimensions: `4215x13` vs `4215x13`
+- Key columns preserved: `Hugo_Symbol`, `Chromosome`, `Start_Position`, `End_Position`, `Tumor_Sample_Barcode`, `Variant_Classification`, `Variant_Type`
+- Key columns identical: `TRUE`
+- MAF file MD5 identical: `5703fd75ce08cdae56461590f0b7d22e`
+- RDS file MD5 identical: `dc22144fa8059f222b6ab40c52b9287f`
+- MAF object `@data` identical: `TRUE`
+
+Consistency assessment: consistent.

@@ -1,0 +1,34 @@
+MCP and direct R image comparison
+MCP PNG: maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/gistic_chrom_plot.mcp.preserved.png
+Direct R PNG: maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/gistic_chrom_plot.direct_r.png
+Dimensions: both 2600 x 2000 PNG RGBA
+SHA256 MCP: 85bbd7e7b9e13a182f3251e48e9d2972aaf6bfa18d0b691e2860df5ca3eea188
+SHA256 Direct R: 85bbd7e7b9e13a182f3251e48e9d2972aaf6bfa18d0b691e2860df5ca3eea188
+significant cytobands: 31 
+variant counts:
+
+Amp Del 
+ 11  20 
+top rows:
+     Unique_Name Variant_Classification Cytoband         Wide_Peak_Limits
+1  DP_26:22q12.1                    Del  22q12.1  chr22:29192671-29455701
+2    DP_7:4q35.1                    Del   4q35.1 chr4:183087331-184213557
+3    DP_5:4q34.3                    Del   4q34.3 chr4:179280062-182757119
+4    DP_6:4q34.3                    Del   4q34.3 chr4:121980639-191154276
+5   DP_4:3q13.31                    Del  3q13.31 chr3:116568608-116653900
+6   DP_1:1p36.23                    Del  1p36.23     chr1:8403012-8925111
+7   AP_3:5p15.33                    Amp  5p15.33     chr5:1288616-1300024
+8   DP_12:9p21.3                    Del   9p21.3   chr9:21626574-22448737
+9  DP_17:13q14.2                    Del  13q14.2  chr13:48875329-49064807
+10    DP_11:9p23                    Del     9p23    chr9:8885227-12687261
+      qvalues
+1  2.6118e-26
+2  2.2312e-19
+3  2.7556e-14
+4  2.1300e-13
+5  2.5833e-12
+6  8.2229e-09
+7  1.7994e-08
+8  4.0214e-06
+9  2.9485e-04
+10 1.1631e-03

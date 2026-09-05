@@ -1,0 +1,31 @@
+Selected analytical tool: `plot_signatures` from `maftools-mcp`.
+
+Selected parameters:
+`extractSignatures_rds=maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/extractSignatures.rds`, `contributions=false`, `output_dir=maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs`; MCP defaults used for plot size/style: `2600x2000`, `sig_db=legacy`, `yaxisLim=0.3`, `show_title=true`, `show_barcodes=false`.
+
+MCP execution status: successful after retrying with absolute paths because the first relative-path attempt could not open the RDS.
+
+Observed MCP output:
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/signature_profiles.png`, preserved before direct R execution as:
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/signature_profiles.mcp.preserved.png`
+
+The plot contains six extracted mutational signature profiles and no sample contribution panel. Visible best matches were COSMIC_6, COSMIC_5, COSMIC_6, COSMIC_6, COSMIC_5, and COSMIC_20 with cosine similarities around `0.744-0.828`.
+
+Exported R script:
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/plot_signatures_profiles_no_contributions_retry.R`
+
+Direct R execution status: successful, `Rscript` exit code `0`. Log output was only:
+
+```text
+null device 
+          1
+```
+
+Direct R output:
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/signature_profiles.direct_r.png`
+
+Consistency assessment: MCP-preserved, direct-R, and final `signature_profiles.png` are byte-identical. All three are PNG `2600 x 2000` RGBA images with SHA-256:
+
+```text
+a578b38a4cd2d9383b2c42973bd945bafb019be0efb27c92a2b94597a84fa1f9
+```

@@ -1,0 +1,13 @@
+Warning message:
+package ‘data.table’ was built under R version 4.5.2 
+Loading required package: iterators
+Loading required package: parallel
+-Validating
+--Non MAF specific values in Variant_Classification column:
+  COULD_NOT_DETERMINE
+  DE_NOVO_START_OUT_FRAME
+-Silent variants: 3572 
+-Summarizing
+-Processing clinical data
+--Missing clinical data
+-Finished in 0.049s elapsed (0.036s cpu) 

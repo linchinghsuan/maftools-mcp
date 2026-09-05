@@ -1,0 +1,43 @@
+Stage 2 Maftools-MCP validation retry: custom survival group
+
+Selected analytical tool:
+plot_maf_survgroup_custom
+
+Underlying R/Maftools function:
+maftools::mafSurvGroup
+
+Selected parameters:
+maf_path=maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA_custom_survival_12char.maf
+clinical_csv=maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA_custom_survival_clinical.csv
+geneSet=TP53
+sample_col=Tumor_Sample_Barcode
+time_col=CDR_OS.time
+status_col=CDR_OS
+output_dir=maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs
+img_width=3000
+img_height=2400
+
+MCP execution status:
+Success using pixel image dimensions compatible with the exported MCP R script.
+
+Observed MCP output:
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/mafSurvGroup_CUSTOM.png
+Preserved as maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/mafSurvGroup_CUSTOM.mcp.preserved.png before direct R execution.
+Plot-reported statistics: P-value 0.423; HR 1.15.
+Plot groups: Geneset [N=348]; WT [N=671].
+
+Exported R script:
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/plot_maf_survgroup_custom_TP53.R
+
+Direct R execution status:
+Success, Rscript exit status 0.
+Log: maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/plot_maf_survgroup_custom_TP53.direct_r.log
+Direct plot copy: maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/mafSurvGroup_CUSTOM.direct_r.png
+Direct R console summary:
+Removed 217 duplicated variants.
+Removed 1 samples with NA's.
+Median survival: Mutant medianTime=843, N=348; WT medianTime=822, N=671.
+
+Consistency assessment:
+Consistent. The preserved MCP plot and direct-R plot are both PNG image data, 3000 x 2400, and have identical SHA-256 hashes:
+375751f56bfd1394872c49cb5eb95c2caab725befe0f9cee56139f91c9375bb3

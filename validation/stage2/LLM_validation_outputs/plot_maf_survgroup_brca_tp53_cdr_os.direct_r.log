@@ -1,0 +1,9 @@
+Looking for clinical data in annoatation slot of MAF..
+Removed 1 samples with NA's
+Median survival..
+    Group medianTime     N
+   <char>      <num> <int>
+1: Mutant        843   350
+2:     WT        812   675
+null device 
+          1 

@@ -1,0 +1,13 @@
+-Reading
+-Validating
+-Summarizing
+--Possible FLAGS among top ten genes:
+  TTN
+  MUC16
+  FLG
+-Processing clinical data
+--Missing clinical data
+-Finished in 2.664s elapsed (2.682s cpu) 
+Summarizing signalling pathways [Sanchez-Vega et al., https://doi.org/10.1016/j.cell.2018.03.035]
+null device 
+          1 

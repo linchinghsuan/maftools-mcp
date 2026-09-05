@@ -1,0 +1,56 @@
+Completed the Stage 2 validation pilot.
+
+**Selected MCP Tool**
+`genotype_matrix`
+
+**Parameters**
+`maf_path`: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA.maf`  
+`genes`: `TP53`, `PIK3CA`, `GATA3`  
+`includeSyn`: `false`  
+`output_dir`: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs`
+
+**MCP Execution**
+Succeeded. Output written to:
+
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/genotype_matrix.tsv`
+
+Preserved MCP copy:
+
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/genotype_matrix.mcp.tsv`
+
+Observed MCP output:
+- Matrix dimensions: `314 x 708` after reading row names separately
+- Rows: variant/locus IDs, e.g. `10:8100382`, `10:8105964`, `10:8106022`
+- Columns: tumor sample barcodes
+- Non-`None` genotype cells: `880`
+- Input selected non-synonymous records: `880`
+  - `TP53`: `356`
+  - `PIK3CA`: `393`
+  - `GATA3`: `131`
+
+**Exported R Script**
+Saved to:
+
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/genotype_matrix_brca_tp53_pik3ca_gata3.R`
+
+The exported script uses `maftools::genotypeMatrix` with the same effective MCP parameters.
+
+**Direct R Execution**
+Succeeded with `Rscript`.
+
+Direct-R output copy:
+
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/genotype_matrix.direct_r.tsv`
+
+Log:
+
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/genotype_matrix.direct_r.log`
+
+**Consistency Assessment**
+Consistent. MCP and direct-R outputs matched exactly:
+- Same dimensions: `314 x 708`
+- Same sample columns
+- Same row IDs
+- Same representative genotype values
+- Same non-`None` genotype cell count: `880`
+- Full table comparison: `identical(mcp, direct_r) == TRUE`

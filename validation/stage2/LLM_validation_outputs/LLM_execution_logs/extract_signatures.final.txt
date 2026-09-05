@@ -1,0 +1,34 @@
+Completed the Stage 2 retry.
+
+MCP tool selected: `extract_signatures`
+
+Parameters used:
+```text
+trinuc_matrix_rds = maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/trinuc_matrix.rds
+n = 6
+parallel = 4
+output_dir = LLM_validation_outputs
+```
+
+MCP execution succeeded using the validation input path resolved for the MCP server and wrote:
+
+```text
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/extractSignatures.rds
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/signatures.rds
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/contributions.rds
+```
+
+Exported and ran the validation R script:
+
+```text
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/extract_signatures_n6_parallel4.R
+```
+
+Direct R run succeeded. Verified outputs:
+
+```text
+signatures dim: 96x6
+contributions dim: 6x16
+```
+
+Note: the R/NMF backend reported `Cores 2/2` during direct execution despite `parallel=4`, which appears to reflect the available backend/core limit in this environment.

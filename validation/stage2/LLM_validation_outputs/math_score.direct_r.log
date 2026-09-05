@@ -1,0 +1,18 @@
+-Reading
+-Validating
+-Summarizing
+--Possible FLAGS among top ten genes:
+  TTN
+  MUC16
+  FLG
+-Processing clinical data
+--Missing clinical data
+-Finished in 2.519s elapsed (2.547s cpu) 
+t_vaf field is missing, but found t_ref_count & t_alt_count columns. Estimating vaf..
+Not enough mutations in TCGA-A2-A0EP-01A-52D-A22X-09 . Skipping..
+Not enough mutations in TCGA-A2-A25F-01A-11D-A167-09 . Skipping..
+Not enough mutations in TCGA-A2-A3XW-01A-11D-A23C-09 . Skipping..
+Not enough mutations in TCGA-BH-A1FE-06A-11D-A20S-09 . Skipping..
+Not enough mutations in TCGA-EW-A1P1-01A-31D-A14G-09 . Skipping..
+Not enough mutations in TCGA-LL-A440-01A-11D-A243-09 . Skipping..
+Not enough mutations in TCGA-PL-A8LY-01A-11D-A41F-09 . Skipping..

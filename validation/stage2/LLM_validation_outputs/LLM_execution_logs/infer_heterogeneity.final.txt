@@ -1,0 +1,21 @@
+Selected analytical tool: `infer_heterogeneity` (`maftools::inferHeterogeneity`)
+
+Selected parameters: `maf_path=maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA.maf`, `top=5`, `useSyn=false`, `minVaf=0`, `maxVaf=1`, `output_dir=maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs`; defaults preserved included `dirichlet=false`, `showCNvars=false`, `img_width=2000`, `img_height=1600`.
+
+MCP execution status: succeeded after using absolute paths for the MCP server. Outputs:
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/heterogeneity_clusters.png`
+- preserved MCP plot: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/heterogeneity_clusters.mcp.preserved.png`
+- preserved MCP table: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/heterogeneity_table.mcp.preserved.tsv`
+
+Observed MCP output: 2000x1600 PNG heterogeneity cluster plot for five processed samples. The exported table artifact is 1 byte/empty because the MCP-exported script writes `hetero$clusters`, while the actual returned object contains `clusterData` and `clusterMeans`.
+
+Exported R script: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/infer_heterogeneity_brca_top5_nonsyn_vaf0_1.R`
+
+Direct R execution status: succeeded via `Rscript`. Direct outputs preserved:
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/heterogeneity_clusters.direct_r.png`
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/heterogeneity_table.direct_r.tsv`
+- log: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/infer_heterogeneity.direct_r.log`
+
+Comparison: MCP and direct R plots are byte-identical, both 2000x1600, SHA-256 `3a49c0a88f976f80e3c7c7625e65c4c6dd7634ef3c3553d341094daf9ad876d0`. Table files are also byte-identical and both 1 byte. Direct object-level check from the same parameters produced `clusterData` 17740x9 and `clusterMeans` 30x3 across five samples.
+
+Consistency assessment: consistent. The selected tool matches the request, and the required parameters were preserved. A comparison note is saved at `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/infer_heterogeneity.comparison.txt`.

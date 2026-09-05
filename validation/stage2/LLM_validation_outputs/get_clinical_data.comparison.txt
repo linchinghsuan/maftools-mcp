@@ -1,0 +1,7 @@
+mcp_rows 1026
+mcp_cols 780
+direct_rows 1026
+direct_cols 780
+same_colnames TRUE
+same_data TRUE
+key_cols_present Tumor_Sample_Barcode_min,Tumor_Sample_Barcode,n_vars_all,type,CDR_age_at_initial_pathologic_diagnosis,CDR_gender,CDR_ajcc_pathologic_tumor_stage,CDR_vital_status

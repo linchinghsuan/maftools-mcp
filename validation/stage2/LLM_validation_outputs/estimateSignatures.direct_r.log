@@ -1,0 +1,23 @@
+Loading required package: registry
+Loading required package: rngtools
+Loading required package: cluster
+NMF - BioConductor layer [OK] | Shared memory capabilities [NO: bigmemory] | Cores 2/2
+  To enable shared memory capabilities, try: install.extras('
+NMF
+')
+
+Attaching package: ‘NMF’
+
+The following object is masked from ‘package:generics’:
+
+    fit
+
+Warning message:
+package ‘cluster’ was built under R version 4.5.2 
+-Running NMF for 6 ranks
+Compute NMF rank= 2  ... + measures ... OK
+Compute NMF rank= 3  ... + measures ... OK
+Compute NMF rank= 4  ... + measures ... OK
+Compute NMF rank= 5  ... + measures ... OK
+Compute NMF rank= 6  ... + measures ... OK
+-Finished in 8.013s elapsed (2.317s cpu) 

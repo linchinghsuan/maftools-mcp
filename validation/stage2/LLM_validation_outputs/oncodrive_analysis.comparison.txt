@@ -1,0 +1,38 @@
+TSV class MCP: data.frame 
+TSV class direct: data.frame 
+TSV dimensions MCP: 886x21 
+TSV dimensions direct: 886x21 
+Columns identical: TRUE 
+Key columns present: Hugo_Symbol,total,clusters,muts_in_clusters,zscore,pval,fdr,fract_muts_in_clusters 
+TSV identical: TRUE 
+RDS class MCP: data.table,data.frame 
+RDS class direct: data.table,data.frame 
+RDS dimensions MCP: 886x21 
+RDS dimensions direct: 886x21 
+RDS data identical: TRUE 
+Representative rows MCP/direct key cols:
+  Hugo_Symbol total clusters muts_in_clusters      zscore      pval       fdr
+1       ABCA7    14        1                2 -1.40046283 0.9193126 0.9770989
+2       ABCB4    17        1                2 -1.53194746 0.9372323 0.9770989
+3       ABCC2    10        1                2 -1.10243099 0.8648628 0.9770989
+4       ABCF3     5        1                2 -0.05931955 0.5236512 0.9770989
+5         ABR    10        2                4  0.17248299 0.4315289 0.9770989
+  fract_muts_in_clusters
+1              0.1428571
+2              0.1176471
+3              0.2000000
+4              0.4000000
+5              0.4000000
+Top ranked by fdr then pval:
+    Hugo_Symbol total clusters muts_in_clusters   zscore        pval       fdr
+602        PLP2     5        2                5 2.764494 0.002850554 0.9770989
+27         AKT1    28        1               26 2.697475 0.003493377 0.9770989
+400        KRAS     6        1                5 2.200755 0.013876679 0.9770989
+585      PIK3CA   393       11              366 2.058128 0.019788900 0.9770989
+247     FAM102A     5        2                4 2.026903 0.021336151 0.9770989
+    fract_muts_in_clusters
+602              1.0000000
+27               0.9285714
+400              0.8333333
+585              0.9312977
+247              0.8000000

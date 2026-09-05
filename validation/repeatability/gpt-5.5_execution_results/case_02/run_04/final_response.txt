@@ -1,0 +1,8 @@
+Completed through `maftools-mcp`.
+
+Generated outputs under `./outputs`:
+
+- [lollipop_TP53.png](maftools_validation_data/use_case_test/validation_results/gpt-5.5/case_02/run_04/outputs/lollipop_TP53.png)
+- [tp53_tcga_hnsc_oscc_lollipopPlot2.R](maftools_validation_data/use_case_test/validation_results/gpt-5.5/case_02/run_04/outputs/tp53_tcga_hnsc_oscc_lollipopPlot2.R)
+
+The final comparative TP53 plot uses TCGA-HNSC vs the OSCC MAF and includes PFAM protein domains, mutation-type coloring, compact position labels, and the exact requested run_01-style formatting parameters. I also verified the exported R script contains the requested values, including `img_width=2400`, `img_height=1400`, `axisTextSize=c(0.7,0.7)`, `roundedRect=TRUE`, `alpha=0.85`, and `domainBorderCol="gray40"`.

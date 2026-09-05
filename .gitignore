@@ -1,0 +1,17 @@
+.DS_Store
+.Rhistory
+.Rapp.history
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+build/
+dist/
+.env
+/outputs/
+validation/work/
+validation/private_data/
+environment/library/
+environment/cache/
+humandb/
+annovar.latest.tar.gz

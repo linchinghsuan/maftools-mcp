@@ -1,0 +1,13 @@
+tool=plot_oncoplot
+maf_path=maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA.maf
+top=20
+mcp_output=maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/oncoplot_stage2_top20.mcp.preserved.png
+direct_r_output=maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/oncoplot_stage2_top20.direct_r.png
+dimensions_mcp=2600x2000_RGBA_8bit
+dimensions_direct_r=2600x2000_RGBA_8bit
+md5_mcp=f8d45a1d5a875695f3432917e9add265
+md5_direct_r=f8d45a1d5a875695f3432917e9add265
+sample_count=1026
+title_content=Altered in 909 (88.6%) of 1026 samples.
+top20_table=maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/oncoplot_stage2_top20.top20_genes.tsv
+assessment=consistent

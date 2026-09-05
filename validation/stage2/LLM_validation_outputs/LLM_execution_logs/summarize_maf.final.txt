@@ -1,0 +1,35 @@
+Completed the Stage 2 Maftools-MCP validation pilot.
+
+**Selected MCP tool:** `summarize_maf`  
+**Selected parameters:** `maf_path = maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA.maf`  
+Note: the MCP server did not resolve the relative path on the first attempt, so the successful MCP call used the absolute equivalent.
+
+**MCP execution status:** succeeded  
+**Observed MCP output:** sample-level mutation-class summary from `maftools::getSampleSummary`, with 1,026 samples. Key rows:
+
+- `TCGA-AN-A046-01A-21W-A050-09`: total `5366`
+- `TCGA-AC-A23H-01A-11D-A159-09`: total `4161`
+- `TCGA-EW-A2FV-01A-11D-A17D-09`: total `3899`
+- Trailing samples had totals `4`, `3`, `2`, `1`, `1`
+
+Supplemental MAF context from the same loaded MAF:
+
+- Variants: `85,864`
+- Samples: `1,026`
+- Unique genes: `16,686`
+- Top genes: `PIK3CA:393`, `TP53:356`, `TTN:321`, `CDH1:132`, `GATA3:131`
+- Fields included `Hugo_Symbol`, `Chromosome`, `Start_Position`, `End_Position`, `Variant_Classification`, `Variant_Type`, `Tumor_Sample_Barcode`, and others.
+
+**Saved outputs:**
+
+- Validation report: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/summarize_brca_maf_validation_report.md`
+- Direct R output: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/summary.txt`
+- Named direct R output copy: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/summarize_brca_maf.direct_r.txt`
+
+**Exported R script:**  
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/summarize_brca_maf.R`
+
+**Direct R execution status:** succeeded with `Rscript 4.5.1`  
+Direct R reproduced the key sample-summary results: `1,026` samples, top sample total `5366`, second sample total `4161`, summed sample totals `85,864`.
+
+**Consistency assessment:** consistent. The exported script’s direct R output matches the observed MCP sample-summary structure and key analytical values.

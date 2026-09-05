@@ -1,0 +1,7 @@
+Selected tool: describe_maftools_mcp
+Selected parameters: none
+MCP execution status: success
+Observed MCP output content summary: Returned a Markdown capabilities overview for Maftools-MCP. Supported analyses include VCF integration and MAF conversion, cohort mutation summaries, TMB, oncoplots, VAF distributions, gene-level lollipop/protein-domain plots, cross-cohort comparisons, clinical association and Kaplan-Meier survival analysis, mutational signatures/patterns, and data filtering/subsetting by genes, mutation types, or samples. Accepted inputs include ANNOVAR-annotated VCF, MAF, and RDS maftools MAF objects. For Docker usage, input files are expected under /app/outputs/...
+Intent match: yes, the returned content directly matches the requested informational/reference overview. No direct R validation was performed.
+JSON log path: maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/codex_cli_logs/describe_maftools_mcp_stage2_info.jsonl
+Final log path: maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/codex_cli_logs/describe_maftools_mcp_stage2_info.final.txt

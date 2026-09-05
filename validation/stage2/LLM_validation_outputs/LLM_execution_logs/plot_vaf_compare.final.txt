@@ -1,0 +1,59 @@
+**Stage 2 Validation Result**
+
+Selected analytical tool: `plot_vaf_compare`  
+Underlying R/maftools function: `maftools::vafCompare`
+
+Selected parameters:
+```text
+maf1_path = maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/cohort1.maf
+maf2_path = maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/cohort2.maf
+top = 5
+m1Name = M1
+m2Name = M2
+sigvals = TRUE
+output_dir = LLM_validation_outputs
+```
+
+MCP execution status: succeeded after rerunning with absolute paths, because the MCP server resolved relative paths from its own package directory.
+
+Observed MCP output:
+```text
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/vaf_compare.png
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/vaf_compare.mcp.preserved.png
+```
+
+MCP plot dimensions:
+```text
+2600 x 1800 PNG
+```
+
+Exported R script:
+```text
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/plot_vaf_compare_cohort1_vs_cohort2_top5.R
+```
+
+Direct R execution status: succeeded with `Rscript`.
+
+Direct R output:
+```text
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/vaf_compare.direct_r.png
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/plot_vaf_compare.direct_r.log
+```
+
+Direct R plot dimensions:
+```text
+2600 x 1800 PNG
+```
+
+Deterministic analytical content reproduced:
+```text
+Genes plotted: EPHA2, FAT1, NOTCH1, CHUK, TP53
+
+EPHA2   M1_n=20   M2_n=11   M1_median=0.011613   M2_median=0.011557   p=0.277032   sig=ns
+FAT1    M1_n=207  M2_n=190  M1_median=0.498060   M2_median=0.498409   p=0.105999   sig=ns
+NOTCH1  M1_n=181  M2_n=69   M1_median=0.021306   M2_median=0.019785   p=0.0269411  sig=ns
+CHUK    M1_n=18   M2_n=16   M1_median=0.495796   M2_median=0.493174   p=0.503106   sig=ns
+TP53    M1_n=58   M2_n=13   M1_median=0.026968   M2_median=0.032152   p=0.262405   sig=ns
+```
+
+Consistency assessment: consistent. The MCP call preserved the requested analytical intent and parameters: two cohort VAF comparison, top 5 genes, labels `M1`/`M2`, significance values enabled, and output saved under `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs`. The MCP and direct R plots have matching dimensions and matching deterministic analytical content. Image hashes differed because `vafCompare` uses jittered point placement in `stripchart`, so byte-identical PNGs are not expected.

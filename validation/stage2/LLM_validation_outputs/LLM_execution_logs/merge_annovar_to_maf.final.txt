@@ -1,0 +1,34 @@
+Selected analytical tool: `merge_annovar_to_maf`  
+Underlying R function: `maftools::annovarToMaf`
+
+Selected parameters:
+- `annovar_files`: five files in `maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/annovar_to_maf/`
+- `refBuild`: `hg19`
+- `table`: `refGene`
+- `sep`: tab
+- `ens2hugo`: `TRUE`
+- `basename`: `merged`
+- `output_dir`: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs`
+
+MCP execution status: succeeded.  
+Observed MCP output:
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/merged.maf`
+- Preserved MCP copy: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/merged.mcp.maf`
+- 102 data rows, 32 columns
+- Sample counts: `test1:30`, `test2:24`, `test3:20`, `test4:19`, `test5:9`
+- First representative row: `test1 | chr1 | 16148809 | C>T | EPHA2 | Missense_Mutation | SNP`
+
+Exported R script:
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/merge_annovar_to_maf_merged.R`
+
+Direct R execution status: succeeded with `Rscript`.  
+Direct R output:
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/merged.direct_r.maf`
+- Log: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/merge_annovar_to_maf.direct_r.log`
+
+Consistency assessment: consistent. The MCP and direct-R MAF files both have 102 rows and 32 columns, identical key columns, identical representative values, and identical SHA-256 hash:
+
+`ea8203f3cea3b733b9f09eb57f00d2c8d937ad51e6965cbc587b94d26d991143`
+
+Comparison artifact:
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/merge_annovar_to_maf.comparison.txt`

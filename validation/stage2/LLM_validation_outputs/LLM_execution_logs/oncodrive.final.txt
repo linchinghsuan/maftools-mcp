@@ -1,0 +1,17 @@
+Selected analytical tool: `oncodrive`
+
+Selected parameters:
+`maf_path=maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA.rds`, `output_dir=maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs`, `minMut=5`, `pvalMethod="zscore"`, `nBgGenes=100`, `bgEstimate=true`.
+
+MCP execution status: succeeded.
+Observed MCP output: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/oncodrive.tsv`, preserved as `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/oncodrive.mcp.tsv`. The table has 886 rows and 21 columns, including `Hugo_Symbol`, `clusters`, `muts_in_clusters`, `zscore`, `pval`, and `fdr`.
+
+Exported R script:
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/oncodrive_brca_minmut5_zscore_bg100.R`
+
+Direct R execution status: succeeded with `Rscript`; output copied to `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/oncodrive.direct_r.tsv`. The direct R log is empty: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/oncodrive.direct_r.log`.
+
+Comparison:
+MCP and direct R outputs matched exactly. Both are `data.frame` objects with dimensions `886x21`; column names and column classes are identical; representative values and full table contents are identical.
+
+Consistency assessment: consistent.

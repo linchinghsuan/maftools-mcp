@@ -1,0 +1,52 @@
+Selected analytical tool: compare_signatures
+Underlying R/Maftools function: maftools::compareSignatures
+
+Selected parameters:
+extractSignatures_rds = maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/extractSignatures.rds
+sig_db = legacy
+verbose = true
+output_dir = LLM_validation_outputs
+
+MCP execution status:
+Succeeded when invoked with absolute execution paths for the MCP server.
+
+Observed MCP output:
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/compareSignatures.rds
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/similarity_matrix.txt
+
+Preserved MCP output:
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/compareSignatures.mcp.preserved.rds
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/similarity_matrix.mcp.preserved.txt
+
+Observed content:
+The compareSignatures RDS contains fields cosine_similarities, aetiology_db, and best_match.
+The cosine_similarities matrix is 6 x 30.
+The MCP-written similarity_matrix.txt is 1 byte because the wrapper writes comp$similarity, while the installed maftools compareSignatures object stores the matrix as comp$cosine_similarities.
+
+Extracted similarity outputs:
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/similarity_matrix.cosine_similarities.mcp.tsv
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/similarity_matrix.cosine_similarities.direct_r.tsv
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/compare_signatures.best_matches.tsv
+
+Exported R script:
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/compare_signatures__legacy_cosmic_retry.R
+
+Direct R execution:
+Succeeded with Rscript.
+Log: maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/compare_signatures.direct_r.retry.log
+Direct R outputs:
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/compareSignatures.direct_r.rds
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/similarity_matrix.direct_r.txt
+
+Consistency assessment:
+The MCP-preserved RDS and direct-R RDS are byte-identical.
+The MCP-written similarity_matrix.txt and direct-R similarity_matrix.txt are byte-identical, but both are effectively empty due to the wrapper field-name mismatch.
+The actual cosine similarity matrices extracted from the MCP and direct-R RDS outputs are byte-identical as TSV files.
+
+Best matches:
+Signature_1	COSMIC_6	0.794	defective DNA mismatch repair
+Signature_2	COSMIC_5	0.761	Unknown
+Signature_3	COSMIC_6	0.828	defective DNA mismatch repair
+Signature_4	COSMIC_6	0.778	defective DNA mismatch repair
+Signature_5	COSMIC_5	0.760	Unknown
+Signature_6	COSMIC_20	0.744	defective DNA mismatch repair

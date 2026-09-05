@@ -1,0 +1,15 @@
+mcp_rows=1018 direct_rows=1018
+mcp_cols=Tumor_Sample_Barcode,MedianAbsoluteDeviation,MATH
+direct_cols=Tumor_Sample_Barcode,MedianAbsoluteDeviation,MATH
+same_keys=TRUE
+same_columns=TRUE
+max_mad_abs_diff=0
+max_math_abs_diff=0
+representative_rows
+         Tumor_Sample_Barcode MedianAbsoluteDeviation     MATH
+ TCGA-3C-AAAU-01A-11D-A41F-09                6.038048 29.09403
+ TCGA-3C-AALI-01A-11D-A41F-09                6.811594 43.01370
+ TCGA-3C-AALJ-01A-31D-A41F-09                8.409575 62.96358
+ TCGA-3C-AALK-01A-11D-A41F-09                6.086957 45.12261
+ TCGA-4H-AAAK-01A-12D-A41F-09               12.390029 64.83338
+files_identical=TRUE

@@ -1,0 +1,24 @@
+-Reading
+-Validating
+--Non MAF specific values in Variant_Classification column:
+  COULD_NOT_DETERMINE
+  DE_NOVO_START_OUT_FRAME
+  START_CODON_SNP
+-Silent variants: 8021 
+-Summarizing
+-Processing clinical data
+--Missing clinical data
+-Finished in 0.256s elapsed (0.328s cpu) 
+-Reading
+-Validating
+--Non MAF specific values in Variant_Classification column:
+  DE_NOVO_START_OUT_FRAME
+  COULD_NOT_DETERMINE
+  DE_NOVO_START_IN_FRAME
+-Silent variants: 6964 
+-Summarizing
+-Processing clinical data
+--Missing clinical data
+-Finished in 0.353s elapsed (0.442s cpu) 
+null device 
+          1 

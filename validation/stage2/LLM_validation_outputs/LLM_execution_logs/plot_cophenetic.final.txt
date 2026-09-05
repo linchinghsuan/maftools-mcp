@@ -1,0 +1,42 @@
+Selected analytical tool: `plot_cophenetic`
+Underlying R function: `maftools::plotCophenetic`
+
+Selected parameters:
+```text
+estimateSignatures_rds = maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/estimateSignatures.rds
+output_dir = maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs
+img_width = 2600
+img_height = 2000
+```
+
+MCP execution status: successful using the validated Stage 2 estimateSignatures object.
+
+Observed MCP output:
+```text
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/cophenetic_plot.png
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/cophenetic_plot.mcp.preserved.png
+```
+
+Exported R script:
+```text
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/plot_cophenetic_estimateSignatures.R
+```
+
+Direct R execution status: successful.
+```text
+Rscript exit status: 0
+null device
+          1
+```
+
+Direct R output:
+```text
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/cophenetic_plot.direct_r.png
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/plot_cophenetic.direct_r.log
+```
+
+Consistency assessment: MCP-preserved, direct-R, and final `cophenetic_plot.png` outputs are byte-identical. All three PNGs are `2600 x 2000`, size `203432` bytes, with matching SHA-256:
+
+```text
+59f4913bacc826c2c50862de307dd4205190f99b0ce5cf7f4be6bc366e8e8f64
+```

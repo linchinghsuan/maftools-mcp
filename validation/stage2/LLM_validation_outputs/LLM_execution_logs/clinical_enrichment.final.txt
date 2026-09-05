@@ -1,0 +1,32 @@
+Completed the Stage 2 validation pilot.
+
+**Selected analytical tool:** `clinical_enrichment`  
+**Analytical parameters:** `maf_path=maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA_clinical_enrichment_validation_subset.rds`, `clinicalFeature=breast_carcinoma_estrogen_receptor_status`, `minMut=5`, `output_dir=maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs`. MCP effective defaults included `useCNV=TRUE` and `pVal=0.05`.
+
+**MCP execution status:** succeeded after using absolute paths for the MCP server.  
+**Observed MCP output:** `clinical_enrichment_results.txt` with 92 rows and 10 columns, plus `clinical_enrichment_plot.png` at 1800 x 1400. Key enriched/significant rows included:
+
+- `TP53`: Negative 50/60 vs Rest 8/60, `p=4.395404e-15`, `fdr=2.021886e-13`
+- `GATA3`: Positive 10/60 vs Rest 0/60, `p=0.001299133`, `fdr=0.02988007`
+- `PIK3CA`: Positive 22/60 vs Rest 8/60, `p=0.005581625`, `fdr=0.08558491`
+- `CDH1`: Positive 12/60 vs Rest 2/60, `p=0.008378147`, `fdr=0.09634869`
+
+**Preserved MCP outputs:**
+
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/clinical_enrichment_results.mcp.preserved.txt`
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/clinical_enrichment_plot.mcp.preserved.png`
+
+**Exported R script path:**  
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/clinical_enrichment_brca_er_status_minmut5.R`
+
+**Direct R execution status:** succeeded via `Rscript`.  
+**Direct R outputs:**
+
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/clinical_enrichment_results.direct_r.txt`
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/clinical_enrichment_plot.direct_r.png`
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/clinical_enrichment.direct_r.log`
+
+**Consistency assessment:** consistent. The direct R table exactly matched the preserved MCP table: 92 rows, 10 columns, identical column names, and identical values. The MCP and direct R plots were both 1800 x 1400 and had identical SHA-256 hashes.
+
+Comparison report saved at:  
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/clinical_enrichment.comparison.txt`

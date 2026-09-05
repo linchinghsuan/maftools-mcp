@@ -1,0 +1,49 @@
+Selected analytical tool: `get_fields` (`maftools::getFields`)
+
+Selected parameters:
+- `maf_path`: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA.maf`
+- `output_dir`: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs`
+
+MCP execution status: succeeded after using absolute workspace paths for the MCP server. Output written to:
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/maf_fields.tsv`
+- preserved MCP copy: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/maf_fields.mcp.tsv`
+
+Observed MCP output: 23 MAF fields, in single column `Field`:
+```text
+Hugo_Symbol
+Chromosome
+Start_Position
+End_Position
+Variant_Classification
+Variant_Type
+Reference_Allele
+Tumor_Seq_Allele2
+Tumor_Sample_Barcode
+Matched_Norm_Sample_Barcode
+HGVSc
+HGVSp_Short
+Transcript_ID
+Exon_Number
+t_ref_count
+t_alt_count
+n_ref_count
+n_alt_count
+IMPACT
+ExAC_AF
+IMPACT
+FILTER
+Tumor_Sample_Barcode_min
+```
+
+Exported R script:
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/get_fields_brca.R`
+
+Direct R execution status: succeeded with `Rscript`. Regenerated output preserved as:
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/maf_fields.direct_r.tsv`
+- log: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/get_fields.direct_r.log`
+
+Consistency assessment: consistent. MCP and direct-R outputs both have 24 rows including header, 23 data fields, key column `Field`, and identical SHA-256 hash:
+`9052444cf73fbc5a9304211257f2ae5c06babfb7185ee74f205525fe99d469dd`
+
+Comparison artifact:
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/get_fields.comparison.txt`

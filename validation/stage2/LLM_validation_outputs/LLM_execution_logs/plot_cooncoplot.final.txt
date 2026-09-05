@@ -1,0 +1,18 @@
+Completed the Stage 2 validation pilot.
+
+**Selected analytical tool:** `plot_cooncoplot`  
+**Underlying R function:** `maftools::coOncoplot`
+
+**Selected parameters:**  
+Inputs were `maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/cohort1.maf` and `maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/cohort2.maf`; output directory `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs`; image size `2600 x 2000`; `keepGeneOrder = TRUE`. The requested top 10 reduced to 8 maftools-plottable non-silent genes after `read.maf` filtering: `FAT1, NOTCH1, CHUK, EPHA2, TP53, PIK3CA, CDKN2A, ELAVL1`.
+
+**MCP execution status:** succeeded after rerunning with absolute paths for the MCP server.  
+**Observed MCP output:** `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/cooncoplot.png`, preserved as `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/cooncoplot.mcp.preserved.png`; PNG `2600 x 2000`; cohorts shown as `Cohort1 (N = 16)` and `Cohort2 (N = 16)`.
+
+**Exported R script:** `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/plot_cooncoplot_cohort1_vs_cohort2_top10.R`
+
+**Direct R execution:** succeeded; regenerated plot preserved as `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/cooncoplot.direct_r.png`.
+
+**Consistency assessment:** consistent. MCP and direct-R plots had identical dimensions and identical SHA-256 hash: `e5c57c37f0349f20542fbee6a67ead290b8af95649f5b48703a64e98030f43d3`.
+
+Comparison record saved at `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/plot_cooncoplot.comparison.txt`.

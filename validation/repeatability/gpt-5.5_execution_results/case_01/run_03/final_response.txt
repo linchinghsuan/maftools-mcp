@@ -1,0 +1,9 @@
+Completed through `maftools-mcp`.
+
+Generated outputs under `./outputs`:
+
+- [OSCC_merged.maf](maftools_validation_data/use_case_test/validation_results/gpt-5.5/case_01/run_03/outputs/OSCC_merged.maf)
+- [OSCC_top20_oncoplot.png](maftools_validation_data/use_case_test/validation_results/gpt-5.5/case_01/run_03/outputs/OSCC_top20_oncoplot.png)
+- [OSCC_top20_oncoplot.R](maftools_validation_data/use_case_test/validation_results/gpt-5.5/case_01/run_03/outputs/OSCC_top20_oncoplot.R)
+
+The input directory contained ANNOVAR `*.hg19_multianno.txt` files, so I used the maftools-mcp ANNOVAR-to-MAF merge workflow. The merged cohort MAF includes 50 files, and the exported R script confirms `top = 20` with PNG output named exactly `OSCC_top20_oncoplot.png`.

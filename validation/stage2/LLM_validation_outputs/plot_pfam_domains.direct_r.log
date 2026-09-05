@@ -1,0 +1,112 @@
+-Reading
+-Validating
+-Summarizing
+--Possible FLAGS among top ten genes:
+  TTN
+  MUC16
+  FLG
+-Processing clinical data
+--Missing clinical data
+-Finished in 2.647s elapsed (2.605s cpu) 
+Warning in pfamDomains(maf = maf_obj, AACol = "HGVSp_Short", summarizeBy = "AAPos",  :
+  Removed 105 mutations for which AA position was not available
+$proteinSummary
+         HGNC AAPos Variant_Classification     N total   fraction
+       <char> <num>                 <fctr> <int> <num>      <num>
+    1: PIK3CA  1047      Missense_Mutation   146   393 0.37150127
+    2: PIK3CA   545      Missense_Mutation    74   393 0.18829517
+    3: PIK3CA   542      Missense_Mutation    47   393 0.11959288
+    4:   AKT1    17      Missense_Mutation    26    28 0.92857143
+    5:   TP53   273      Missense_Mutation    22   356 0.06179775
+   ---                                                           
+83860:   ZZZ3   903      Missense_Mutation     1     7 0.14285714
+83861:   ZZZ3   493      Missense_Mutation     1     7 0.14285714
+83862:   ZZZ3   356      Missense_Mutation     1     7 0.14285714
+83863:   ZZZ3   569      Missense_Mutation     1     7 0.14285714
+83864:   ZZZ3     4      Missense_Mutation     1     7 0.14285714
+          DomainLabel
+               <char>
+    1: PI3Kc_IA_alpha
+    2:        PI3Ka_I
+    3:        PI3Ka_I
+    4:         PH_Akt
+    5:            P53
+   ---               
+83860:           <NA>
+83861:           <NA>
+83862:           <NA>
+83863:           <NA>
+83864:           <NA>
+                                                                                                                                                                                                       pfam
+                                                                                                                                                                                                     <char>
+    1:                       The PI3K catalytic domain family is part of a larger superfamily that includes the catalytic domains of other kinases such as the typical serine/threonine/tyrosine protein...
+    2: PIK domain is conserved in all PI3 and PI4-kinases. Its role is unclear but it has been suggested to be involved in substrate presentation. In general, PI3K class I prefer phosphoinositol (4,5)...
+    3: PIK domain is conserved in all PI3 and PI4-kinases. Its role is unclear but it has been suggested to be involved in substrate presentation. In general, PI3K class I prefer phosphoinositol (4,5)...
+    4:                                                                                                                                                                                              cd01241
+    5:                                                                                                                                                                                              cd08367
+   ---                                                                                                                                                                                                     
+83860:                                                                                                                                                                                                 <NA>
+83861:                                                                                                                                                                                                 <NA>
+83862:                                                                                                                                                                                                 <NA>
+83863:                                                                                                                                                                                                 <NA>
+83864:                                                                                                                                                                                                 <NA>
+                                                                       Description
+                                                                            <char>
+    1: Phosphoinositide 3-kinase (PI3K), class IA, alpha isoform, catalytic domain
+    2:                  Phosphoinositide 3-kinase (PI3K) class I, accessory domain
+    3:                  Phosphoinositide 3-kinase (PI3K) class I, accessory domain
+    4:                                         Akt pleckstrin homology (PH) domain
+    5:                                                      P53 DNA-binding domain
+   ---                                                                            
+83860:                                                                        <NA>
+83861:                                                                        <NA>
+83862:                                                                        <NA>
+83863:                                                                        <NA>
+83864:                                                                        <NA>
+
+$domainSummary
+          DomainLabel nMuts nGenes
+               <char> <int>  <int>
+   1:           7tm_1  1290    492
+   2:         COG5048  1197    381
+   3: Cadherin_repeat   701    104
+   4:             FN3   616    132
+   5:         COG2319   426    149
+  ---                             
+6428:  zf-Sec23_Sec24     1      1
+6429:          zf-UBR     1      1
+6430:         zf-rbx1     1      1
+6431:     zf-ribbon_3     1      1
+6432:         zf-tcix     1      1
+                                                                                                                                                                                                                                  pfam
+                                                                                                                                                                                                                                <char>
+   1:                                                                                                                                                                                                                        pfam00001
+   2:                                                                                                                                                                                                                             <NA>
+   3:                                                                                                                                                                                                                          cd11304
+   4: One of three types of internal repeats found in the plasma protein fibronectin. Its tenth fibronectin type III repeat contains an RGD cell recognition sequence in a flexible loop between 2 strands. Approximately 2% of all...
+   5:                                                                                                                                                                                                                             <NA>
+  ---                                                                                                                                                                                                                                 
+6428:                                                                                                                                                                                                                        pfam04810
+6429:                                                                                                                                                                                                                        pfam02207
+6430:                                                                                                                                                                                                                        pfam12678
+6431:                                                                                                                                                                                                                        pfam13248
+6432:                                                                                                                                                                                                                             <NA>
+                                              Description
+                                                   <char>
+   1:         7 transmembrane receptor (rhodopsin family)
+   2:   FOG: Zn-finger [General function prediction only]
+   3:                       Cadherin tandem repeat domain
+   4:                           Fibronectin type 3 domain
+   5: FOG: WD40 repeat [General function prediction only]
+  ---                                                    
+6428:                             Sec23/Sec24 zinc finger
+6429:        Putative zinc finger in N-recognin (UBR box)
+6430:                                 RING-H2 zinc finger
+6431:                                  zinc-ribbon domain
+6432:                                                <NA>
+
+Warning message:
+In pfamDomains(maf = maf_obj, AACol = "HGVSp_Short", summarizeBy = "AAPos",  :
+  NAs introduced by coercion
+null device 
+          1 

@@ -1,0 +1,46 @@
+Maftools-MCP Stage 2 validation: drug_interactions
+
+Selected analytical tool: drug_interactions
+Selected parameters:
+- maf_path: maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA.maf
+- output_dir: LLM_validation_outputs
+- top: 20
+- plotType: bar
+- drugs: false
+- fontSize: 0.8
+- img_width: 2600
+- img_height: 2000
+
+MCP execution status: succeeded after rerun with absolute filesystem paths for MCP server path resolution.
+Observed MCP output:
+- Plot: maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/drug_interactions.png
+- Preserved MCP plot: maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/drug_interactions.mcp.preserved.png
+- Preserved MCP plot dimensions: 2600 x 2000 PNG
+- Preserved MCP plot SHA-256: f4f14546b91fbe5ce6b535308c7ead442c36160085f41036d85c6d52601a36a1
+
+Exported R script:
+- maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/drug_interactions_brca_top20_categories_bar_no_drugs.R
+
+Direct R execution status: succeeded.
+Direct R outputs:
+- Plot copy: maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/drug_interactions.direct_r.png
+- Log: maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/drug_interactions.direct_r.log
+- Returned category assignments: maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/drug_interactions.direct_r.categories.tsv
+- Category count summary: maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/drug_interactions.direct_r.category_summary.tsv
+
+Direct R plot dimensions: 2600 x 2000 PNG
+Direct R plot SHA-256: f4f14546b91fbe5ce6b535308c7ead442c36160085f41036d85c6d52601a36a1
+
+Deterministic analytical content:
+- drugInteractions returned 62 gene-category assignment rows.
+- Category summary has 21 categories.
+- Largest categories by unique gene count:
+  - DRUGGABLE GENOME: 12
+  - CLINICALLY ACTIONABLE: 8
+  - KINASE: 5
+  - SERINE THREONINE KINASE: 5
+  - DRUG RESISTANCE: 4
+  - TUMOR SUPPRESSOR: 4
+
+Consistency assessment: consistent.
+Reason: The LLM-selected tool matches the prompt intent, required parameters were preserved, individual drugs were suppressed with drugs=false, and the direct R plot matched the preserved MCP plot in dimensions and SHA-256 hash.

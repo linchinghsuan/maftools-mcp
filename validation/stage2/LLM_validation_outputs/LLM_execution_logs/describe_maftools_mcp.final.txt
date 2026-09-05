@@ -1,0 +1,13 @@
+Selected tool: `describe_maftools_mcp`
+
+Selected parameters: none
+
+MCP execution status: success
+
+Observed MCP output summary: the server returned a Markdown overview describing support for Maftools-based cancer genomics workflows, including VCF-to-MAF integration, cohort mutation summaries, TMB, oncoplots, VAF distributions, gene-level lollipop/domain plots, cross-cohort comparisons, survival/clinical association analysis, mutational signatures, and filtering/subsetting. Accepted inputs include ANNOVAR-annotated `VCF`, `MAF`, and `RDS` maftools MAF objects; Docker paths should be under `/app/outputs/...`.
+
+Intent match: yes. The returned content directly matches the requested informational/reference overview. No direct R validation was performed.
+
+JSON log path: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/codex_cli_logs/describe_maftools_mcp_stage2_info.jsonl`
+
+Final log path: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/codex_cli_logs/describe_maftools_mcp_stage2_info.final.txt`

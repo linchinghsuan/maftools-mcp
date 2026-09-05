@@ -1,0 +1,15 @@
+filter_maf default gene-filter validation comparison
+MCP rows: 85864
+Direct R rows: 85864
+MCP columns: 23
+Direct R columns: 23
+Column names identical: TRUE
+Key columns: Hugo_Symbol, Chromosome, Start_Position, End_Position, Variant_Classification, Variant_Type, Tumor_Sample_Barcode
+Key-column values identical: TRUE
+Full table identical: TRUE
+Unique genes MCP: 16686
+Unique genes Direct R: 16686
+Unique samples MCP: 1026
+Unique samples Direct R: 1026
+MCP TSV MD5: b9062dbbd9b8e197807fc8a9ce8b2c6d
+Direct R TSV MD5: b9062dbbd9b8e197807fc8a9ce8b2c6d

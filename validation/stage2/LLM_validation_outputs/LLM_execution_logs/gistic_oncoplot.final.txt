@@ -1,0 +1,22 @@
+Selected analytical tool: `gistic_oncoplot`
+
+Selected parameters:
+`gistic_rds_path=maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/ACC_gistic.rds`, `output_dir=maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs`, `showTumorSampleBarcodes=false`. MCP defaults preserved included `removeNonAltered=true`, `img_width=2600`, `img_height=2000`.
+
+MCP execution status: succeeded after using absolute paths. The MCP output was saved as `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/gistic_oncoplot.png`, and I preserved it as `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/gistic_oncoplot.mcp.preserved.png`.
+
+Observed MCP output: PNG CNV heatmap, `2600 x 2000`, with band rows and no tumor sample barcode labels shown.
+
+Exported R script: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/gistic_oncoplot_acc_no_barcodes.R`
+
+Direct R execution status:
+Direct R validation with the required maftools namespace loaded succeeded and regenerated `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/gistic_oncoplot.direct_r.png`.
+
+Comparison:
+Both MCP and direct R plots are `2600 x 2000` PNGs and have identical SHA-256 hashes:
+
+`45d1151c588ac2eed3ab9ee9740493a05e9fb6eff983c731c5895032e607391e`
+
+Deterministic GISTIC content summary: `4911` gene-summary rows, `90` sample-summary rows. Top representative genes by total alteration included `ITFG3`, `AGAP2`, `AVIL`, `CDK4`, and `CTDSP2`; saved at `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/gistic_oncoplot.analytical_content.tsv`.
+
+Consistency assessment: consistent for analytical intent, selected tool, required barcode-hiding parameter, and plot output. Caveat: the exported script is not fully standalone as generated unless `maftools` is loaded before execution.

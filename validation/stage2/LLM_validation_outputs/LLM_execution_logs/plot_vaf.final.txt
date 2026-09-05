@@ -1,0 +1,31 @@
+Selected analytical tool: `mcp__maftools_mcp.plot_vaf`
+
+Selected parameters:
+- `maf_path`: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA.maf`
+- `output_dir`: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs`
+- `top`: `10`
+- `vafCol`: `t_vaf`
+- Effective exported defaults included `orderByMedian=TRUE`, `showN=TRUE`, `vaf_cutoff=0`, `width=5`, `height=5`
+
+MCP execution status: succeeded using validation paths resolved for the MCP server.
+
+Observed MCP output:
+- Figure generated: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/vaf_plot.png`
+- Preserved MCP copy: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/vaf_plot.mcp.png`
+- Dimensions: `1500x1500`
+- Plotted genes/order by median VAF: `TP53`, `CDH1`, `PIK3CA`, `GATA3`, `MAP3K1`, `KMT2C`, `MUC16`, `TTN`, `FLG`, `RYR2`
+
+Exported R script:
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/plot_vaf_brca_top10_t_vaf.R`
+
+Direct R execution:
+- Status: succeeded with `Rscript`
+- Log: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/plot_vaf.direct_r.log`
+- Direct-R figure copy: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/vaf_plot.direct_r.png`
+- Dimensions: `1500x1500`
+
+Consistency assessment:
+- Both MCP and direct R outputs exist and have matching dimensions.
+- The exported script uses the same input, output target, top-10 setting, and `vafCol="t_vaf"`.
+- The raw MAF did not contain `t_vaf`; both the MCP-generated script and direct R execution compute it from `t_alt_count / (t_alt_count + t_ref_count)`.
+- Analytical content is consistent: same top 10 genes and same median-VAF ordering. Pixel identity was not expected because jittered points are redrawn between R sessions, but the figure content and parameters match.

@@ -1,0 +1,13 @@
+Selected tool: `mcp__maftools_mcp.pcawg_available`
+
+Selected parameters: `{}`
+
+MCP execution status: completed / success
+
+Observed output: 25 PCAWG cohorts were returned, including `Biliary-AdenoCA`, `Breast-AdenoCa`, `CNS-Medullo`, `Kidney-RCC`, `Liver-HCC`, `Panc-AdenoCA`, `Prost-AdenoCA`, `Skin-Melanoma`, and `Stomach-AdenoCA`, with descriptive cohort labels.
+
+Intent match: yes. This directly satisfies the informational/reference-listing request. No direct R validation was performed.
+
+Logs:
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/codex_cli_logs/pcawg_available.jsonl`
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/codex_cli_logs/pcawg_available.final.txt`

@@ -1,0 +1,85 @@
+-Reading
+-Validating
+-Summarizing
+--Possible FLAGS among top ten genes:
+  TTN
+  MUC16
+  FLG
+-Processing clinical data
+--Missing clinical data
+-Finished in 3.071s elapsed (2.916s cpu) 
+Performing pairwise t-test for differences in mutation burden..
+$median_mutation_burden
+    Cohort Cohort_Size Median_Mutations Median_Mutations_log10
+    <char>       <int>            <num>                  <num>
+ 1:   LAML         137              9.0              0.9542425
+ 2:   PCPG         183              9.0              0.9542425
+ 3:   THCA         499             10.0              1.0000000
+ 4:    UVM          80             11.5              1.0606978
+ 5:   TGCT         133             13.0              1.1139434
+ 6:   THYM         123             14.0              1.1461280
+ 7:   KICH          66             19.5              1.2900346
+ 8:    ACC          92             25.5              1.4065402
+ 9:    LGG         524             27.0              1.4313638
+10:   MESO          82             27.0              1.4313638
+11:   PRAD         495             27.0              1.4313638
+12:   PAAD         176             35.0              1.5440680
+13: Input1        1026             39.0              1.5910646
+14:   BRCA        1025             40.0              1.6020600
+15:   SARC         239             40.0              1.6020600
+16:   CHOL          36             40.5              1.6074550
+17:    UCS          57             46.0              1.6627578
+18:    GBM         398             51.0              1.7075702
+19:   KIRC         370             52.0              1.7160033
+20:   KIRP         282             65.0              1.8129134
+21:     OV         411             66.0              1.8195439
+22:   UCEC         531             75.0              1.8750613
+23:   LIHC         365             82.0              1.9138139
+24:   CESC         291             86.0              1.9344985
+25:   READ         150             88.5              1.9469433
+26:   ESCA         185            103.0              2.0128372
+27:   HNSC         509            106.0              2.0253059
+28:   DLBC          37            110.0              2.0413927
+29:   STAD         438            114.5              2.0588055
+30:   COAD         406            115.0              2.0606978
+31:   BLCA         411            169.0              2.2278867
+32:   LUAD         516            198.0              2.2966652
+33:   LUSC         485            229.0              2.3598355
+34:   SKCM         468            406.5              2.6090605
+    Cohort Cohort_Size Median_Mutations Median_Mutations_log10
+    <char>       <int>            <num>                  <num>
+
+$mutation_burden_perSample
+               Tumor_Sample_Barcode total cohort
+                             <fctr> <num> <fctr>
+    1: TCGA-AB-2808-03B-01W-0728-08   741   LAML
+    2: TCGA-AB-2828-03B-01W-0728-08   718   LAML
+    3: TCGA-AB-2826-03B-01W-0728-08   616   LAML
+    4: TCGA-AB-2806-03B-01W-0728-08   491   LAML
+    5: TCGA-AB-2833-03B-01W-0728-08   445   LAML
+   ---                                          
+11222: TCGA-FR-A2OS-01A-11D-A21A-08    13   SKCM
+11223: TCGA-BF-AAP8-01A-11D-A401-08    11   SKCM
+11224: TCGA-EB-A4IQ-01A-12D-A25O-08     9   SKCM
+11225: TCGA-EB-A4OZ-01A-12D-A25O-08     9   SKCM
+11226: TCGA-D3-A8GE-06A-11D-A372-08     6   SKCM
+
+$pairwise_t_test
+     Cohort1 Cohort2          Pval
+      <char>  <fctr>         <num>
+  1:    UCEC    BRCA 1.600992e-105
+  2:    UCEC  Input1 1.600992e-105
+  3:    UCEC    THCA  7.188593e-90
+  4:    UCEC     LGG  2.392470e-85
+  5:    UCEC    PRAD  1.490150e-84
+ ---                              
+557:    PAAD     GBM  9.943746e-01
+558:    MESO    KICH  9.943746e-01
+559:    THCA    TGCT  9.943746e-01
+560:     UVM    TGCT  9.943746e-01
+561:     UVM    THCA  9.943746e-01
+
+Warning message:
+In FUN(X[[i]], ...) : Removed 0 samples with zero mutations.
+null device 
+          1 

@@ -1,0 +1,34 @@
+Selected MCP tool: plot_maf_survgroup
+Underlying R function: maftools::mafSurvGroup
+
+Parameters:
+maf_rds_path: maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA.rds
+geneSet: TP53
+time_col: CDR_OS.time
+status_col: CDR_OS
+output_dir: LLM_validation_outputs
+img_width: 800
+img_height: 800
+
+MCP output:
+plot: maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/mafSurvGroup.png
+preserved plot: maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/mafSurvGroup_TP53_CDR_OS.mcp.preserved.png
+observed plot labels: Geneset TP53; Geneset N=350; WT N=675; P-value 0.402; HR 1.16
+
+Exported R script:
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/plot_maf_survgroup_brca_tp53_cdr_os.R
+
+Direct R output:
+plot: maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/mafSurvGroup_TP53_CDR_OS.direct_r.png
+log: maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/plot_maf_survgroup_brca_tp53_cdr_os.direct_r.log
+direct log group medians: Mutant medianTime 843 N 350; WT medianTime 812 N 675
+independent R check: rows_with_survival=1025; Geneset N=350; WT N=675; logrank_p=0.4018; reciprocal HR approximately 1.158
+
+Artifact comparison:
+MCP preserved dimensions: 800 x 800
+Direct R dimensions: 800 x 800
+MCP preserved SHA-256: 3a025a301860463d4db85c0ed5183967635bae8045317eb14702603db20b8930
+Direct R SHA-256: 3a025a301860463d4db85c0ed5183967635bae8045317eb14702603db20b8930
+
+Consistency assessment:
+Consistent. The LLM-selected tool matches the request for TCGA-style MAF survival comparison by TP53 mutation status, the requested time/status columns were preserved, and the direct R output is identical to the preserved MCP plot.

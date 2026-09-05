@@ -1,0 +1,16 @@
+Selected analytical tool: `plot_maf_survgroup`  
+Underlying R function: `maftools::mafSurvGroup`
+
+Selected parameters:
+`maf_rds_path=maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA.rds`, `geneSet=TP53`, `time_col=CDR_OS.time`, `status_col=CDR_OS`, `output_dir=maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs`, `img_width=800`, `img_height=800`.
+
+MCP execution status: succeeded after retrying with absolute paths.  
+Observed MCP output: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/mafSurvGroup.png`, preserved as `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/mafSurvGroup_TP53_CDR_OS.mcp.preserved.png`. Plot shows `Geneset N=350`, `WT N=675`, `P-value: 0.402`, `HR: 1.16`.
+
+Exported R script: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/plot_maf_survgroup_brca_tp53_cdr_os.R`
+
+Direct R execution status: succeeded. Output preserved as `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/mafSurvGroup_TP53_CDR_OS.direct_r.png`; log at `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/plot_maf_survgroup_brca_tp53_cdr_os.direct_r.log`.
+
+Consistency assessment: consistent. The direct R plot and preserved MCP plot are both `800 x 800` and have identical SHA-256 hash `3a025a301860463d4db85c0ed5183967635bae8045317eb14702603db20b8930`. Independent R checks also matched the key analytical content: `Geneset/TP53-mutated N=350`, `WT N=675`, log-rank p approximately `0.4018`, reciprocal HR approximately `1.158`, matching the displayed `0.402` and `1.16`.
+
+Comparison report saved at `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/plot_maf_survgroup_brca_tp53_cdr_os.comparison.txt`.

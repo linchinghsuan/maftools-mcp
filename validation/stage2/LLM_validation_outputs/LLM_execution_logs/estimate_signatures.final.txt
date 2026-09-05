@@ -1,0 +1,29 @@
+Completed the Stage 2 retry with Maftools-MCP.
+
+Selected MCP tool: `estimate_signatures`
+
+Parameters used:
+`trinuc_matrix_rds=maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/trinuc_matrix.rds`, `nMin=2`, `nTry=6`, `nrun=10`, `output_dir=maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs`, `verbose=true`.
+
+Note: final MCP execution succeeded with the same validation input resolved for the MCP server; exported scripts and reported paths are recorded under the validation bundle.
+
+Outputs:
+- MCP result: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/estimateSignatures.rds`
+- MCP summary TSV: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/estimateSignatures.mcp.nmfSummary.tsv`
+- Exported R script: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/estimate_signatures_rank2_6_nrun10.R`
+- Direct R result: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/estimateSignatures.direct_r.rds`
+- Direct R summary TSV: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/estimateSignatures.direct_r.nmfSummary.tsv`
+- Direct R log: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/estimateSignatures.exported_r_script.log`
+
+Direct R reproduced the MCP result successfully. The highest cophenetic value was at rank 3:
+
+```text
+rank  cophenetic
+2     0.9162189
+3     0.9263389
+4     0.8323990
+5     0.8825737
+6     0.9252651
+```
+
+Estimated optimal number of mutational signatures: `3`.

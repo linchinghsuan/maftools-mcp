@@ -1,0 +1,15 @@
+Tool: plot_rainfall
+Underlying R function: maftools::rainfallPlot
+Input MAF: maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA.maf
+Sample: TCGA-3C-AAAU-01A-11D-A41F-09
+detectChangePoints: FALSE
+MCP plot: maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/rainfall_TCGA-3C-AAAU-01A-11D-A41F-09.mcp.preserved.png
+Direct R plot: maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/rainfall_TCGA-3C-AAAU-01A-11D-A41F-09.direct_r.png
+Dimensions: 2600 x 2000 for both PNGs
+MCP MD5: d93b56aa9897b0c533991c1cf9c4eafe
+Direct R MD5: d93b56aa9897b0c533991c1cf9c4eafe
+Sample MAF rows: 22
+Sample SNP rows used for rainfall content: 20
+Sample variant types: INS=2; SNP=20
+Sample SNP chromosomes: 11,14,15,19,1,2,5,6,7,9,X
+Assessment: consistent

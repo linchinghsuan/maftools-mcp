@@ -1,0 +1,29 @@
+Completed the Stage 2 validation pilot.
+
+**Selected MCP Tool:** `filter_maf`
+
+**Selected Parameters:** `maf_path=maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA.maf`, `genes=true`, `tsb=null`, `isTCGA=false`, `output_dir=maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs`
+
+**MCP Status:** succeeded. Outputs generated:
+
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/filtered_maf.tsv`
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/filtered_maf.rds`
+
+Preserved MCP copies:
+
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/filtered_maf.mcp.tsv`
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/filtered_maf.mcp.rds`
+
+**Observed MCP Output:** 85,864 rows, 23 columns, 16,686 unique genes, 1,026 tumor samples.
+
+**Exported R Script:** `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/filter_maf_brca_default_gene_filter.R`
+
+**Direct R Status:** succeeded via `Rscript`. Direct outputs preserved as:
+
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/filtered_maf.direct_r.tsv`
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/filtered_maf.direct_r.rds`
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/filter_maf.direct_r.log`
+
+**Consistency Assessment:** MCP and direct R outputs are fully consistent. Row counts, column counts, column names, key-column values, representative rows, and full table contents all matched. The MCP and direct-R TSV MD5 hashes were identical: `b9062dbbd9b8e197807fc8a9ce8b2c6d`.
+
+Comparison summary saved to `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/filter_maf.comparison.txt`.

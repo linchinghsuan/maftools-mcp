@@ -1,0 +1,39 @@
+Selected analytical tool: clinical_enrichment
+Underlying R function: maftools::clinicalEnrichment
+
+Parameters:
+maf_path=maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA_clinical_enrichment_validation_subset.rds
+clinicalFeature=breast_carcinoma_estrogen_receptor_status
+minMut=5
+output_dir=maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs
+MCP effective defaults: useCNV=TRUE, pVal=0.05, cols=NULL, annoFontSize=0.8, geneFontSize=0.8, legendFontSize=0.8, showTitle=TRUE
+
+MCP outputs preserved:
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/clinical_enrichment_results.mcp.preserved.txt
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/clinical_enrichment_plot.mcp.preserved.png
+
+Direct R outputs:
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/clinical_enrichment_results.direct_r.txt
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/clinical_enrichment_plot.direct_r.png
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/clinical_enrichment.direct_r.log
+
+Table comparison:
+MCP rows=92; direct R rows=92
+MCP columns=10; direct R columns=10
+Column names identical=TRUE
+Data identical=TRUE
+
+Representative rows:
+TP53 Negative vs Rest: 50 of 60 vs 8 of 60, p=4.39540416397195e-15, OR=31.0161111712727, fdr=2.0218859154271e-13
+TP53 Positive vs Rest: 8 of 60 vs 50 of 60, p=4.39540416397195e-15, OR=0.0322413082181054, fdr=2.0218859154271e-13
+GATA3 Positive vs Rest: 10 of 60 vs 0 of 60, p=0.00129913346535124, OR=Inf, fdr=0.0298800697030785
+PIK3CA Positive vs Rest: 22 of 60 vs 8 of 60, p=0.00558162476320055, OR=3.72133391082085, fdr=0.0855849130357418
+CDH1 Positive vs Rest: 12 of 60 vs 2 of 60, p=0.00837814658290266, OR=7.14511944801122, fdr=0.0963486857033806
+
+Plot comparison:
+MCP plot dimensions=1800x1400
+Direct R plot dimensions=1800x1400
+MCP plot SHA-256=41d04892c554c7d5453cf3fc18aca8724059136bdaba84144d02bb115813741d
+Direct R plot SHA-256=41d04892c554c7d5453cf3fc18aca8724059136bdaba84144d02bb115813741d
+
+Consistency assessment: consistent

@@ -1,0 +1,15 @@
+Completed through `maftools-mcp`. Outputs are under [outputs](/Users/linqingxuan/maftools_validation_data/use_case_test/validation_results/gpt-5.5/case_05_single_top_label/run_03/outputs).
+
+Verified PNG dimensions: all four lollipop plots are `3600 x 2600`.
+
+| Gene | Single label AA position | PFAM domain | Mutated samples | Events | Top recurrent HGVSp_Short |
+|---|---:|---|---:|---:|---|
+| TP53 | 273 | Yes: `P53` | 22 | 22 | `p.R273H` 13, `p.R273C` 5, `p.R273L` 3, `p.R273P` 1 |
+| PIK3CA | 1047 | Yes: `PI3Kc_IA_alpha` | 146 | 146 | `p.H1047R` 131, `p.H1047L` 13, `p.H1047Y` 2 |
+| GATA3 | 309 | Yes: `ZnF_GATA` | 21 | 21 | `p.X309_splice` 21 |
+| CDH1 | 23 | No | 8 | 8 | `p.Q23*` 8 |
+
+Generated plot files:
+`lollipop_TP53.png`, `lollipop_PIK3CA.png`, `lollipop_GATA3.png`, `lollipop_CDH1.png`.
+
+Also exported per-gene mutation tables, recurrent amino acid position tables, recurrent `HGVSp_Short` summary tables, single-top label tables, the combined `all_genes_single_top_label_positions.tsv`, and MCP-exported `.R` validation scripts for each final lollipop plot.

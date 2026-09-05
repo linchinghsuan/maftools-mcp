@@ -1,0 +1,30 @@
+Selected analytical tool: `plot_pfam_domains` (`maftools::pfamDomains`)
+
+Selected parameters:
+`maf_path=maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA.maf`, `output_dir=maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs`, `AACol=HGVSp_Short`, `summarizeBy=AAPos`, `varClass=nonSyn`, `top=5`, image size `2600x2000`.
+
+MCP execution status: succeeded after normalizing tool enum values (`AAPos`, `nonSyn`) and using absolute paths for MCP readability.
+
+Observed MCP output:
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/pfam_domains.png`, preserved as `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/pfam_domains.mcp.preserved.png`.
+
+Top 5 Pfam domains observed:
+```text
+7tm_1             1290 mutations   492 genes
+COG5048           1197 mutations   381 genes
+Cadherin_repeat    701 mutations   104 genes
+FN3                616 mutations   132 genes
+COG2319            426 mutations   149 genes
+```
+
+Exported R script:
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/plot_pfam_domains_stage2_validation.R`
+
+Direct R execution status: succeeded.
+Log saved to `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/plot_pfam_domains.direct_r.log`. Direct R reported 105 mutations removed because amino-acid position was unavailable, plus an `NAs introduced by coercion` warning from `pfamDomains`.
+
+Consistency assessment: consistent.
+The exported R script preserved the intended parameters and generated `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/pfam_domains.png`. The preserved MCP plot and direct R plot both have dimensions `2600x2000` and identical MD5 hash `865b2092063191fe5b4e7288980a0d3d`.
+
+Additional comparison artifact:
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/plot_pfam_domains.comparison.txt`

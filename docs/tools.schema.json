@@ -1,0 +1,5124 @@
+[
+  {
+    "name": "describe_maftools_mcp",
+    "title": null,
+    "description": "Return a Markdown overview explaining what Maftools-MCP can do.\nUse this tool when the user asks what this MCP supports,\nwhat analyses it can perform, or how to use it.",
+    "inputSchema": {
+      "properties": {},
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "x-fastmcp-wrap-result": true
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "maftools_docs",
+    "title": null,
+    "description": "Return the Maftools-MCP documentation link.\n\nUse this tool when the user asks for:\n- documentation\n- guide\n- link\n- help\n- how to use Maftools-MCP\n- what this MCP can do\n\nDocumentation:\nhttps://reurl.cc/np64QD",
+    "inputSchema": {
+      "properties": {},
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "x-fastmcp-wrap-result": true
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "merge_annovar_to_maf",
+    "title": null,
+    "description": "Convert multiple ANNOVAR multianno(.txt) files into a single merged MAF file.\nSupports glob patterns in `annovar_files`, e.g. [\"/app/outputs/OSCC/*.hg19_multianno.txt\"].",
+    "inputSchema": {
+      "properties": {
+        "annovar_files": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        },
+        "refBuild": {
+          "default": "hg19",
+          "type": "string"
+        },
+        "table": {
+          "default": "refGene",
+          "type": "string"
+        },
+        "ens2hugo": {
+          "default": true,
+          "type": "boolean"
+        },
+        "sep": {
+          "default": "\t",
+          "type": "string"
+        },
+        "sampleAnno": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "basename": {
+          "default": "merged",
+          "type": "string"
+        }
+      },
+      "required": [
+        "annovar_files"
+      ],
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "x-fastmcp-wrap-result": true
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "merge_maf_to_mafobj",
+    "title": null,
+    "description": "Merge multiple MAF files into a single MAF object.",
+    "inputSchema": {
+      "properties": {
+        "maf_files": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        },
+        "output_basename": {
+          "default": "final_merged",
+          "type": "string"
+        },
+        "write_output": {
+          "default": true,
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "maf_files"
+      ],
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "x-fastmcp-wrap-result": true
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "rds_to_maf",
+    "title": null,
+    "description": "Convert an RDS MAF object into a standard MAF TSV file usable by all maftools tools.",
+    "inputSchema": {
+      "properties": {
+        "rds_path": {
+          "type": "string"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        },
+        "basename": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "rds_path"
+      ],
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "x-fastmcp-wrap-result": true
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "list_genes",
+    "title": null,
+    "description": "List all unique genes in the MAF file.",
+    "inputSchema": {
+      "properties": {
+        "maf_path": {
+          "type": "string"
+        },
+        "output_file": {
+          "default": "gene_list.txt",
+          "type": "string"
+        }
+      },
+      "required": [
+        "maf_path"
+      ],
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "x-fastmcp-wrap-result": true
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "list_samples",
+    "title": null,
+    "description": "List all unique Tumor_Sample_Barcodes in the MAF file.",
+    "inputSchema": {
+      "properties": {
+        "maf_path": {
+          "type": "string"
+        },
+        "output_file": {
+          "default": "sample_list.txt",
+          "type": "string"
+        }
+      },
+      "required": [
+        "maf_path"
+      ],
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "x-fastmcp-wrap-result": true
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "summarize_maf",
+    "title": null,
+    "description": "Summarize MAF file and return sample stats.",
+    "inputSchema": {
+      "properties": {
+        "maf_path": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "maf_path"
+      ],
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "x-fastmcp-wrap-result": true
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "plot_summary",
+    "title": null,
+    "description": "Generate mutation summary plot.",
+    "inputSchema": {
+      "properties": {
+        "maf_path": {
+          "type": "string"
+        },
+        "img_width": {
+          "default": 2600,
+          "type": "integer"
+        },
+        "img_height": {
+          "default": 2000,
+          "type": "integer"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        },
+        "fs": {
+          "default": 1,
+          "type": "number"
+        },
+        "top": {
+          "default": 10,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "maf_path"
+      ],
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "plot_oncoplot",
+    "title": null,
+    "description": "Takes output generated by read.maf and draws an oncoplot.",
+    "inputSchema": {
+      "properties": {
+        "maf_path": {
+          "type": "string"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        },
+        "top": {
+          "default": 20,
+          "type": "integer"
+        },
+        "minMut": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "genes": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "altered": {
+          "default": false,
+          "type": "boolean"
+        },
+        "drawRowBar": {
+          "default": true,
+          "type": "boolean"
+        },
+        "drawColBar": {
+          "default": true,
+          "type": "boolean"
+        },
+        "leftBarData": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "leftBarLims": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "rightBarData": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "rightBarLims": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "topBarData": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "logColBar": {
+          "default": false,
+          "type": "boolean"
+        },
+        "includeColBarCN": {
+          "default": true,
+          "type": "boolean"
+        },
+        "clinicalFeatures": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "annotationColor": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "annotationDat": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "pathways": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "selectedPathways": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "draw_titv": {
+          "default": false,
+          "type": "boolean"
+        },
+        "showTumorSampleBarcodes": {
+          "default": false,
+          "type": "boolean"
+        },
+        "barcode_mar": {
+          "default": 4,
+          "type": "integer"
+        },
+        "barcodeSrt": {
+          "default": 90,
+          "type": "integer"
+        },
+        "gene_mar": {
+          "default": 5,
+          "type": "integer"
+        },
+        "anno_height": {
+          "default": 1,
+          "type": "integer"
+        },
+        "legend_height": {
+          "default": 4,
+          "type": "integer"
+        },
+        "sortByAnnotation": {
+          "default": false,
+          "type": "boolean"
+        },
+        "groupAnnotationBySize": {
+          "default": true,
+          "type": "boolean"
+        },
+        "annotationOrder": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "sortByMutation": {
+          "default": false,
+          "type": "boolean"
+        },
+        "keepGeneOrder": {
+          "default": false,
+          "type": "boolean"
+        },
+        "GeneOrderSort": {
+          "default": true,
+          "type": "boolean"
+        },
+        "sampleOrder": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "additionalFeature": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "additionalFeaturePch": {
+          "default": 20,
+          "type": "integer"
+        },
+        "additionalFeatureCol": {
+          "default": "gray70",
+          "type": "string"
+        },
+        "additionalFeatureCex": {
+          "default": 0.9,
+          "type": "number"
+        },
+        "genesToIgnore": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "removeNonMutated": {
+          "default": true,
+          "type": "boolean"
+        },
+        "fill": {
+          "default": true,
+          "type": "boolean"
+        },
+        "cohortSize": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "colors": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "bgCol": {
+          "default": "#CCCCCC",
+          "type": "string"
+        },
+        "borderCol": {
+          "default": "white",
+          "type": "string"
+        },
+        "annoBorderCol": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "numericAnnoCol": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "drawBox": {
+          "default": false,
+          "type": "boolean"
+        },
+        "fontSize": {
+          "default": 0.8,
+          "type": "number"
+        },
+        "SampleNamefontSize": {
+          "default": 1.0,
+          "type": "number"
+        },
+        "titleFontSize": {
+          "default": 1.5,
+          "type": "number"
+        },
+        "legendFontSize": {
+          "default": 1.2,
+          "type": "number"
+        },
+        "annotationFontSize": {
+          "default": 1.2,
+          "type": "number"
+        },
+        "sepwd_genes": {
+          "default": 0.5,
+          "type": "number"
+        },
+        "sepwd_samples": {
+          "default": 0.25,
+          "type": "number"
+        },
+        "writeMatrix": {
+          "default": false,
+          "type": "boolean"
+        },
+        "colbar_pathway": {
+          "default": false,
+          "type": "boolean"
+        },
+        "showTitle": {
+          "default": true,
+          "type": "boolean"
+        },
+        "titleText": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "img_width": {
+          "default": 2600,
+          "type": "integer"
+        },
+        "img_height": {
+          "default": 2000,
+          "type": "integer"
+        },
+        "img_res": {
+          "default": 300,
+          "type": "integer"
+        },
+        "out_name": {
+          "default": "oncoplot.png",
+          "type": "string"
+        }
+      },
+      "required": [
+        "maf_path"
+      ],
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "plot_titv",
+    "title": null,
+    "description": "Plot Transition and Transversion (Ti/Tv) ratios.",
+    "inputSchema": {
+      "properties": {
+        "maf_path": {
+          "type": "string"
+        },
+        "useSyn": {
+          "default": true,
+          "type": "boolean"
+        },
+        "plotType": {
+          "default": "both",
+          "type": "string"
+        },
+        "sampleOrder": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "color": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "showBarcodes": {
+          "default": false,
+          "type": "boolean"
+        },
+        "textSize": {
+          "default": 0.8,
+          "type": "number"
+        },
+        "baseFontSize": {
+          "default": 1.0,
+          "type": "number"
+        },
+        "axisTextSize": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "plotNotch": {
+          "default": false,
+          "type": "boolean"
+        },
+        "img_width": {
+          "default": 2600,
+          "type": "integer"
+        },
+        "img_height": {
+          "default": 2000,
+          "type": "integer"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        }
+      },
+      "required": [
+        "maf_path"
+      ],
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "plot_vaf",
+    "title": null,
+    "description": "Plots vaf distribution of genes as a boxplot.",
+    "inputSchema": {
+      "properties": {
+        "maf_path": {
+          "type": "string"
+        },
+        "vafCol": {
+          "default": "t_vaf",
+          "type": "string"
+        },
+        "genes": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "top": {
+          "default": 10,
+          "type": "integer"
+        },
+        "orderByMedian": {
+          "default": true,
+          "type": "boolean"
+        },
+        "keepGeneOrder": {
+          "default": false,
+          "type": "boolean"
+        },
+        "flip": {
+          "default": false,
+          "type": "boolean"
+        },
+        "fn": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "gene_fs": {
+          "default": 0.8,
+          "type": "number"
+        },
+        "axis_fs": {
+          "default": 0.8,
+          "type": "number"
+        },
+        "height": {
+          "default": 5,
+          "type": "number"
+        },
+        "width": {
+          "default": 5,
+          "type": "number"
+        },
+        "showN": {
+          "default": true,
+          "type": "boolean"
+        },
+        "color": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "vaf_cutoff": {
+          "default": 0,
+          "type": "number"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        }
+      },
+      "required": [
+        "maf_path"
+      ],
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "math_score",
+    "title": null,
+    "description": "Calcuates Mutant-Allele Tumor Heterogeneity (MATH) scores from variant allele frequencies.",
+    "inputSchema": {
+      "properties": {
+        "maf_path": {
+          "type": "string"
+        },
+        "vafCol": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "sampleName": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "vafCutOff": {
+          "default": 0.075,
+          "type": "number"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        }
+      },
+      "required": [
+        "maf_path"
+      ],
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "x-fastmcp-wrap-result": true
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "plot_lollipop",
+    "title": null,
+    "description": "Draws lollipop plot of amino acid changes. Protein domains are derived from PFAM database.",
+    "inputSchema": {
+      "properties": {
+        "maf_path": {
+          "type": "string"
+        },
+        "gene": {
+          "type": "string"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        },
+        "img_width": {
+          "default": 2600,
+          "type": "integer"
+        },
+        "img_height": {
+          "default": 2000,
+          "type": "integer"
+        },
+        "AACol": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "labelPos": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "labPosSize": {
+          "default": 0.9,
+          "type": "number"
+        },
+        "showMutationRate": {
+          "default": true,
+          "type": "boolean"
+        },
+        "showDomainLabel": {
+          "default": true,
+          "type": "boolean"
+        },
+        "cBioPortal": {
+          "default": false,
+          "type": "boolean"
+        },
+        "refSeqID": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "proteinID": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "roundedRect": {
+          "default": true,
+          "type": "boolean"
+        },
+        "repel": {
+          "default": false,
+          "type": "boolean"
+        },
+        "collapsePosLabel": {
+          "default": true,
+          "type": "boolean"
+        },
+        "showLegend": {
+          "default": true,
+          "type": "boolean"
+        },
+        "legendTxtSize": {
+          "default": 0.8,
+          "type": "number"
+        },
+        "labPosAngle": {
+          "default": 0,
+          "type": "number"
+        },
+        "domainLabelSize": {
+          "default": 0.8,
+          "type": "number"
+        },
+        "axisTextSize": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "printCount": {
+          "default": false,
+          "type": "boolean"
+        },
+        "colors": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "domainAlpha": {
+          "default": 1,
+          "type": "number"
+        },
+        "domainBorderCol": {
+          "default": "black",
+          "type": "string"
+        },
+        "bgBorderCol": {
+          "default": "black",
+          "type": "string"
+        },
+        "labelOnlyUniqueDoamins": {
+          "default": true,
+          "type": "boolean"
+        },
+        "defaultYaxis": {
+          "default": false,
+          "type": "boolean"
+        },
+        "titleSize": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "pointSize": {
+          "default": 1.5,
+          "type": "number"
+        }
+      },
+      "required": [
+        "maf_path",
+        "gene"
+      ],
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "plot_rainfall",
+    "title": null,
+    "description": "Generate rainfall plot for a specific Tumor_Sample_Barcode.",
+    "inputSchema": {
+      "properties": {
+        "maf_path": {
+          "type": "string"
+        },
+        "sample": {
+          "type": "string"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        },
+        "img_width": {
+          "default": 2600,
+          "type": "integer"
+        },
+        "img_height": {
+          "default": 2000,
+          "type": "integer"
+        },
+        "detectChangePoints": {
+          "default": false,
+          "type": "boolean"
+        },
+        "color": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "savePlot": {
+          "default": false,
+          "type": "boolean"
+        },
+        "width": {
+          "default": 6,
+          "type": "number"
+        },
+        "height": {
+          "default": 3,
+          "type": "number"
+        },
+        "fontSize": {
+          "default": 1.2,
+          "type": "number"
+        },
+        "pointSize": {
+          "default": 0.4,
+          "type": "number"
+        }
+      },
+      "required": [
+        "maf_path",
+        "sample"
+      ],
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "plot_tcga_compare",
+    "title": null,
+    "description": "Compares mutation load in input MAF against all of 33 TCGA cohorts.",
+    "inputSchema": {
+      "properties": {
+        "maf_path": {
+          "type": "string"
+        },
+        "capture_size": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "tcga_capture_size": {
+          "default": 35.8,
+          "type": "number"
+        },
+        "cohortName": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "tcga_cohorts": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "primarySite": {
+          "default": false,
+          "type": "boolean"
+        },
+        "col": {
+          "default": [
+            "gray70",
+            "black"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "bg_col": {
+          "default": [
+            "#EDF8B1",
+            "#2C7FB8"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "medianCol": {
+          "default": "red",
+          "type": "string"
+        },
+        "decreasing": {
+          "default": false,
+          "type": "boolean"
+        },
+        "logscale": {
+          "default": true,
+          "type": "boolean"
+        },
+        "rm_hyper": {
+          "default": false,
+          "type": "boolean"
+        },
+        "rm_zero": {
+          "default": true,
+          "type": "boolean"
+        },
+        "cohortFontSize": {
+          "default": 0.8,
+          "type": "number"
+        },
+        "axisFontSize": {
+          "default": 0.8,
+          "type": "number"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        },
+        "img_width": {
+          "default": 2600,
+          "type": "integer"
+        },
+        "img_height": {
+          "default": 2000,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "maf_path"
+      ],
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "tcga_available",
+    "title": null,
+    "description": "List available TCGA studies.",
+    "inputSchema": {
+      "properties": {},
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "x-fastmcp-wrap-result": true
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "pcawg_available",
+    "title": null,
+    "description": "List available PCAWG studies.",
+    "inputSchema": {
+      "properties": {},
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "x-fastmcp-wrap-result": true
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "load_tcga_data",
+    "title": null,
+    "description": "Load TCGA MAF dataset.\n  - tcga_data/{study}.rds   (MAF object)\n  - tcga_data/{study}.maf   (tab-delimited MAF table)",
+    "inputSchema": {
+      "properties": {
+        "cancer_name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "cancer_name"
+      ],
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "x-fastmcp-wrap-result": true
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "load_pcawg_data",
+    "title": null,
+    "description": "Load PCAWG MAF dataset.\n  - pcawg_data/{study}.rds\n  - pcawg_data/{study}.maf",
+    "inputSchema": {
+      "properties": {
+        "cancer_name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "cancer_name"
+      ],
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "x-fastmcp-wrap-result": true
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "plot_cooncoplot",
+    "title": null,
+    "description": "Generate a coOncoplot with full parameter customization\nfor:\n  - TCGA vs User MAF, or\n  - User vs User MAF.",
+    "inputSchema": {
+      "properties": {
+        "tcga_rds_path": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "user_maf_path": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "user_maf_path2": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        },
+        "genes": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "clinicalFeatures1": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "clinicalFeatures2": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "annotationColor1": {
+          "anyOf": [
+            {
+              "additionalProperties": {
+                "type": "string"
+              },
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "annotationColor2": {
+          "anyOf": [
+            {
+              "additionalProperties": {
+                "type": "string"
+              },
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "sortByAnnotation1": {
+          "default": false,
+          "type": "boolean"
+        },
+        "sortByAnnotation2": {
+          "default": false,
+          "type": "boolean"
+        },
+        "sampleOrder1": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "sampleOrder2": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "additionalFeature1": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "additionalFeaturePch1": {
+          "default": 20,
+          "type": "integer"
+        },
+        "additionalFeatureCol1": {
+          "default": "white",
+          "type": "string"
+        },
+        "additionalFeatureCex1": {
+          "default": 0.9,
+          "type": "number"
+        },
+        "additionalFeature2": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "additionalFeaturePch2": {
+          "default": 20,
+          "type": "integer"
+        },
+        "additionalFeatureCol2": {
+          "default": "white",
+          "type": "string"
+        },
+        "additionalFeatureCex2": {
+          "default": 0.9,
+          "type": "number"
+        },
+        "sepwd_genes1": {
+          "default": 0.5,
+          "type": "number"
+        },
+        "sepwd_samples1": {
+          "default": 0.5,
+          "type": "number"
+        },
+        "sepwd_genes2": {
+          "default": 0.5,
+          "type": "number"
+        },
+        "sepwd_samples2": {
+          "default": 0.5,
+          "type": "number"
+        },
+        "colors": {
+          "anyOf": [
+            {
+              "additionalProperties": {
+                "type": "string"
+              },
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "removeNonMutated": {
+          "default": true,
+          "type": "boolean"
+        },
+        "anno_height": {
+          "default": 2,
+          "type": "number"
+        },
+        "legend_height": {
+          "default": 4,
+          "type": "number"
+        },
+        "geneNamefont": {
+          "default": 0.8,
+          "type": "number"
+        },
+        "showSampleNames": {
+          "default": false,
+          "type": "boolean"
+        },
+        "SampleNamefont": {
+          "default": 0.5,
+          "type": "number"
+        },
+        "barcode_mar": {
+          "default": 1,
+          "type": "number"
+        },
+        "outer_mar": {
+          "default": 3,
+          "type": "number"
+        },
+        "gene_mar": {
+          "default": 1,
+          "type": "number"
+        },
+        "legendFontSize": {
+          "default": 1.2,
+          "type": "number"
+        },
+        "titleFontSize": {
+          "default": 1.5,
+          "type": "number"
+        },
+        "keepGeneOrder": {
+          "default": false,
+          "type": "boolean"
+        },
+        "bgCol": {
+          "default": "#CCCCCC",
+          "type": "string"
+        },
+        "borderCol": {
+          "default": "white",
+          "type": "string"
+        },
+        "img_width": {
+          "default": 2600,
+          "type": "integer"
+        },
+        "img_height": {
+          "default": 2000,
+          "type": "integer"
+        }
+      },
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "plot_cobarplot",
+    "title": null,
+    "description": "Draw two barplots side by side for cohort comparision:\n  - TCGA vs User\n  - User vs User",
+    "inputSchema": {
+      "properties": {
+        "tcga_rds_path": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "user_maf_path": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "user_maf_path2": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        },
+        "genes": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "orderBy": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "m1Name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "m2Name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "colors": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "normalize": {
+          "default": true,
+          "type": "boolean"
+        },
+        "yLims": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "borderCol": {
+          "default": "gray",
+          "type": "string"
+        },
+        "titleSize": {
+          "default": 1,
+          "type": "number"
+        },
+        "geneSize": {
+          "default": 0.8,
+          "type": "number"
+        },
+        "showPct": {
+          "default": true,
+          "type": "boolean"
+        },
+        "pctSize": {
+          "default": 0.7,
+          "type": "number"
+        },
+        "axisSize": {
+          "default": 0.8,
+          "type": "number"
+        },
+        "legendTxtSize": {
+          "default": 1,
+          "type": "number"
+        },
+        "img_width": {
+          "default": 2600,
+          "type": "integer"
+        },
+        "img_height": {
+          "default": 2000,
+          "type": "integer"
+        }
+      },
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "plot_lollipopPlot2",
+    "title": null,
+    "description": "Generate a lollipopPlot2 comparing:\n  - TCGA vs User MAF (if tcga_rds_path provided)\n  - User vs User MAF (if user_maf_path2 provided)",
+    "inputSchema": {
+      "properties": {
+        "tcga_rds_path": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "user_maf_path": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "user_maf_path2": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "gene": {
+          "default": "",
+          "type": "string"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        },
+        "AACol1": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "AACol2": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "labPosAngle": {
+          "default": 0,
+          "type": "number"
+        },
+        "labPosSize": {
+          "default": 1.2,
+          "type": "number"
+        },
+        "refSeqID": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "proteinID": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "colors": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "alpha": {
+          "default": 1,
+          "type": "number"
+        },
+        "axisTextSize": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "pointSize": {
+          "default": 1.2,
+          "type": "number"
+        },
+        "roundedRect": {
+          "default": true,
+          "type": "boolean"
+        },
+        "showDomainLabel": {
+          "default": true,
+          "type": "boolean"
+        },
+        "domainBorderCol": {
+          "default": "black",
+          "type": "string"
+        },
+        "domainLabelSize": {
+          "default": 1.2,
+          "type": "number"
+        },
+        "legendTxtSize": {
+          "default": 1.2,
+          "type": "number"
+        },
+        "verbose": {
+          "default": true,
+          "type": "boolean"
+        },
+        "img_width": {
+          "default": 2600,
+          "type": "integer"
+        },
+        "img_height": {
+          "default": 2000,
+          "type": "integer"
+        }
+      },
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "compare_maf_forestplot",
+    "title": null,
+    "description": "Compare two cohorts using mafCompare and create a forestPlot.\nSupports:\n  - TCGA vs User\n  - User vs User",
+    "inputSchema": {
+      "properties": {
+        "tcga_rds_path": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "user_maf_path": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "user_maf_path2": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        },
+        "geneFontSize": {
+          "default": 1.0,
+          "type": "number"
+        },
+        "titleSize": {
+          "default": 1.5,
+          "type": "number"
+        },
+        "lineWidth": {
+          "default": 1.5,
+          "type": "number"
+        },
+        "minMut": {
+          "default": 5,
+          "type": "integer"
+        },
+        "pVal": {
+          "default": 0.1,
+          "type": "number"
+        },
+        "img_width": {
+          "default": 2600,
+          "type": "integer"
+        },
+        "img_height": {
+          "default": 2000,
+          "type": "integer"
+        }
+      },
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "trinucleotide_matrix",
+    "title": null,
+    "description": "Extract single 5' and 3' bases flanking the mutated site for de-novo signature analysis.\nAlso estimates APOBEC enrichment scores.",
+    "inputSchema": {
+      "properties": {
+        "maf_path": {
+          "type": "string"
+        },
+        "ref_genome": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "prefix": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "add": {
+          "default": true,
+          "type": "boolean"
+        },
+        "ignoreChr": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "useSyn": {
+          "default": true,
+          "type": "boolean"
+        },
+        "fn": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        }
+      },
+      "required": [
+        "maf_path"
+      ],
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "x-fastmcp-wrap-result": true
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "estimate_signatures",
+    "title": null,
+    "description": "Estimate number of signatures based on cophenetic correlation metric.",
+    "inputSchema": {
+      "properties": {
+        "trinuc_matrix_rds": {
+          "type": "string"
+        },
+        "nMin": {
+          "default": 2,
+          "type": "integer"
+        },
+        "nTry": {
+          "default": 6,
+          "type": "integer"
+        },
+        "nrun": {
+          "default": 10,
+          "type": "integer"
+        },
+        "pConstant": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "verbose": {
+          "default": true,
+          "type": "boolean"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        }
+      },
+      "required": [
+        "trinuc_matrix_rds"
+      ],
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "x-fastmcp-wrap-result": true
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "plot_cophenetic",
+    "title": null,
+    "description": "Draw an elbow plot of cophenetic correlation metric.",
+    "inputSchema": {
+      "properties": {
+        "estimateSignatures_rds": {
+          "type": "string"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        },
+        "img_width": {
+          "default": 2600,
+          "type": "integer"
+        },
+        "img_height": {
+          "default": 2000,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "estimateSignatures_rds"
+      ],
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "extract_signatures",
+    "title": null,
+    "description": "Decompose a matrix of 96 substitution classes into n signatures.",
+    "inputSchema": {
+      "properties": {
+        "trinuc_matrix_rds": {
+          "type": "string"
+        },
+        "n": {
+          "type": "integer"
+        },
+        "parallel": {
+          "default": 4,
+          "type": "integer"
+        },
+        "pConstant": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        }
+      },
+      "required": [
+        "trinuc_matrix_rds",
+        "n"
+      ],
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "x-fastmcp-wrap-result": true
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "compare_signatures",
+    "title": null,
+    "description": "Compare identified de novo mutational signatures against known COSMIC signatures.",
+    "inputSchema": {
+      "properties": {
+        "extractSignatures_rds": {
+          "type": "string"
+        },
+        "sig_db": {
+          "default": "legacy",
+          "type": "string"
+        },
+        "verbose": {
+          "default": true,
+          "type": "boolean"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        }
+      },
+      "required": [
+        "extractSignatures_rds"
+      ],
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "x-fastmcp-wrap-result": true
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "plot_signatures",
+    "title": null,
+    "description": "Plot extracted mutational signatures derived from NMF decomposition.",
+    "inputSchema": {
+      "properties": {
+        "extractSignatures_rds": {
+          "type": "string"
+        },
+        "contributions": {
+          "default": false,
+          "type": "boolean"
+        },
+        "font_size": {
+          "default": 1.2,
+          "type": "number"
+        },
+        "show_title": {
+          "default": true,
+          "type": "boolean"
+        },
+        "sig_db": {
+          "default": "legacy",
+          "type": "string"
+        },
+        "axis_lwd": {
+          "default": 2,
+          "type": "integer"
+        },
+        "title_size": {
+          "default": 0.9,
+          "type": "number"
+        },
+        "show_barcodes": {
+          "default": false,
+          "type": "boolean"
+        },
+        "yaxisLim": {
+          "default": 0.3,
+          "type": "number"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        },
+        "img_width": {
+          "default": 2600,
+          "type": "integer"
+        },
+        "img_height": {
+          "default": 2000,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "extractSignatures_rds"
+      ],
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "clinical_enrichment",
+    "title": null,
+    "description": "Performs mutational enrichment analysis for a given clinical feature.",
+    "inputSchema": {
+      "properties": {
+        "maf_path": {
+          "type": "string"
+        },
+        "clinicalFeature": {
+          "type": "string"
+        },
+        "clinicalData": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "annotationDat": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "minMut": {
+          "default": 5,
+          "type": "integer"
+        },
+        "useCNV": {
+          "default": true,
+          "type": "boolean"
+        },
+        "pVal": {
+          "default": 0.05,
+          "type": "number"
+        },
+        "cols": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "annoFontSize": {
+          "default": 0.8,
+          "type": "number"
+        },
+        "geneFontSize": {
+          "default": 0.8,
+          "type": "number"
+        },
+        "legendFontSize": {
+          "default": 0.8,
+          "type": "number"
+        },
+        "showTitle": {
+          "default": true,
+          "type": "boolean"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        }
+      },
+      "required": [
+        "maf_path",
+        "clinicalFeature"
+      ],
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "signature_enrichment",
+    "title": null,
+    "description": "Performs mutational signature enrichment analysis and saves the plot.",
+    "inputSchema": {
+      "properties": {
+        "maf_rds": {
+          "type": "string"
+        },
+        "sig_res_rds": {
+          "type": "string"
+        },
+        "minMut": {
+          "default": 5,
+          "type": "integer"
+        },
+        "useCNV": {
+          "default": false,
+          "type": "boolean"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        }
+      },
+      "required": [
+        "maf_rds",
+        "sig_res_rds"
+      ],
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "drug_interactions",
+    "title": null,
+    "description": "Checks for drug-gene interactions and druggable categories.",
+    "inputSchema": {
+      "properties": {
+        "maf_path": {
+          "type": "string"
+        },
+        "top": {
+          "default": 20,
+          "type": "integer"
+        },
+        "genes": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "plotType": {
+          "default": "bar",
+          "type": "string"
+        },
+        "drugs": {
+          "default": false,
+          "type": "boolean"
+        },
+        "fontSize": {
+          "default": 0.8,
+          "type": "number"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        },
+        "img_width": {
+          "default": 2600,
+          "type": "integer"
+        },
+        "img_height": {
+          "default": 2000,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "maf_path"
+      ],
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "filter_maf",
+    "title": null,
+    "description": "Filter MAF by genes or Tumor Sample Barcode (tsb).\n\nOutputs:\n    - filtered_maf.rds  : filtered MAF object\n    - filtered_maf.tsv  : filtered mutation table",
+    "inputSchema": {
+      "properties": {
+        "maf_path": {
+          "type": "string"
+        },
+        "genes": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          ],
+          "default": true
+        },
+        "tsb": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "isTCGA": {
+          "default": false,
+          "type": "boolean"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        }
+      },
+      "required": [
+        "maf_path"
+      ],
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "x-fastmcp-wrap-result": true
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "subset_maf",
+    "title": null,
+    "description": "Subset MAF using sample names, gene names, mutation conditions,\nclinical filters, genomic ranges, or custom queries.\n\nOutputs:\n    - subset_maf.rds : Result as a MAF object / data.frame\n    - subset_maf.tsv : Subset mutation table",
+    "inputSchema": {
+      "properties": {
+        "maf_path": {
+          "type": "string"
+        },
+        "tsb": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "genes": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "query": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "clinQuery": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "ranges": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "mult": {
+          "default": "first",
+          "type": "string"
+        },
+        "fields": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "mafObj": {
+          "default": true,
+          "type": "boolean"
+        },
+        "includeSyn": {
+          "default": true,
+          "type": "boolean"
+        },
+        "isTCGA": {
+          "default": false,
+          "type": "boolean"
+        },
+        "dropLevels": {
+          "default": true,
+          "type": "boolean"
+        },
+        "restrictTo": {
+          "default": "all",
+          "type": "string"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        }
+      },
+      "required": [
+        "maf_path"
+      ],
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "x-fastmcp-wrap-result": true
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "genes_to_barcodes",
+    "title": null,
+    "description": "Extract Tumor Sample Barcodes where specified genes are mutated.\n\nOutputs:\n    - genes_to_barcodes.rds  (R object for downstream MCP / R usage)\n    - genes_to_barcodes.tsv  (structured table)",
+    "inputSchema": {
+      "properties": {
+        "maf_path": {
+          "type": "string"
+        },
+        "genes": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "justNames": {
+          "default": false,
+          "type": "boolean"
+        },
+        "verbose": {
+          "default": true,
+          "type": "boolean"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        }
+      },
+      "required": [
+        "maf_path",
+        "genes"
+      ],
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "x-fastmcp-wrap-result": true
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "genotype_matrix",
+    "title": null,
+    "description": "Generate a genotype matrix (genes x samples) from a MAF file.\n\nOutput:\n    - genotype_matrix.tsv (structured matrix table)",
+    "inputSchema": {
+      "properties": {
+        "maf_path": {
+          "type": "string"
+        },
+        "genes": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "tsb": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "includeSyn": {
+          "default": false,
+          "type": "boolean"
+        },
+        "vafCol": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "vafCutoff": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        }
+      },
+      "required": [
+        "maf_path"
+      ],
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "x-fastmcp-wrap-result": true
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "get_clinical_data",
+    "title": null,
+    "description": "Extract clinical annotation table from a MAF object or TCGA RDS object.",
+    "inputSchema": {
+      "properties": {
+        "maf_path": {
+          "type": "string"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        }
+      },
+      "required": [
+        "maf_path"
+      ],
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "x-fastmcp-wrap-result": true
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "get_fields",
+    "title": null,
+    "description": "Retrieve all available fields/columns present in the MAF data table.\n\nOutput:\n    - maf_fields.tsv",
+    "inputSchema": {
+      "properties": {
+        "maf_path": {
+          "type": "string"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        }
+      },
+      "required": [
+        "maf_path"
+      ],
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "x-fastmcp-wrap-result": true
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "get_gene_summary",
+    "title": null,
+    "description": "Generate gene-level summary statistics from either:\n  - a MAF file (SNV/INDEL summary via maftools), or\n  - a GISTIC RDS object.\n\nOutput:\n    - gene_summary.tsv",
+    "inputSchema": {
+      "properties": {
+        "maf_path": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "gistic_rds_path": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "x-fastmcp-wrap-result": true
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "tcga_available_gistic",
+    "title": null,
+    "description": "List available TCGA GISTIC studies.",
+    "inputSchema": {
+      "properties": {},
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "x-fastmcp-wrap-result": true
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "load_tcga_gistic",
+    "title": null,
+    "description": "Load TCGA GISTIC CNV dataset using TCGAgistic.\n\nArgs:\n    cancer_name: TCGA cohort abbreviation or full cancer name\n    copy_number_level: one of \"all\", \"deep\", \"shallow\"\n    output_dir: directory to save the loaded RDS object\n\nReturns:\n    Status message with saved file path.",
+    "inputSchema": {
+      "properties": {
+        "cancer_name": {
+          "type": "string"
+        },
+        "copy_number_level": {
+          "default": "all",
+          "type": "string"
+        },
+        "output_dir": {
+          "default": "tcga_gistic",
+          "type": "string"
+        }
+      },
+      "required": [
+        "cancer_name"
+      ],
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "x-fastmcp-wrap-result": true
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "get_sample_summary",
+    "title": null,
+    "description": "Extract per-sample summary statistics from either:\n  - a MAF object (mutation summary via maftools::getSampleSummary), or\n  - a GISTIC object (CNV summary via TCGAgistic::getSampleSummary).\n\nOutput:\n    - sample_summary.tsv (structured data table)",
+    "inputSchema": {
+      "properties": {
+        "maf_path": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "gistic_rds_path": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "x-fastmcp-wrap-result": true
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "gistic_bubble_plot",
+    "title": null,
+    "description": "Plots significantly altered cytobands as a function of number samples in which it is altered and number genes it contains. Size of each bubble is according to -log10 transformed q values.",
+    "inputSchema": {
+      "properties": {
+        "gistic_rds_path": {
+          "type": "string"
+        },
+        "color": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "markBands": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "fdrCutOff": {
+          "default": 0.1,
+          "type": "number"
+        },
+        "log_y": {
+          "default": true,
+          "type": "boolean"
+        },
+        "txtSize": {
+          "default": 3,
+          "type": "number"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        },
+        "img_width": {
+          "default": 2600,
+          "type": "integer"
+        },
+        "img_height": {
+          "default": 2000,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "gistic_rds_path"
+      ],
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "gistic_chrom_plot",
+    "title": null,
+    "description": "A genomic plot with segments highlighting signififcant Amplifications and Deletion regions.",
+    "inputSchema": {
+      "properties": {
+        "gistic_rds_path": {
+          "type": "string"
+        },
+        "fdrCutOff": {
+          "default": 0.1,
+          "type": "number"
+        },
+        "markBands": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "color": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "ref_build": {
+          "default": "hg19",
+          "type": "string"
+        },
+        "cytobandOffset": {
+          "default": 0.01,
+          "type": "number"
+        },
+        "txtSize": {
+          "default": 0.8,
+          "type": "number"
+        },
+        "cytobandTxtSize": {
+          "default": 0.6,
+          "type": "number"
+        },
+        "maf_path": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "mutGenes": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "y_lims": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "mutGenesTxtSize": {
+          "default": 0.6,
+          "type": "number"
+        },
+        "img_width": {
+          "default": 2600,
+          "type": "integer"
+        },
+        "img_height": {
+          "default": 2000,
+          "type": "integer"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        }
+      },
+      "required": [
+        "gistic_rds_path"
+      ],
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "gistic_oncoplot",
+    "title": null,
+    "description": "Draw CNV oncoplot-style heatmap using GISTIC data.",
+    "inputSchema": {
+      "properties": {
+        "gistic_rds_path": {
+          "type": "string"
+        },
+        "top": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "bands": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "showTumorSampleBarcodes": {
+          "default": false,
+          "type": "boolean"
+        },
+        "gene_mar": {
+          "default": 5,
+          "type": "number"
+        },
+        "barcode_mar": {
+          "default": 6,
+          "type": "number"
+        },
+        "sepwd_genes": {
+          "default": 0.5,
+          "type": "number"
+        },
+        "sepwd_samples": {
+          "default": 0.25,
+          "type": "number"
+        },
+        "clinicalData_txt": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "clinicalFeatures": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "sortByAnnotation": {
+          "default": false,
+          "type": "boolean"
+        },
+        "sampleOrder": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "annotationColor": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "bandsToIgnore": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "removeNonAltered": {
+          "default": true,
+          "type": "boolean"
+        },
+        "colors": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "SampleNamefontSize": {
+          "default": 0.6,
+          "type": "number"
+        },
+        "fontSize": {
+          "default": 0.8,
+          "type": "number"
+        },
+        "legendFontSize": {
+          "default": 1.2,
+          "type": "number"
+        },
+        "annotationFontSize": {
+          "default": 1.2,
+          "type": "number"
+        },
+        "borderCol": {
+          "default": "white",
+          "type": "string"
+        },
+        "bgCol": {
+          "default": "#CCCCCC",
+          "type": "string"
+        },
+        "img_width": {
+          "default": 2600,
+          "type": "integer"
+        },
+        "img_height": {
+          "default": 2000,
+          "type": "integer"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        }
+      },
+      "required": [
+        "gistic_rds_path"
+      ],
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "infer_heterogeneity",
+    "title": null,
+    "description": "Clusters variants based on Variant Allele Frequencies (VAF)\nand visualizes tumor heterogeneity.",
+    "inputSchema": {
+      "properties": {
+        "maf_path": {
+          "type": "string"
+        },
+        "tsb": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "top": {
+          "default": 5,
+          "type": "integer"
+        },
+        "vafCol": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "segFile": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "ignChr": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "minVaf": {
+          "default": 0,
+          "type": "number"
+        },
+        "maxVaf": {
+          "default": 1,
+          "type": "number"
+        },
+        "useSyn": {
+          "default": false,
+          "type": "boolean"
+        },
+        "dirichlet": {
+          "default": false,
+          "type": "boolean"
+        },
+        "plot_tsb": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "genes": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "showCNvars": {
+          "default": false,
+          "type": "boolean"
+        },
+        "colors": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        },
+        "img_width": {
+          "default": 2000,
+          "type": "integer"
+        },
+        "img_height": {
+          "default": 1600,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "maf_path"
+      ],
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "mutcount_matrix",
+    "title": null,
+    "description": "Generates a count matrix of mutations. i.e, number of mutations per gene per sample.",
+    "inputSchema": {
+      "properties": {
+        "maf_path": {
+          "type": "string"
+        },
+        "includeSyn": {
+          "default": false,
+          "type": "boolean"
+        },
+        "countOnly": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "removeNonMutated": {
+          "default": true,
+          "type": "boolean"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        }
+      },
+      "required": [
+        "maf_path"
+      ],
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "x-fastmcp-wrap-result": true
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "oncodrive",
+    "title": null,
+    "description": "Clusters variants based on their position to detect disease causing genes.\nExpects maf_path to be an RDS file containing a MAF object.",
+    "inputSchema": {
+      "properties": {
+        "maf_path": {
+          "type": "string"
+        },
+        "AACol": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "minMut": {
+          "default": 5,
+          "type": "integer"
+        },
+        "pvalMethod": {
+          "default": "zscore",
+          "type": "string"
+        },
+        "nBgGenes": {
+          "default": 100,
+          "type": "integer"
+        },
+        "bgEstimate": {
+          "default": true,
+          "type": "boolean"
+        },
+        "ignoreGenes": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        }
+      },
+      "required": [
+        "maf_path"
+      ],
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "x-fastmcp-wrap-result": true
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "pathway_enrichment",
+    "title": null,
+    "description": "Checks for enrichment of known oncogenic pathways and plots result.",
+    "inputSchema": {
+      "properties": {
+        "maf_path": {
+          "type": "string"
+        },
+        "pathdb": {
+          "default": "sigpw",
+          "type": "string"
+        },
+        "pathways": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "fontSize": {
+          "default": 1,
+          "type": "number"
+        },
+        "panelWidths": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "plotType": {
+          "default": "bar",
+          "type": "string"
+        },
+        "col": {
+          "default": "#f39c12",
+          "type": "string"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        },
+        "img_width": {
+          "default": 2600,
+          "type": "integer"
+        },
+        "img_height": {
+          "default": 2000,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "maf_path"
+      ],
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "plot_pfam_domains",
+    "title": null,
+    "description": "Summarizes amino acid positions and annotates them with pfam domain information.",
+    "inputSchema": {
+      "properties": {
+        "maf_path": {
+          "type": "string"
+        },
+        "AACol": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "summarizeBy": {
+          "default": "AAPos",
+          "type": "string"
+        },
+        "top": {
+          "default": 5,
+          "type": "integer"
+        },
+        "domainsToLabel": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "baseName": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "varClass": {
+          "default": "nonSyn",
+          "type": "string"
+        },
+        "img_width": {
+          "default": 2600,
+          "type": "integer"
+        },
+        "img_height": {
+          "default": 2000,
+          "type": "integer"
+        },
+        "width": {
+          "default": 5,
+          "type": "number"
+        },
+        "height": {
+          "default": 5,
+          "type": "number"
+        },
+        "labelSize": {
+          "default": 1,
+          "type": "number"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        }
+      },
+      "required": [
+        "maf_path"
+      ],
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "plot_apobec_diff",
+    "title": null,
+    "description": "Plots differences between APOBEC enriched and non-APOBEC enriched samples",
+    "inputSchema": {
+      "properties": {
+        "trinuc_matrix_rds": {
+          "type": "string"
+        },
+        "maf_rds": {
+          "type": "string"
+        },
+        "pVal": {
+          "default": 0.05,
+          "type": "number"
+        },
+        "title_size": {
+          "default": 1,
+          "type": "number"
+        },
+        "axis_lwd": {
+          "default": 1,
+          "type": "number"
+        },
+        "font_size": {
+          "default": 1.2,
+          "type": "number"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        },
+        "img_width": {
+          "default": 2600,
+          "type": "integer"
+        },
+        "img_height": {
+          "default": 2000,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "trinuc_matrix_rds",
+        "maf_rds"
+      ],
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "plot_maf_survgroup",
+    "title": null,
+    "description": "Performs survival analysis for a geneset(for TCGA).",
+    "inputSchema": {
+      "properties": {
+        "maf_rds_path": {
+          "type": "string"
+        },
+        "geneSet": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "time_col": {
+          "default": "CDR_OS.time",
+          "type": "string"
+        },
+        "status_col": {
+          "default": "CDR_OS",
+          "type": "string"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        },
+        "img_width": {
+          "default": 2600,
+          "type": "integer"
+        },
+        "img_height": {
+          "default": 2000,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "maf_rds_path"
+      ],
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "plot_maf_survgroup_custom",
+    "title": null,
+    "description": "Survival analysis for CUSTOM user-uploaded MAF + clinical CSV.",
+    "inputSchema": {
+      "properties": {
+        "maf_path": {
+          "type": "string"
+        },
+        "clinical_csv": {
+          "type": "string"
+        },
+        "geneSet": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "sample_col": {
+          "default": "Sample",
+          "type": "string"
+        },
+        "time_col": {
+          "default": "OS_time",
+          "type": "string"
+        },
+        "status_col": {
+          "default": "OS_status",
+          "type": "string"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        },
+        "img_width": {
+          "default": 2600,
+          "type": "integer"
+        },
+        "img_height": {
+          "default": 2000,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "maf_path",
+        "clinical_csv"
+      ],
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "oncodrive_analysis",
+    "title": null,
+    "description": "Clusters variants based on their position to detect disease causing genes.\nExpects maf_path to be an RDS file containing a MAF object.",
+    "inputSchema": {
+      "properties": {
+        "maf_path": {
+          "type": "string"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        },
+        "AACol": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "minMut": {
+          "default": 5,
+          "type": "integer"
+        },
+        "pvalMethod": {
+          "default": "zscore",
+          "type": "string"
+        },
+        "nBgGenes": {
+          "default": 100,
+          "type": "integer"
+        },
+        "bgEstimate": {
+          "default": true,
+          "type": "boolean"
+        },
+        "ignoreGenes": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "fdrCutOff": {
+          "default": 0.05,
+          "type": "number"
+        },
+        "useFraction": {
+          "default": false,
+          "type": "boolean"
+        },
+        "colCode": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "bubbleSize": {
+          "default": 1.0,
+          "type": "number"
+        },
+        "labelSize": {
+          "default": 1.0,
+          "type": "number"
+        },
+        "img_width": {
+          "default": 2600,
+          "type": "integer"
+        },
+        "img_height": {
+          "default": 2000,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "maf_path"
+      ],
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "plot_cbs_segments",
+    "title": null,
+    "description": "Plots segmented copy number data.",
+    "inputSchema": {
+      "properties": {
+        "cbsFile": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "maf_path": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "tsb": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        },
+        "ylims": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "seg_size": {
+          "default": 0.1,
+          "type": "number"
+        },
+        "genes": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "ref_build": {
+          "default": "hg19",
+          "type": "string"
+        },
+        "writeTable": {
+          "default": false,
+          "type": "boolean"
+        },
+        "removeXY": {
+          "default": false,
+          "type": "boolean"
+        },
+        "color": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "img_width": {
+          "default": 2600,
+          "type": "integer"
+        },
+        "img_height": {
+          "default": 1200,
+          "type": "integer"
+        }
+      },
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "prepare_mutsig",
+    "title": null,
+    "description": "Correct gene symbols for MutSig compatibility.",
+    "inputSchema": {
+      "properties": {
+        "maf_path": {
+          "type": "string"
+        },
+        "output_maf": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "maf_path"
+      ],
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "x-fastmcp-wrap-result": true
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "plot_tmb",
+    "title": null,
+    "description": "Estimates Tumor Mutation Burden per megabase.",
+    "inputSchema": {
+      "properties": {
+        "maf_path": {
+          "type": "string"
+        },
+        "captureSize": {
+          "default": 50,
+          "type": "number"
+        },
+        "logScale": {
+          "default": true,
+          "type": "boolean"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        },
+        "img_width": {
+          "default": 2600,
+          "type": "integer"
+        },
+        "img_height": {
+          "default": 2000,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "maf_path"
+      ],
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "plot_vaf_compare",
+    "title": null,
+    "description": "Compare VAF distributions between two cohorts.",
+    "inputSchema": {
+      "properties": {
+        "maf1_path": {
+          "type": "string"
+        },
+        "maf2_path": {
+          "type": "string"
+        },
+        "output_dir": {
+          "default": "outputs",
+          "type": "string"
+        },
+        "genes": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "top": {
+          "default": 5,
+          "type": "integer"
+        },
+        "vafCol1": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "vafCol2": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "m1Name": {
+          "default": "M1",
+          "type": "string"
+        },
+        "m2Name": {
+          "default": "M2",
+          "type": "string"
+        },
+        "cols": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "sigvals": {
+          "default": true,
+          "type": "boolean"
+        },
+        "nrows": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "ncols": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "img_width": {
+          "default": 2600,
+          "type": "integer"
+        },
+        "img_height": {
+          "default": 1800,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "maf1_path",
+        "maf2_path"
+      ],
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "export_r_script",
+    "title": null,
+    "description": "Export the R code generated by an existing Maftools-MCP tool without executing R.\n\nThis internal validation utility captures the actual ro.r(...) script assembled by\nthe selected MCP tool after applying the same Python-side parameter defaults and\nconversion logic used during normal MCP execution.",
+    "inputSchema": {
+      "properties": {
+        "tool_name": {
+          "type": "string"
+        },
+        "parameters": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "output_dir": {
+          "default": "outputs/r_scripts",
+          "type": "string"
+        },
+        "script_basename": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "tool_name"
+      ],
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "x-fastmcp-wrap-result": true
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "_fastmcp": {
+        "tags": []
+      }
+    }
+  }
+]

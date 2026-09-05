@@ -1,0 +1,11 @@
+MCP rows: 350 
+Direct R rows: 350 
+MCP columns: 11 
+Direct R columns: 11 
+Column names identical: TRUE 
+Full table identical: TRUE 
+Key columns: TP53.Tumor_Sample_Barcode, TP53.Frame_Shift_Del, TP53.Frame_Shift_Ins, TP53.In_Frame_Del, TP53.In_Frame_Ins, TP53.Missense_Mutation, TP53.Nonsense_Mutation, TP53.Nonstop_Mutation, TP53.Splice_Site, TP53.Translation_Start_Site, TP53.total 
+Representative MCP row 1: TP53.Tumor_Sample_Barcode=TCGA-AN-A046-01A-21W-A050-09; TP53.Frame_Shift_Del=3; TP53.Frame_Shift_Ins=12; TP53.In_Frame_Del=0; TP53.In_Frame_Ins=0; TP53.Missense_Mutation=4497; TP53.Nonsense_Mutation=757; TP53.Nonstop_Mutation=6; TP53.Splice_Site=91; TP53.Translation_Start_Site=0; TP53.total=5366 
+Representative Direct R row 1: TP53.Tumor_Sample_Barcode=TCGA-AN-A046-01A-21W-A050-09; TP53.Frame_Shift_Del=3; TP53.Frame_Shift_Ins=12; TP53.In_Frame_Del=0; TP53.In_Frame_Ins=0; TP53.Missense_Mutation=4497; TP53.Nonsense_Mutation=757; TP53.Nonstop_Mutation=6; TP53.Splice_Site=91; TP53.Translation_Start_Site=0; TP53.total=5366 
+Sum TP53.total MCP: 33747 
+Sum TP53.total Direct R: 33747 

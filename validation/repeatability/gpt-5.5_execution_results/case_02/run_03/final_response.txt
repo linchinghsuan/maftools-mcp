@@ -1,0 +1,8 @@
+Completed through `maftools-mcp`.
+
+Generated outputs:
+
+- Plot: [outputs/lollipop_TP53.png](maftools_validation_data/use_case_test/validation_results/gpt-5.5/case_02/run_03/outputs/lollipop_TP53.png)
+- Exported R script: [outputs/tp53_tcga_hnsc_oscc_lollipopPlot2_run01_style.R](maftools_validation_data/use_case_test/validation_results/gpt-5.5/case_02/run_03/outputs/tp53_tcga_hnsc_oscc_lollipopPlot2_run01_style.R)
+
+I verified the exported script contains the requested run_01-style parameters, including `img_width=2400`, `img_height=1400`, compact label sizing/angle, domain labels, rounded rectangles, `alpha=0.85`, and `domainBorderCol="gray40"`.

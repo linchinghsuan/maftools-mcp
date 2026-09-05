@@ -1,0 +1,13 @@
+plot_pfam_domains validation comparison
+MCP preserved plot: maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/pfam_domains.mcp.preserved.png
+Direct R plot: maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/pfam_domains.png
+Image dimensions: both 2600x2000
+MD5: both 865b2092063191fe5b4e7288980a0d3d
+
+Top 5 domainSummary from direct R log:
+DomainLabel	nMuts	nGenes	Description
+7tm_1	1290	492	7 transmembrane receptor (rhodopsin family)
+COG5048	1197	381	FOG: Zn-finger [General function prediction only]
+Cadherin_repeat	701	104	Cadherin tandem repeat domain
+FN3	616	132	Fibronectin type 3 domain
+COG2319	426	149	FOG: WD40 repeat [General function prediction only]

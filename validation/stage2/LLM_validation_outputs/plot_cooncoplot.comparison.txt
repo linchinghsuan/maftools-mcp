@@ -1,0 +1,19 @@
+Selected MCP tool: plot_cooncoplot
+Underlying maftools function: maftools::coOncoplot
+Inputs:
+  cohort1: maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/cohort1.maf
+  cohort2: maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/cohort2.maf
+Requested top genes: 10
+Maftools-plottable non-silent top genes available: 8
+Genes used:
+  FAT1, NOTCH1, CHUK, EPHA2, TP53, PIK3CA, CDKN2A, ELAVL1
+MCP plot: maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/cooncoplot.mcp.preserved.png
+Direct R plot: maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/cooncoplot.direct_r.png
+Image dimensions:
+  MCP: 2600 x 2000
+  Direct R: 2600 x 2000
+SHA-256:
+  MCP: e5c57c37f0349f20542fbee6a67ead290b8af95649f5b48703a64e98030f43d3
+  Direct R: e5c57c37f0349f20542fbee6a67ead290b8af95649f5b48703a64e98030f43d3
+Consistency assessment:
+  Consistent. The exported R script reproduced the MCP plot byte-identically. The top-10 request was preserved as the top available maftools-plottable non-silent genes; only 8 such genes were present after read.maf filtering.

@@ -1,0 +1,11 @@
+Completed through `maftools-mcp`.
+
+Generated outputs:
+
+- [lollipop_TP53.png](maftools_validation_data/use_case_test/validation_results/gpt-5.5/case_02/run_05/outputs/lollipop_TP53.png)  
+  Verified as `2400 x 1400` PNG.
+
+- [TP53_TCGA_HNSC_OSCC_lollipopPlot2_run_05.R](maftools_validation_data/use_case_test/validation_results/gpt-5.5/case_02/run_05/outputs/TP53_TCGA_HNSC_OSCC_lollipopPlot2_run_05.R)  
+  Exported via `maftools-mcp export_r_script` and includes the requested parameters: `showDomainLabel=TRUE`, `domainLabelSize=0.55`, `labPosSize=0.4`, `labPosAngle=45`, `legendTxtSize=0.6`, `pointSize=1`, `axisTextSize=c(0.7,0.7)`, `roundedRect=TRUE`, `alpha=0.85`, `domainBorderCol="gray40"`, with `width=2400`, `height=1400`.
+
+The plot compares TCGA-HNSC against the supplied OSCC MAF for `TP53`, with mutation types and PFAM protein domains shown.

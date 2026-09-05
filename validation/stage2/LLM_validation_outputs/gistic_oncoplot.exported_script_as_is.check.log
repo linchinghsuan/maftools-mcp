@@ -1,0 +1,3 @@
+Error in gisticOncoPlot(gistic = gistic_obj, top = NULL, bands = NULL,  : 
+  could not find function "gisticOncoPlot"
+Execution halted

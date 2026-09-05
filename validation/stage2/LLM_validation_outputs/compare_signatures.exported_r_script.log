@@ -1,0 +1,6 @@
+Error in gzfile(file, "rb") : cannot open the connection
+Calls: readRDS -> gzfile
+In addition: Warning message:
+In gzfile(file, "rb") :
+  cannot open compressed file 'maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/extract_signatures__extractSignatures.rds', probable reason 'No such file or directory'
+Execution halted

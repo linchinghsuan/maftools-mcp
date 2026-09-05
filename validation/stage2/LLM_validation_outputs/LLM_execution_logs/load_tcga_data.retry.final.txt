@@ -1,0 +1,28 @@
+Selected analytical tool: `load_tcga_data`
+
+Selected parameters: `cancer_name = "COAD"`
+
+MCP execution status: succeeded. It loaded TCGA COAD through `TCGAmutations::tcga_load` and generated a Maftools `MAF` object plus tab-delimited MAF table. Preserved MCP outputs:
+
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/mcp_preserved_outputs/COAD.rds`
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/mcp_preserved_outputs/COAD.maf`
+
+Observed MCP output:
+
+- Object class: `MAF`
+- Variants: `169878`
+- Samples: `406`
+- Genes: `18183`
+- MAF table columns: `23`
+- Key columns present: `Hugo_Symbol`, `Chromosome`, `Start_Position`, `End_Position`, `Reference_Allele`, `Tumor_Seq_Allele2`, `Variant_Classification`, `Variant_Type`, `Tumor_Sample_Barcode`
+
+Exported R script:
+
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/load_tcga_data_COAD.R`
+
+Direct R execution status: succeeded with only a non-fatal `data.table` R-version warning. Direct-R regenerated outputs were copied to:
+
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/direct_r_outputs/COAD.rds`
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/direct_r_outputs/COAD.maf`
+
+Consistency assessment: passed. MCP and direct-R outputs matched on object class, RDS data dimensions, MAF table dimensions, sample/gene/variant counts, key column presence, representative sorted rows, and full written MAF table identity. Representative first sorted row matched as `ABCA6`, chromosome `17`, position `67092867`, `C>T`, `Missense_Mutation`, sample `TCGA-3L-AA1B-01A-11D-A36X-10`.

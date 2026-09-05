@@ -1,0 +1,19 @@
+Completed through `maftools-mcp`. Outputs are under `./outputs`, including:
+
+- `lollipop_TP53.png`, `lollipop_PIK3CA.png`, `lollipop_GATA3.png`, `lollipop_CDH1.png`
+- Four per-gene mutation tables, recurrent amino acid position tables, recurrent `HGVSp_Short` summary tables, and selected-label tables
+- `all_genes_single_top_label_positions.tsv`
+- Four MCP-exported R scripts: `*_lollipop_single_top_label.R`
+
+Verified PNG dimensions: all four are `3600 x 2600`.
+
+**Selected Single Labels**
+
+| Gene | Label AA position | PFAM domain? | Domain | Mutated samples | Events | Top recurrent HGVSp_Short |
+|---|---:|---|---|---:|---:|---|
+| TP53 | 273 | Yes | P53, P53 DNA-binding domain | 22 | 22 | p.R273H 13; p.R273C 5; p.R273L 3; p.R273P 1 |
+| PIK3CA | 1047 | Yes | PI3Kc_IA_alpha, PI3K class IA alpha catalytic domain | 146 | 146 | p.H1047R 131; p.H1047L 13; p.H1047Y 2 |
+| GATA3 | 309 | Yes | ZnF_GATA, Zinc finger DNA binding domain | 21 | 21 | p.X309_splice 21 |
+| CDH1 | 23 | No | none | 8 | 8 | p.Q23* 8 |
+
+The exported R scripts show `AACol = "HGVSp_Short"`, one `labelPos` per gene, requested compact text settings, `repel = TRUE`, `roundedRect = TRUE`, and `colors = NULL` for the default maftools mutation-class colors.

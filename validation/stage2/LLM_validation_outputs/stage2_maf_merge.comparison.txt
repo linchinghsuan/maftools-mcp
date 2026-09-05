@@ -1,0 +1,7 @@
+mcp_rows	3915
+direct_rows	3915
+mcp_cols	240
+direct_cols	240
+column_names_identical	TRUE
+key_cols_present	TRUE
+full_table_identical	TRUE

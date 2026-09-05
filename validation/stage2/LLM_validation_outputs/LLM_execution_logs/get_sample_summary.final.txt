@@ -1,0 +1,34 @@
+Selected analytical tool: `get_sample_summary`
+
+Selected parameters:
+- `maf_path`: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA.maf`
+- `output_dir`: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs`
+
+MCP execution status: succeeded  
+Observed MCP output:
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/sample_summary.tsv`
+- Preserved MCP copy: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/sample_summary.mcp.tsv`
+- Table size: 1,026 data rows, 11 columns
+- Columns include `Tumor_Sample_Barcode`, mutation-class counts, and `total`
+
+Exported R script:
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/get_sample_summary_brca.R`
+- Underlying R function: `maftools::getSampleSummary`
+
+Direct R execution status: succeeded  
+Direct R outputs:
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/sample_summary.direct_r.tsv`
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/get_sample_summary.direct_r.log`
+
+Consistency assessment:
+- MCP and direct R row counts: `1026` vs `1026`
+- Column counts: `11` vs `11`
+- Column names identical: `TRUE`
+- Full table identical: `TRUE`
+- SHA-256 hashes identical: `2d327c7cd4074eb516f12ce280439461defe66f2d0cdb0fec6c3fd92165d5df2`
+
+Representative matching values:
+- `TCGA-AN-A046-01A-21W-A050-09`: `Missense_Mutation=4497`, `Nonsense_Mutation=757`, `total=5366`
+- `TCGA-AC-A23H-01A-11D-A159-09`: `Missense_Mutation=3647`, `Nonsense_Mutation=404`, `total=4161`
+
+Validation result: consistent.

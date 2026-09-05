@@ -1,0 +1,37 @@
+**Selected Tool**
+`plot_oncoplot` from `maftools-mcp`, using underlying `maftools::oncoplot`.
+
+**Selected Parameters**
+`maf_path=maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA.maf`, `output_dir=maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs`, `out_name=oncoplot.png`, `top=20`. MCP defaults included `img_width=2600`, `img_height=2000`, `img_res=300`, `drawRowBar=TRUE`, `drawColBar=TRUE`, `removeNonMutated=TRUE`.
+
+**MCP Execution**
+Succeeded after rerunning with absolute paths required by the MCP server. Output generated at:
+
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/oncoplot.png`
+
+Observed MCP figure: top 20 genes, title `Altered in 909 (88.6%) of 1026 samples.` Top displayed genes included `PIK3CA`, `TP53`, `TTN`, `CDH1`, `GATA3`, `MUC16`, through `OBSCN`.
+
+Preserved MCP copy:
+
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/oncoplot.mcp.png`
+
+**Exported R Script**
+Generated successfully at:
+
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/oncoplot.R`
+
+**Direct R Execution**
+Succeeded with `Rscript maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/oncoplot.R`.
+
+R output included normal MAF processing messages and completed with:
+
+`Finished in 2.825s elapsed`
+`null device 1`
+
+**Consistency Assessment**
+Consistent. The direct R run regenerated `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/oncoplot.png` with the same analytical parameters and same top-20 mutation content. File comparison showed:
+
+`oncoplot.mcp.png`: PNG, `2600 x 2000`, size `392313`
+`oncoplot.png`: PNG, `2600 x 2000`, size `392313`
+
+SHA-256 hashes were identical for both files. Independent gene summary confirmed the top genes and counts, led by `PIK3CA 352`, `TP53 350`, `TTN 193`, `CDH1 130`, `GATA3 128`.

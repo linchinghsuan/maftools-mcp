@@ -1,0 +1,17 @@
+Completed through `maftools-mcp`. Outputs are under [outputs](/Users/linqingxuan/maftools_validation_data/use_case_test/validation_results/gpt-5.5/case_05_single_top_label/run_05/outputs), including PNGs, per-gene TSVs, combined TSV, and exported MCP R scripts.
+
+Verified PNG dimensions: all four plots are `3600 x 2600`.
+
+| Gene | Label AA position | PFAM domain | Mutated samples | Events | Top recurrent `HGVSp_Short` changes |
+|---|---:|---|---:|---:|---|
+| TP53 | 273 | Yes, `P53` | 22 | 22 | `p.R273H` 13, `p.R273C` 5, `p.R273L` 3, `p.R273P` 1 |
+| PIK3CA | 1047 | Yes, `PI3Kc_IA_alpha` | 146 | 146 | `p.H1047R` 131, `p.H1047L` 13, `p.H1047Y` 2 |
+| GATA3 | 309 | Yes, `ZnF_GATA` | 21 | 21 | `p.X309_splice` 21 |
+| CDH1 | 23 | No PFAM domain | 8 | 8 | `p.Q23*` 8 |
+
+Key combined table: [all_genes_single_top_label_positions.tsv](/Users/linqingxuan/maftools_validation_data/use_case_test/validation_results/gpt-5.5/case_05_single_top_label/run_05/outputs/all_genes_single_top_label_positions.tsv)
+
+Example plot/script pairs:
+[TP53 PNG](/Users/linqingxuan/maftools_validation_data/use_case_test/validation_results/gpt-5.5/case_05_single_top_label/run_05/outputs/TP53/lollipop_TP53.png), [TP53 R](/Users/linqingxuan/maftools_validation_data/use_case_test/validation_results/gpt-5.5/case_05_single_top_label/run_05/outputs/TP53/TP53_lollipop_single_top_label.R)
+
+The exported scripts use `AACol = "HGVSp_Short"`, one-element `labelPos`, `colors = NULL`, `repel = TRUE`, `roundedRect = TRUE`, visible legend, mutation rate, PFAM domain labels, collapsed position labels, and printed counts.

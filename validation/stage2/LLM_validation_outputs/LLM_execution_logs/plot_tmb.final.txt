@@ -1,0 +1,31 @@
+Selected analytical tool: `plot_tmb` from `maftools-mcp`, using underlying `maftools::tmb`.
+
+Selected parameters:
+- `maf_path`: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA.maf`
+- `captureSize`: `50`
+- `logScale`: `TRUE`
+- `output_dir`: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs`
+- MCP default image size used by export: `2600 x 2000`
+
+MCP execution status: succeeded after using default plot dimensions.
+
+Observed MCP output:
+- Figure: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/tmb.png`
+- Preserved MCP copy: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/tmb.mcp.png`
+- PNG dimensions: `2600 x 2000`
+- Plot-reported median TMB: `0.78/MB`
+
+Exported R script:
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/plot_tmb_brca_50mb_logscale.R`
+
+Direct R execution status: succeeded via `Rscript`.
+
+Direct R output:
+- Regenerated figure copied to: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/tmb.direct_r.png`
+- Samples: `1026`
+- Median TMB: `0.78`
+- Min TMB: `0.02`
+- Max TMB: `107.32`
+- Median log10 TMB: `-0.1079054`
+
+Consistency assessment: consistent. The MCP and direct-R PNGs both exist, both are `2600 x 2000`, and their SHA-256 hashes are identical. The analytical content matches the requested 50 Mb capture size and log-scaled TMB display, with median TMB `0.78/MB`.

@@ -1,0 +1,12 @@
+.git
+.venv
+__pycache__
+outputs
+validation/work
+validation/private_data
+supplementary
+environment/cache
+environment/library
+build
+dist
+**/*.egg-info

@@ -1,0 +1,12 @@
+Selected analytical tool: `maftools-mcp signature_enrichment` wrapping `maftools::signatureEnrichment`.
+
+Parameters used:
+`maf_rds=maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA_clinical_enrichment_validation_subset.rds`, `sig_res_rds=maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/signature_enrichment_source__extractSignatures.rds`, `output_dir=maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs`, `minMut=5`, `useCNV=TRUE`.
+
+MCP execution: successful after retrying with absolute path strings to the same requested files. Observed MCP output was `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/signature_enrichment.png`, preserved before direct R execution as `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/signature_enrichment.mcp.preserved.retry.png`. The plot shows average signature exposure and mutation load, with cluster sizes: Signature_1=19, Signature_2=10, Signature_3=19, Signature_4=27, Signature_5=26, Signature_6=19.
+
+Exported R script: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/signature_enrichment_brca_er_status_retry.R`.
+
+Direct R execution: successful via `Rscript`. Log saved to `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/signature_enrichment.retry_direct_r.log`; direct output preserved as `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/signature_enrichment.direct_r.retry.png`.
+
+Consistency: MCP and direct-R PNGs are byte-identical. Both are 1800x1400 and share SHA-256 `08098781648bc800a57a3cc62d632dc7adba237458ecbda46dda762e5c7cdf63`. Validation report saved to `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/signature_enrichment.retry_validation_report.txt`.

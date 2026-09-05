@@ -1,0 +1,26 @@
+Selected analytical tool: `load_tcga_gistic`
+
+Selected parameters:
+- `cancer_name`: `ACC`
+- `copy_number_level`: `all`
+- `output_dir`: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/tcga_gistic`
+
+MCP execution status: succeeded  
+Observed MCP output: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/tcga_gistic/ACC_gistic_all.rds`
+
+Exported R script: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/load_tcga_gistic_ACC_all.R`
+
+Direct R execution status: succeeded. The exported script reran `TCGAgistic::tcga_gistic_load(cohort="ACC", cnLevel="all")` and regenerated `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/tcga_gistic/ACC_gistic_all.rds`.
+
+Comparison against preserved MCP output `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/tcga_gistic/ACC_gistic_all.mcp.rds`:
+- Object class: both `GISTIC`
+- Slots: identical
+- `@data`: `100578 x 5`, identical
+- `@cnv.summary`: `90 x 4`, identical
+- `@cytoband.summary`: `44 x 7`, identical
+- `@gene.summary`: `4911 x 5`, identical
+- `@cnMatrix`: `44 x 90`, identical
+- `@numericMatrix`: `44 x 90`, identical
+- Representative values matched, including first genes `TERT`, `RN7SL562P`, `F12` in `@data` and `ITFG3`, `AGAP2`, `AVIL` in `@gene.summary`.
+
+Consistency assessment: consistent.

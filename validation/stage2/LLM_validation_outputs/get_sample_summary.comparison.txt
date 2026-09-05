@@ -1,0 +1,6 @@
+mcp_rows 1026
+direct_rows 1026
+mcp_cols 11
+direct_cols 11
+columns_identical TRUE
+data_identical TRUE

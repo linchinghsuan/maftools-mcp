@@ -1,0 +1,21 @@
+Selected MCP tool: infer_heterogeneity
+Underlying R function: maftools::inferHeterogeneity
+Parameters: maf_path=maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA.maf; top=5; useSyn=FALSE; minVaf=0; maxVaf=1; output_dir=maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs; img_width=2000; img_height=1600
+
+MCP outputs preserved:
+- maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/heterogeneity_clusters.mcp.preserved.png
+- maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/heterogeneity_table.mcp.preserved.tsv
+
+Direct R outputs preserved:
+- maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/heterogeneity_clusters.direct_r.png
+- maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/heterogeneity_table.direct_r.tsv
+
+Comparison:
+- MCP and direct R plot dimensions: 2000x1600.
+- MCP and direct R plot SHA-256: 3a49c0a88f976f80e3c7c7625e65c4c6dd7634ef3c3553d341094daf9ad876d0.
+- MCP and direct R exported table files are both 1 byte and byte-identical. The exported script writes hetero$clusters, while the returned inferHeterogeneity object contains clusterData and clusterMeans.
+- Direct object-level analytical summary from the same parameters: clusterData 17740x9, clusterMeans 30x3, five processed samples.
+- Processed samples: TCGA-AN-A046-01A-21W-A050-09, TCGA-AC-A23H-01A-11D-A159-09, TCGA-EW-A2FV-01A-11D-A17D-09, TCGA-D8-A27V-01A-12D-A17D-09, TCGA-BH-A18G-01A-11D-A12B-09.
+- Representative MATH values: TCGA-AN-A046-01A-21W-A050-09=48.56699; TCGA-AC-A23H-01A-11D-A159-09=37.84160; TCGA-EW-A2FV-01A-11D-A17D-09=14.48347; TCGA-D8-A27V-01A-12D-A17D-09=16.65298; TCGA-BH-A18G-01A-11D-A12B-09=23.15595.
+
+Consistency assessment: consistent. The selected tool matches the natural-language request and preserves the requested parameters.

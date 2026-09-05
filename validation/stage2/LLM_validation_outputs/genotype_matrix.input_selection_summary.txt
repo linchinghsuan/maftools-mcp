@@ -1,0 +1,4 @@
+selected_non_syn_rows 880 
+selected_genes GATA3:131,PIK3CA:393,TP53:356 
+selected_samples 708 
+variant_classes Missense_Mutation:609,Frame_Shift_Ins:79,Frame_Shift_Del:72,Nonsense_Mutation:51,Splice_Site:48,In_Frame_Del:21 

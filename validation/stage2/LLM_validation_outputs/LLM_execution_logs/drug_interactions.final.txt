@@ -1,0 +1,13 @@
+**Selected analytical tool:** `drug_interactions`
+
+**Selected parameters:** `maf_path=maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA.maf`, `output_dir=maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs`, `top=20`, `plotType=bar`, `drugs=false`, `img_width=2600`, `img_height=2000`, `fontSize=0.8`.
+
+**MCP execution status:** succeeded after rerunning with absolute paths for the MCP server’s working-directory resolution.
+
+**Observed MCP output:** `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/drug_interactions.png`, preserved as `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/drug_interactions.mcp.preserved.png`. The plot is a `2600 x 2000` PNG showing druggable categories only, with no individual drug listing.
+
+**Exported R script:** `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/drug_interactions_brca_top20_categories_bar_no_drugs.R`
+
+**Direct R execution status/output:** succeeded. Regenerated plot copied to `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/drug_interactions.direct_r.png`; log saved to `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/drug_interactions.direct_r.log`. Supplemental direct-R category outputs were saved as `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/drug_interactions.direct_r.categories.tsv` and `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/drug_interactions.direct_r.category_summary.tsv`.
+
+**Consistency assessment:** consistent. The direct-R plot matched the preserved MCP plot exactly: same dimensions, and identical SHA-256 hash `f4f14546b91fbe5ce6b535308c7ead442c36160085f41036d85c6d52601a36a1`. The deterministic returned content contained `62` gene-category assignments across `21` categories, with the largest categories including `DRUGGABLE GENOME` `12`, `CLINICALLY ACTIONABLE` `8`, and `KINASE` / `SERINE THREONINE KINASE` `5` each. A comparison summary is saved at `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/drug_interactions.comparison.txt`.

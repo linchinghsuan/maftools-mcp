@@ -1,0 +1,27 @@
+**Stage 2 Validation Result**
+
+Selected analytical tool: `plot_oncoplot` via `maftools-mcp`
+
+Selected parameters:
+`maf_path=maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA.maf`, `output_dir=maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs`, `top=20`, `out_name=oncoplot_stage2_top20.png`
+
+MCP execution status: succeeded after rerunning with absolute paths, since the MCP server’s own cwd could not resolve the initial relative MAF path.
+
+Observed MCP output:
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/oncoplot_stage2_top20.mcp.preserved.png`
+PNG, `2600x2000`, RGBA 8-bit. Plot title content: `Altered in 909 (88.6%) of 1026 samples.` Top genes included PIK3CA, TP53, TTN, CDH1, GATA3, MUC16, KMT2C, MAP3K1, FLG, and RYR2.
+
+Exported R script:
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/plot_oncoplot_stage2_top20.R`
+
+Direct R execution status: succeeded with exit code `0`.
+Direct output preserved as:
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/oncoplot_stage2_top20.direct_r.png`
+
+Comparison:
+MCP and direct-R PNG dimensions matched: `2600x2000`.
+MD5 hashes matched exactly: `f8d45a1d5a875695f3432917e9add265`.
+Top-20 deterministic gene summary was saved at:
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/oncoplot_stage2_top20.top20_genes.tsv`
+
+Consistency assessment: **consistent**.

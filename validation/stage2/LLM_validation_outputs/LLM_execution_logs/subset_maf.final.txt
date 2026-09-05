@@ -1,0 +1,24 @@
+Completed the Stage 2 validation pilot.
+
+**Selected analytical tool:** `subset_maf`  
+**Underlying R function:** `maftools::subsetMaf`
+
+**Selected parameters:** `maf_path=maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA.maf`, `genes=["TP53"]`, output to `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs`; exported defaults included `mafObj=true`, `includeSyn=true`, `dropLevels=true`, `mult="first"`, `restrictTo="all"`, `isTCGA=false`.
+
+**MCP execution status:** succeeded.  
+**Observed MCP output:** `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/subset_maf.tsv` and `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/subset_maf.rds`, preserved as:
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/subset_maf.mcp.tsv`
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/subset_maf.mcp.rds`
+
+The MCP table contains 356 rows and 23 columns; all `Hugo_Symbol` values are `TP53`.
+
+**Exported R script:** `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/subset_maf_brca_tp53.R`
+
+**Direct R execution status:** succeeded. Outputs preserved as:
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/subset_maf.direct_r.tsv`
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/subset_maf.direct_r.rds`
+- log: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/subset_maf.direct_r.log`
+
+**Consistency assessment:** consistent. The direct R TSV and MCP TSV are byte-identical, and the direct R RDS and MCP RDS are byte-identical. Row counts, columns, representative TP53 mutation values, and RDS class (`MAF`) match exactly.
+
+Comparison note saved at `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/subset_maf.comparison.txt`.

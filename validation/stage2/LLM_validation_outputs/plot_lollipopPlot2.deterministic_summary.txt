@@ -1,0 +1,26 @@
+cohort1 samples 16 TP53_mutated_samples 15 TP53_events 58 rate 0.9375 
+    Protein_Change Variant_Classification     N
+            <char>                 <fctr> <int>
+ 1:                           Splice_Site    12
+ 2:        p.H179R      Missense_Mutation     3
+ 3:        p.H179L      Missense_Mutation     2
+ 4:        p.Y205C      Missense_Mutation     2
+ 5:        p.I195F      Missense_Mutation     2
+ 6:        p.T125T            Splice_Site     2
+ 7:        p.H193P      Missense_Mutation     2
+ 8:        p.H179D      Missense_Mutation     1
+ 9:        p.R213L      Missense_Mutation     1
+10:        p.E346*      Nonsense_Mutation     1
+cohort2 samples 16 TP53_mutated_samples 4 TP53_events 13 rate 0.25 
+    Protein_Change Variant_Classification     N
+            <char>                 <fctr> <int>
+ 1:        p.P278S      Missense_Mutation     1
+ 2:        p.I255F      Missense_Mutation     1
+ 3:        p.A189P      Missense_Mutation     1
+ 4:        p.V143G      Missense_Mutation     1
+ 5: p.254_255II>FF      Missense_Mutation     1
+ 6:        p.I195F      Missense_Mutation     1
+ 7:        p.G187V            Splice_Site     1
+ 8:        p.V172D      Missense_Mutation     1
+ 9:        p.R110L      Missense_Mutation     1
+10:        p.E224V            Splice_Site     1

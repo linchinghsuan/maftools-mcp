@@ -1,0 +1,28 @@
+Selected MCP tool: plot_maf_survgroup_custom
+Requested MAF path: maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA.maf
+MCP-compatible MAF path used for successful run: maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA_custom_survival_12char.maf
+Clinical CSV: maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA_custom_survival_clinical.csv
+Gene set: TP53
+Sample column: Tumor_Sample_Barcode
+Time column: CDR_OS.time
+Status column: CDR_OS
+
+Final MCP-compatible validation used the prepared 12-character BRCA custom-survival MAF and matched clinical CSV.
+
+MCP output preserved:
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/mafSurvGroup_CUSTOM.mcp.preserved.png
+Dimensions: 2600 x 2000
+MD5: 1d6c88eb3af30676d7fa53b9781019d5
+Observed plot content: Geneset TP53; Geneset N=348; WT N=671; P-value=0.423; HR=1.15
+
+Exported R script:
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/plot_maf_survgroup_custom_brca_tp53_cdr_os.R
+
+Direct R output preserved:
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/mafSurvGroup_CUSTOM.direct_r.png
+Dimensions: 2600 x 2000
+MD5: 1d6c88eb3af30676d7fa53b9781019d5
+Direct R log median-survival table: Mutant medianTime=843 N=348; WT medianTime=822 N=671
+
+Consistency assessment:
+MCP and direct R outputs are consistent for the successful MCP-compatible validation analysis.

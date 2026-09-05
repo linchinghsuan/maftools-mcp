@@ -1,0 +1,13 @@
+Selected analytical tool: `plot_tcga_compare` via Maftools-MCP, corresponding to `maftools::tcgaCompare`.
+
+Selected parameters: `maf_path=maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA.maf`, `tcga_capture_size=35.8`, `logscale=TRUE`, `rm_zero=TRUE`, `rm_hyper=FALSE`, output under `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs`.
+
+MCP execution status: succeeded after rerunning with an absolute input path for MCP path resolution. Observed MCP output: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/tcga_compare.png`, preserved as `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/tcga_compare.mcp.preserved.png`, PNG `2600 x 2000`.
+
+Exported R script: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/plot_tcga_compare_brca_tcga35_8_log_rmzero_keep_hyper.R`.
+
+Direct R execution status: succeeded. Output preserved as `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/tcga_compare.direct_r.png`; log saved at `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/plot_tcga_compare.direct_r.log`.
+
+Comparison: MCP and direct-R PNGs both `2600 x 2000`, same file size, identical SHA-256 hash `b6b740cafc7135cba7d7b202b5084ea9e38b476514ef34713109abd49d7d21a9`. Representative direct-R analytical values included `Input1` cohort size `1026`, median mutations `39`, log10 median `1.5910646`; TCGA `BRCA` cohort size `1025`, median mutations `40`, log10 median `1.6020600`; mutation burden table rows `11226`.
+
+Consistency assessment: consistent. A comparison record was written to `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/plot_tcga_compare.comparison.txt`.

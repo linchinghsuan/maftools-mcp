@@ -1,0 +1,276 @@
+-Reading
+-Validating
+-Summarizing
+--Possible FLAGS among top ten genes:
+  TTN
+  MUC16
+  FLG
+-Processing clinical data
+--Missing clinical data
+-Finished in 2.954s elapsed (3.010s cpu) 
+      Gene
+    <char>
+ 1: MAP3K1
+ 2: MAP3K1
+ 3: MAP3K1
+ 4: MAP3K1
+ 5: MAP3K1
+ 6:   TP53
+ 7:   TP53
+ 8:   TP53
+ 9:   TP53
+10:   TP53
+11:   TP53
+12:   TP53
+13:   TP53
+14:   TP53
+15:  GATA3
+16:  GATA3
+17:  GATA3
+18:  GATA3
+19:  GATA3
+20:  GATA3
+21:  KMT2C
+22:  KMT2C
+23:  KMT2C
+24:  NCOR1
+25:  NCOR1
+26:   PTEN
+27:   PTEN
+28:   PTEN
+29:   PTEN
+30:   PTEN
+31:   PTEN
+32:   PTEN
+33:   PTEN
+34:   PTEN
+35:   CDH1
+36:   CDH1
+37:   CDH1
+38:    TTN
+39:    TTN
+40:    TTN
+41:    TTN
+42:  USH2A
+43:    DMD
+44:    DMD
+45:    DMD
+46:    DMD
+47: PIK3CA
+48: PIK3CA
+49: PIK3CA
+50: PIK3CA
+51: PIK3CA
+52:  MUC16
+53:  HMCN1
+54:  HMCN1
+55:  OBSCN
+56:  OBSCN
+57:  OBSCN
+58:   RYR2
+59:   RYR2
+60:   RYR2
+61:   RYR2
+62:   RYR2
+      Gene
+    <char>
+                                                            gene_long_name
+                                                                    <char>
+ 1:                       MITOGEN-ACTIVATED PROTEIN KINASE KINASE KINASE 1
+ 2:                       MITOGEN-ACTIVATED PROTEIN KINASE KINASE KINASE 1
+ 3:                       MITOGEN-ACTIVATED PROTEIN KINASE KINASE KINASE 1
+ 4:                       MITOGEN-ACTIVATED PROTEIN KINASE KINASE KINASE 1
+ 5:                       MITOGEN-ACTIVATED PROTEIN KINASE KINASE KINASE 1
+ 6:                                                      TUMOR PROTEIN P53
+ 7:                                                      TUMOR PROTEIN P53
+ 8:                                                      TUMOR PROTEIN P53
+ 9:                                                      TUMOR PROTEIN P53
+10:                                                      TUMOR PROTEIN P53
+11:                                                      TUMOR PROTEIN P53
+12:                                                      TUMOR PROTEIN P53
+13:                                                      TUMOR PROTEIN P53
+14:                                                      TUMOR PROTEIN P53
+15:                                                 GATA BINDING PROTEIN 3
+16:                                                 GATA BINDING PROTEIN 3
+17:                                                 GATA BINDING PROTEIN 3
+18:                                                 GATA BINDING PROTEIN 3
+19:                                                 GATA BINDING PROTEIN 3
+20:                                                 GATA BINDING PROTEIN 3
+21:                                            LYSINE METHYLTRANSFERASE 2C
+22:                                            LYSINE METHYLTRANSFERASE 2C
+23:                                            LYSINE METHYLTRANSFERASE 2C
+24:                                         NUCLEAR RECEPTOR COREPRESSOR 1
+25:                                         NUCLEAR RECEPTOR COREPRESSOR 1
+26:                                         PHOSPHATASE AND TENSIN HOMOLOG
+27:                                         PHOSPHATASE AND TENSIN HOMOLOG
+28:                                         PHOSPHATASE AND TENSIN HOMOLOG
+29:                                         PHOSPHATASE AND TENSIN HOMOLOG
+30:                                         PHOSPHATASE AND TENSIN HOMOLOG
+31:                                         PHOSPHATASE AND TENSIN HOMOLOG
+32:                                         PHOSPHATASE AND TENSIN HOMOLOG
+33:                                         PHOSPHATASE AND TENSIN HOMOLOG
+34:                                         PHOSPHATASE AND TENSIN HOMOLOG
+35:                                                             CADHERIN 1
+36:                                                             CADHERIN 1
+37:                                                             CADHERIN 1
+38:                                                                  TITIN
+39:                                                                  TITIN
+40:                                                                  TITIN
+41:                                                                  TITIN
+42:                                                                USHERIN
+43:                                                             DYSTROPHIN
+44:                                                             DYSTROPHIN
+45:                                                             DYSTROPHIN
+46:                                                             DYSTROPHIN
+47: PHOSPHATIDYLINOSITOL-4,5-BISPHOSPHATE 3-KINASE CATALYTIC SUBUNIT ALPHA
+48: PHOSPHATIDYLINOSITOL-4,5-BISPHOSPHATE 3-KINASE CATALYTIC SUBUNIT ALPHA
+49: PHOSPHATIDYLINOSITOL-4,5-BISPHOSPHATE 3-KINASE CATALYTIC SUBUNIT ALPHA
+50: PHOSPHATIDYLINOSITOL-4,5-BISPHOSPHATE 3-KINASE CATALYTIC SUBUNIT ALPHA
+51: PHOSPHATIDYLINOSITOL-4,5-BISPHOSPHATE 3-KINASE CATALYTIC SUBUNIT ALPHA
+52:                                      MUCIN 16, CELL SURFACE ASSOCIATED
+53:                                                           HEMICENTIN 1
+54:                                                           HEMICENTIN 1
+55:         OBSCURIN, CYTOSKELETAL CALMODULIN AND TITIN-INTERACTING RHOGEF
+56:         OBSCURIN, CYTOSKELETAL CALMODULIN AND TITIN-INTERACTING RHOGEF
+57:         OBSCURIN, CYTOSKELETAL CALMODULIN AND TITIN-INTERACTING RHOGEF
+58:                                                   RYANODINE RECEPTOR 2
+59:                                                   RYANODINE RECEPTOR 2
+60:                                                   RYANODINE RECEPTOR 2
+61:                                                   RYANODINE RECEPTOR 2
+62:                                                   RYANODINE RECEPTOR 2
+                                                            gene_long_name
+                                                                    <char>
+                                           category_sources
+                                                     <char>
+ 1:            RussLampel,dGene,HopkinsGroom,HingoraniCasas
+ 2:                            FoundationOneGenes,MskImpact
+ 3:                       dGene,GO,GuideToPharmacologyGenes
+ 4:                HopkinsGroom,GO,GuideToPharmacologyGenes
+ 5:                                                      GO
+ 6:                  HingoraniCasas,RussLampel,HopkinsGroom
+ 7:                                                      GO
+ 8:                                                      GO
+ 9:                                                      GO
+10:                                                      GO
+11:                                                      GO
+12:                                                      GO
+13:                                                      GO
+14: FoundationOneGenes,MskImpact,CarisMolecularIntelligence
+15:                            FoundationOneGenes,MskImpact
+16:                                                      GO
+17:                                                      GO
+18:                                                      GO
+19:                                                      GO
+20:                                                      GO
+21:                  GuideToPharmacologyGenes,BaderLabGenes
+22:                                                      GO
+23:                                               MskImpact
+24:                                               MskImpact
+25:                                                      GO
+26: MskImpact,FoundationOneGenes,CarisMolecularIntelligence
+27:                                                   dGene
+28:                                                   dGene
+29:                                                      GO
+30:                                                      GO
+31:                                                      GO
+32:                                                      GO
+33:                                                      GO
+34:                                                      GO
+35:                                          HingoraniCasas
+36: FoundationOneGenes,MskImpact,CarisMolecularIntelligence
+37:                                                      GO
+38:                       HingoraniCasas,dGene,HopkinsGroom
+39:                       dGene,GO,GuideToPharmacologyGenes
+40:                GO,GuideToPharmacologyGenes,HopkinsGroom
+41:                                                      GO
+42:                                          HingoraniCasas
+43:                                                      GO
+44:                                                      GO
+45:                                                      GO
+46:                                          HingoraniCasas
+47:            RussLampel,dGene,HopkinsGroom,HingoraniCasas
+48:                                                      GO
+49:                             GO,GuideToPharmacologyGenes
+50: FoundationOneGenes,CarisMolecularIntelligence,MskImpact
+51:             GuideToPharmacologyGenes,dGene,HopkinsGroom
+52:                                          HingoraniCasas
+53:                                          HingoraniCasas
+54:                                                      GO
+55:                HopkinsGroom,GO,GuideToPharmacologyGenes
+56:                       HopkinsGroom,HingoraniCasas,dGene
+57:                       GO,GuideToPharmacologyGenes,dGene
+58:                  RussLampel,HingoraniCasas,HopkinsGroom
+59:  BaderLabGenes,GuideToPharmacologyGenes,HopkinsGroom,GO
+60:                             GuideToPharmacologyGenes,GO
+61:                   GuideToPharmacologyGenes,HopkinsGroom
+62:                                                      GO
+                                           category_sources
+                                                     <char>
+                         category
+                           <char>
+ 1:              DRUGGABLE GENOME
+ 2:         CLINICALLY ACTIONABLE
+ 3:       SERINE THREONINE KINASE
+ 4:                        KINASE
+ 5:              TUMOR SUPPRESSOR
+ 6:              DRUGGABLE GENOME
+ 7:              TUMOR SUPPRESSOR
+ 8:  TRANSCRIPTION FACTOR BINDING
+ 9:   RNA DIRECTED DNA POLYMERASE
+10:                    DNA REPAIR
+11:          HISTONE MODIFICATION
+12:               DRUG RESISTANCE
+13:  TRANSCRIPTION FACTOR COMPLEX
+14:         CLINICALLY ACTIONABLE
+15:         CLINICALLY ACTIONABLE
+16:              TUMOR SUPPRESSOR
+17:  TRANSCRIPTION FACTOR COMPLEX
+18:  TRANSCRIPTION FACTOR BINDING
+19:               DRUG RESISTANCE
+20:          HISTONE MODIFICATION
+21:            METHYL TRANSFERASE
+22:          HISTONE MODIFICATION
+23:         CLINICALLY ACTIONABLE
+24:         CLINICALLY ACTIONABLE
+25:  TRANSCRIPTION FACTOR BINDING
+26:         CLINICALLY ACTIONABLE
+27:              DRUGGABLE GENOME
+28:                   PTEN FAMILY
+29:              TUMOR SUPPRESSOR
+30:       SERINE THREONINE KINASE
+31:               DRUG RESISTANCE
+32:                   TRANSPORTER
+33:           PROTEIN PHOSPHATASE
+34:                        KINASE
+35:              DRUGGABLE GENOME
+36:         CLINICALLY ACTIONABLE
+37:               DRUG RESISTANCE
+38:              DRUGGABLE GENOME
+39:       SERINE THREONINE KINASE
+40:                        KINASE
+41:               TYROSINE KINASE
+42:              DRUGGABLE GENOME
+43:                   TRANSPORTER
+44:                  CELL SURFACE
+45:                   ION CHANNEL
+46:              DRUGGABLE GENOME
+47:              DRUGGABLE GENOME
+48:       SERINE THREONINE KINASE
+49:                        KINASE
+50:         CLINICALLY ACTIONABLE
+51: PHOSPHATIDYLINOSITOL 3 KINASE
+52:              DRUGGABLE GENOME
+53:              DRUGGABLE GENOME
+54:                  CELL SURFACE
+55:                        KINASE
+56:              DRUGGABLE GENOME
+57:       SERINE THREONINE KINASE
+58:              DRUGGABLE GENOME
+59:                   ION CHANNEL
+60:                   TRANSPORTER
+61:             B30_2 SPRY DOMAIN
+62:               ABC TRANSPORTER
+                         category
+                           <char>
+null device 
+          1 

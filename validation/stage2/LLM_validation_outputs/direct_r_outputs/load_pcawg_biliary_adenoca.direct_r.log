@@ -1,0 +1,17 @@
+Loading PCAWG data [Biliary-AdenoCA]
+If you find this data useful, please cite https://doi.org/10.1038/s41586-020-1969-6
+                   ID summary    Mean Median
+               <char>   <num>   <num>  <num>
+ 1:        NCBI_Build      NA      NA     NA
+ 2:            Center      NA      NA     NA
+ 3:           Samples      34      NA     NA
+ 4:            nGenes    3388      NA     NA
+ 5:   Frame_Shift_Del     486  14.294    2.0
+ 6:   Frame_Shift_Ins     134   3.941    1.0
+ 7:      In_Frame_Del      63   1.853    0.0
+ 8:      In_Frame_Ins       1   0.029    0.0
+ 9: Missense_Mutation    3139  92.324   42.5
+10: Nonsense_Mutation     170   5.000    2.0
+11:  Nonstop_Mutation       7   0.206    0.0
+12:       Splice_Site     215   6.324    2.0
+13:             total    4215 123.971   50.0

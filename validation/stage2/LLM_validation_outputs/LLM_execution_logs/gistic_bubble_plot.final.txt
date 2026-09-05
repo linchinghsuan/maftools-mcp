@@ -1,0 +1,30 @@
+**Stage 2 Validation Result**
+
+Selected analytical tool: `gistic_bubble_plot`  
+R/Maftools function exported: `maftools::gisticBubblePlot`
+
+Selected parameters:
+- `gistic_rds_path`: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/ACC_gistic.rds`
+- `fdrCutOff`: `0.1`
+- `log_y`: `TRUE`
+- `output_dir`: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs`
+- MCP defaults preserved: `txtSize=3`, `img_width=2600`, `img_height=2000`, `color=NULL`, `markBands=NULL`
+
+MCP execution status: succeeded after using absolute paths for MCP-side file resolution.  
+Observed MCP output: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/gistic_bubble_plot.png`  
+Preserved MCP copy: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/gistic_bubble_plot.mcp.preserved.png`
+
+Exported R script:
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/gistic_bubble_plot_acc_fdr0_1_logy.R`
+
+Direct R execution status: succeeded via `Rscript`; regenerated plot copied to:
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/gistic_bubble_plot.direct_r.png`
+- log: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/gistic_bubble_plot.direct_r.log`
+
+Comparison:
+- MCP PNG and direct R PNG are both `2600 x 2000`.
+- SHA-256 hashes are identical: `943e31d2f57745d846bd6e5677caadbd66240c941b127ad96b523a8d6394850e`.
+- Deterministic cytoband content at `qvalues <= 0.1`: 31 cytobands total, 11 `Amp`, 20 `Del`.
+- Representative top cytobands include `22q12.1` deletion with `q=2.6118e-26`, `4q35.1` deletion with `q=2.2312e-19`, and `5p15.33` amplification with `q=1.7994e-08`.
+
+Consistency assessment: consistent. The selected tool matches the natural-language intent, the requested FDR cutoff and log-scaled y axis were preserved, and direct R output matches the MCP output exactly. Full comparison saved at `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/gistic_bubble_plot.comparison.txt`.

@@ -1,0 +1,25 @@
+Selected analytical tool: `get_gene_summary`
+
+Selected parameters:
+- `maf_path`: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA.maf`
+- `output_dir`: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs`
+
+MCP execution status: succeeded after using absolute paths for the MCP server runtime.
+
+Observed MCP output:
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/gene_summary.tsv`
+- Preserved copy: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/gene_summary.mcp.tsv`
+- Table size: 16,686 data rows, 13 columns
+- Top rows:
+  - `PIK3CA`: total `393`, MutatedSamples `352`, AlteredSamples `352`
+  - `TP53`: total `356`, MutatedSamples `350`, AlteredSamples `350`
+  - `TTN`: total `321`, MutatedSamples `193`, AlteredSamples `193`
+
+Exported R script:
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/get_gene_summary_brca.R`
+
+Direct R execution status: succeeded with `Rscript`.
+- Direct output: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/gene_summary.direct_r.tsv`
+- Log: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/get_gene_summary.direct_r.log`
+
+Consistency assessment: passed. The MCP and direct-R tables have identical row counts, identical column names, identical representative values, and identical SHA-256 hashes. Full table comparison returned identical. Comparison report saved at `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/get_gene_summary.comparison.txt`.

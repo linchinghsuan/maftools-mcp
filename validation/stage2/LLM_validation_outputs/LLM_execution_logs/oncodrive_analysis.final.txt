@@ -1,0 +1,30 @@
+**Stage 2 Validation Result**
+
+Selected analytical tool: `oncodrive_analysis`
+
+Selected parameters:
+`maf_path=maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA.rds`, `minMut=5`, `pvalMethod="zscore"`, `nBgGenes=100`, `bgEstimate=true`, `fdrCutOff=1.0`, output under `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs`.
+
+MCP execution status: succeeded after rerunning with an absolute input path for MCP file resolution.
+
+Observed MCP output:
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/oncodrive_result.tsv`
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/oncodrive_result.rds`
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/oncodrive_plot.png`
+
+Preserved MCP copies:
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/oncodrive_analysis.mcp.preserved.tsv`
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/oncodrive_analysis.mcp.preserved.rds`
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/oncodrive_analysis.mcp.preserved.png`
+
+Exported R script:
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/oncodrive_analysis_brca_minmut5_zscore_bg100_fdr1.R`
+
+Direct R execution status: succeeded with empty log at `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/oncodrive_analysis.direct_r.log`.
+
+Comparison:
+TSV outputs were identical: `886 x 21`, class `data.frame`, same columns. RDS outputs were identical as `data.table,data.frame`, `886 x 21`. Key columns included `Hugo_Symbol`, `total`, `clusters`, `muts_in_clusters`, `zscore`, `pval`, `fdr`, `fract_muts_in_clusters`.
+
+Representative top results by FDR/p-value included `PLP2`, `AKT1`, `KRAS`, `PIK3CA`, and `FAM102A`; values matched exactly between MCP and direct R. Plot dimensions matched at `2600 x 2000`, and PNG SHA-256 hashes were identical.
+
+Consistency assessment: consistent.

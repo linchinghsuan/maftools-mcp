@@ -1,0 +1,11 @@
+mcp_dim 314x709 
+direct_dim 314x709 
+same_colnames TRUE 
+same_rownames_first_col TRUE 
+same_all TRUE 
+first_col_name  
+first_5_row_ids 10:8100382,10:8105964,10:8106022,10:8106058,10:8106093 
+sample_cols_2_6 TCGA-BH-A18M-01A-11D-A12B-09,TCGA-BH-A2L8-01A-11D-A18P-09,TCGA-BH-A0HF-01A-11W-A071-09,TCGA-D8-A1JJ-01A-31D-A14K-09,TCGA-5L-AAT1-01A-12D-A41F-09 
+representative_values 10:8100382|10:8105964|10:8106022|10:8106058|10:8106093|Het|None|None|None|None|None|Het|None|Het|None|None|None|Het|None|None|None|None|None|Het|None|None|None|None|Het|None 
+non_none_cells_mcp 880 
+non_none_cells_direct 880 

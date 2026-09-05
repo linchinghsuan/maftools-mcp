@@ -1,0 +1,13 @@
+Selected analytical tool: `genes_to_barcodes` (`maftools::genesToBarcodes`)
+
+Selected parameters: `maf_path=maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA.maf`, `genes=TP53`, `justNames=false`, `output_dir=maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs`, `verbose=true`.
+
+MCP execution status: succeeded after rerunning with absolute paths required by the MCP server.
+
+Observed MCP output: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/genes_to_barcodes.tsv` and `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/genes_to_barcodes.rds`. I preserved the MCP TSV as `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/genes_to_barcodes.mcp.tsv`. The table has 350 TP53-mutated tumor sample barcode rows and 11 metadata columns, including `TP53.Tumor_Sample_Barcode`, TP53 mutation-class count columns, and `TP53.total`.
+
+Exported R script: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/genes_to_barcodes_brca_tp53_full_metadata.R`
+
+Direct R execution status: succeeded. Direct output was preserved as `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/genes_to_barcodes.direct_r.tsv`; log is at `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/genes_to_barcodes.direct_r.log`.
+
+Consistency assessment: consistent. MCP and direct R outputs both had 350 rows and 11 columns, identical column names, identical representative first row, matching `sum(TP53.total)=33747`, and identical SHA-256 hash `c87e8ab21f858382b55fde55e61429f665ed80d65de3df8a6fd3963cf75bba34`. Comparison report saved at `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/genes_to_barcodes.comparison.txt`.

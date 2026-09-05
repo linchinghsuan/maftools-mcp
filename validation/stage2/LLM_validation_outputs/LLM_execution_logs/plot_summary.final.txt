@@ -1,0 +1,30 @@
+Selected analytical tool: `plot_summary` from Maftools-MCP, using `maftools::plotmafSummary`.
+
+Selected parameters:
+- `maf_path`: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA.maf`
+- `output_dir`: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs`
+- `top`: `10`
+- MCP defaults captured in export: `img_width=2600`, `img_height=2000`, `fs=1`
+
+MCP execution status: succeeded after using absolute paths for MCP-side file resolution.
+
+Observed MCP output:
+- Generated `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/plot_summary.png`
+- Preserved MCP copy: `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/plot_summary.mcp.png`
+- Image dimensions: `2600 x 2000`
+- Top 10 genes shown/validated from the same MAF: `PIK3CA`, `TP53`, `TTN`, `CDH1`, `GATA3`, `MUC16`, `KMT2C`, `MAP3K1`, `FLG`, `RYR2`
+
+Exported R script:
+- `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/plot_summary_brca_top10.R`
+
+Direct R execution status/output:
+- `Rscript` exit status: `0`
+- Log saved at `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/plot_summary.direct_r.log`
+- Direct R regenerated `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/plot_summary.png`
+- R log included successful MAF read/summarization and maftools notes about possible FLAGS among top ten genes: `TTN`, `MUC16`, `FLG`
+
+Consistency assessment:
+- MCP image and direct R image both exist.
+- Dimensions match: `2600 x 2000`.
+- MD5 checksums match exactly: `50f7a19be702fd2f08583a758e710f64`.
+- Analytical content is consistent: same input, same exported parameters, same top-10 mutation summary plot output.

@@ -1,0 +1,41 @@
+**Stage 2 Validation Result**
+
+Selected analytical tool: `plot_lollipopPlot2`
+
+Selected parameters:
+`user_maf_path=maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/cohort1.maf`
+`user_maf_path2=maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/cohort2.maf`
+`gene=TP53`
+`output_dir=maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs`
+MCP-applied plotting defaults included `img_width=2600`, `img_height=2000`, `m1_name=Cohort1`, `m2_name=Cohort2`.
+
+MCP execution status: succeeded after using absolute paths and default plot dimensions.
+
+Observed MCP output:
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/lollipop_TP53.png`
+Preserved MCP copy:
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/lollipopPlot2_TP53.mcp.preserved.png`
+
+The MCP plot displayed:
+`Cohort1 [93.75%; N = 16]`
+`Cohort2 [25%; N = 16]`
+Transcript: `TP53: NM_000546`
+
+Exported R script:
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/plot_lollipopPlot2_cohort1_vs_cohort2_TP53.R`
+
+Direct R execution status: succeeded.
+Direct R output copy:
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/lollipopPlot2_TP53.direct_r.png`
+Direct R log:
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/plot_lollipopPlot2.direct_r.log`
+
+Comparison:
+Both MCP-preserved and direct-R plots are PNGs at `2600 x 2000`. SHA-256 hashes were identical:
+`b1a3b92cd94fb8436ae998c1261310b72fda77fd23c2327f16493f8e137132cf`
+
+Deterministic analytical check from `maftools::read.maf`:
+`cohort1`: 16 samples, TP53 mutated samples `15`, TP53 events `58`, rate `0.9375`
+`cohort2`: 16 samples, TP53 mutated samples `4`, TP53 events `13`, rate `0.25`
+
+Consistency assessment: consistent. The selected tool matches the request for a two-cohort TP53 amino-acid lollipop comparison, required cohort inputs and gene were preserved, and direct R reproduced the MCP plot exactly.

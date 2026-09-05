@@ -1,0 +1,17 @@
+tool=merge_annovar_to_maf
+underlying_r_function=maftools::annovarToMaf
+parameters=refBuild hg19; table refGene; sep tab; ens2hugo TRUE; basename merged; five ANNOVAR multianno input files
+mcp_rows=102
+direct_rows=102
+mcp_cols=32
+direct_cols=32
+columns_identical=TRUE
+key_columns_present=TRUE
+sample_counts_mcp=test1:30,test2:24,test3:20,test4:19,test5:9
+sample_counts_direct=test1:30,test2:24,test3:20,test4:19,test5:9
+first_row_mcp=test1|chr1|16148809|16148809|C|T|EPHA2|Missense_Mutation|SNP
+first_row_direct=test1|chr1|16148809|16148809|C|T|EPHA2|Missense_Mutation|SNP
+all_equal=TRUE
+sha256:
+ea8203f3cea3b733b9f09eb57f00d2c8d937ad51e6965cbc587b94d26d991143  maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/merged.mcp.maf
+ea8203f3cea3b733b9f09eb57f00d2c8d937ad51e6965cbc587b94d26d991143  maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/merged.direct_r.maf

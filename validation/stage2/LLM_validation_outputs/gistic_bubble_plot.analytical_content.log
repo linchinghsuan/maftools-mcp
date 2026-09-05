@@ -1,0 +1,29 @@
+Warning message:
+package ‘data.table’ was built under R version 4.5.2 
+significant_cytobands 31 
+variant_counts
+   Variant_Classification     N
+                   <char> <int>
+1:                    Amp    11
+2:                    Del    20
+top_rows
+     Unique_Name Cytoband Variant_Classification nGenes nSamples    qvalues
+          <char>   <char>                 <char>  <int>    <int>      <num>
+1: DP_26:22q12.1  22q12.1                    Del      1       50 2.6118e-26
+2:   DP_7:4q35.1   4q35.1                    Del      4       30 2.2312e-19
+3:   DP_5:4q34.3   4q34.3                    Del      3       25 2.7556e-14
+4:   DP_6:4q34.3   4q34.3                    Del    272       28 2.1300e-13
+5:  DP_4:3q13.31  3q13.31                    Del      2       25 2.5833e-12
+6:  DP_1:1p36.23  1p36.23                    Del      1       38 8.2229e-09
+7:  AP_3:5p15.33  5p15.33                    Amp      1       65 1.7994e-08
+8:  DP_12:9p21.3   9p21.3                    Del      5       26 4.0214e-06
+   neg_log10_q
+         <num>
+1:   25.583060
+2:   18.651461
+3:   13.559784
+4:   12.671620
+5:   11.587825
+6:    8.084975
+7:    7.744872
+8:    5.395623

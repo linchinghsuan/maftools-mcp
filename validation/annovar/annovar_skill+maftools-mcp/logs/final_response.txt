@@ -1,0 +1,11 @@
+ANNOVAR annotation completed for all 27 VCFs using `hg19` and `refGene`. Outputs are in:
+
+`ANNOVAR_test/outputs`
+
+Run records were written:
+
+- `outputs/logs/annovar_commands.log` with 27 exact ANNOVAR commands
+- `outputs/logs/environment_record.txt`
+- `outputs/logs/final_file_manifest.tsv`
+
+The `maftools-mcp` stage did not complete: `merge_annovar_to_maf` returned `user cancelled MCP tool call` on two attempts. Because `merged.maf` was not created, `plot_oncoplot` was not run and `oncoplot.png` does not exist.

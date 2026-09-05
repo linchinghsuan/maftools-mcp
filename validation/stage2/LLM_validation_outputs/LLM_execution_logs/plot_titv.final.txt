@@ -1,0 +1,17 @@
+Selected analytical tool: Maftools-MCP `plot_titv`
+
+Selected parameters:
+`maf_path=maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA.maf`, `output_dir=maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs`, `useSyn=true`, `plotType=both`; MCP defaults used for the rest, including `img_width=2600`, `img_height=2000`, `showBarcodes=false`, `textSize=0.8`, `baseFontSize=1.0`, `plotNotch=false`.
+
+MCP execution status: succeeded after rerunning with absolute paths, since the MCP server resolves relative paths from its own install directory.
+
+Observed MCP output:
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/titv_plot.png`, preserved as `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/titv_plot.mcp.png`. The figure is a combined Ti/Tv plot with boxplot and stacked barplot views, including synonymous variants.
+
+Exported R script:
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/plot_titv_brca_useSyn_both.R`
+
+Direct R execution status: succeeded with `Rscript`, exit code 0. Console output showed successful MAF read/validation/summarization and PNG device close. Regenerated figure copied to `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/titv_plot.direct_r.png`.
+
+Consistency assessment:
+MCP and direct-R figures both exist, are both PNG `2600 x 2000`, and have identical MD5 checksums: `b5b2c33970e2ebb6cd51b742877fa93a`. Analytical content also matches the exported script logic: `maftools::titv(..., useSyn=TRUE)` produced `fraction.contribution`, `raw.counts`, and `TiTv.fractions`, each with 1026 samples. The validation is consistent.

@@ -1,0 +1,30 @@
+**Stage 2 Validation Result**
+
+Selected analytical tool: `plot_lollipop`
+
+Selected analytical parameters:
+`maf_path=maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA.maf`, `gene=TP53`, `output_dir=maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs`. Effective MCP defaults included `img_width=2600`, `img_height=2000`, `showMutationRate=TRUE`, `showDomainLabel=TRUE`, `AACol=NULL`, `pointSize=1.5`.
+
+MCP execution status: succeeded after retrying with absolute paths because the MCP server did not resolve the relative MAF path.
+
+Observed MCP output:
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/lollipop_TP53.png`
+Preserved MCP copy:
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/lollipop_TP53.mcp.preserved.png`
+
+Observed analytical content:
+TP53 lollipop plot using transcript `NM_000546`, protein length 393, somatic mutation rate `34.11%`. Deterministic MAF summary: `1026` samples, `350` TP53-mutated samples, `356` TP53 mutation rows. Top recurrent mutation included `p.R175H` with count `21`.
+
+Exported R script:
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/plot_lollipop_brca_tp53.R`
+
+Direct R execution status: succeeded with `R_STATUS=0`.
+Direct R output:
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/lollipop_TP53.direct_r.png`
+
+Comparison:
+Both MCP-preserved and direct-R plots are `2600x2000`, `sRGB`, `265503` bytes, and have identical SHA-256 hash:
+
+`92def64a0d4040050ce29613ff3b6b5f4fc48dfc3a442eb41f362f14d1d541fd`
+
+Consistency assessment: consistent. The selected MCP tool matches the user’s intent, required parameters were preserved, and the direct R execution reproduced the MCP plot exactly.

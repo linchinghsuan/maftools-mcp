@@ -1,0 +1,8 @@
+Done using `maftools-mcp`.
+
+Generated outputs:
+
+- [TP53 comparative lollipop PNG](maftools_validation_data/use_case_test/validation_results/gpt-5.5/case_02/run_01/outputs/tp53_tcga_hnsc_oscc_lollipop.png)
+- [Exported R script](maftools_validation_data/use_case_test/validation_results/gpt-5.5/case_02/run_01/outputs/tp53_tcga_hnsc_oscc_lollipop_final.R)
+
+Verified the PNG is `2400 x 1400`, and the exported script contains the requested run_01-style parameters including `showDomainLabel=TRUE`, `domainLabelSize=0.55`, `labPosSize=0.4`, `labPosAngle=45`, `legendTxtSize=0.6`, `pointSize=1`, `axisTextSize=c(0.7,0.7)`, `roundedRect=TRUE`, `alpha=0.85`, and `domainBorderCol="gray40"`.

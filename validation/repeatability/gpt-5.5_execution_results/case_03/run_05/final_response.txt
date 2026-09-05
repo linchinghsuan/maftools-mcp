@@ -1,0 +1,11 @@
+Completed through `maftools-mcp`.
+
+Generated outputs under [outputs](maftools_validation_data/use_case_test/validation_results/gpt-5.5/case_03/run_05/outputs):
+
+- [mafSurvGroup.png](maftools_validation_data/use_case_test/validation_results/gpt-5.5/case_03/run_05/outputs/mafSurvGroup.png): TP53 mutation status overall survival comparison for TCGA-BRCA
+- [clinical_data.tsv](maftools_validation_data/use_case_test/validation_results/gpt-5.5/case_03/run_05/outputs/clinical_data.tsv): extracted clinical annotation table
+- [tcga_brca_tp53_os_survival.R](maftools_validation_data/use_case_test/validation_results/gpt-5.5/case_03/run_05/outputs/tcga_brca_tp53_os_survival.R): exported MCP-generated R script
+
+Parameters used: TCGA-BRCA cohort, `TP53` geneset, `CDR_OS.time` for overall survival time, and `CDR_OS` for survival status.
+
+The rendered plot reports: TP53-mutant `N=350`, WT `N=675`, `P-value=0.402`, `HR=1.16`.

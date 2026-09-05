@@ -1,0 +1,6 @@
+tool: plot_tcga_compare / maftools::tcgaCompare
+parameters: maf_path=maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA.maf; tcga_capture_size=35.8; logscale=TRUE; rm_zero=TRUE; rm_hyper=FALSE; output_dir=maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs; img_width=2600; img_height=2000
+mcp_output: maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/tcga_compare.mcp.preserved.png; PNG 2600 x 2000; sha256=b6b740cafc7135cba7d7b202b5084ea9e38b476514ef34713109abd49d7d21a9
+direct_r_output: maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/tcga_compare.direct_r.png; PNG 2600 x 2000; sha256=b6b740cafc7135cba7d7b202b5084ea9e38b476514ef34713109abd49d7d21a9
+representative_analytical_values_from_direct_r: Input1 Cohort_Size=1026 Median_Mutations=39 Median_Mutations_log10=1.5910646; TCGA_BRCA Cohort_Size=1025 Median_Mutations=40 Median_Mutations_log10=1.6020600; mutation_burden_perSample rows=11226; warning=Removed 0 samples with zero mutations.
+assessment: consistent

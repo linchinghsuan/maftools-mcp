@@ -1,0 +1,43 @@
+Completed the Stage 2 validation retry using `maftools-mcp`.
+
+Selected analytical tool: `plot_maf_survgroup_custom`  
+Underlying R function: `maftools::mafSurvGroup`
+
+Parameters used:
+`maf_path=maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA_custom_survival_12char.maf`  
+`clinical_csv=maftools_validation_data/LLM_Stage2_validation/LLM_validation_input_file/BRCA_custom_survival_clinical.csv`  
+`geneSet=TP53`  
+`sample_col=Tumor_Sample_Barcode`  
+`time_col=CDR_OS.time`  
+`status_col=CDR_OS`  
+`output_dir=maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs`  
+`img_width=3000`, `img_height=2400`
+
+MCP execution status: success using pixel dimensions compatible with the exported MCP R script.
+
+Observed MCP output:
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/mafSurvGroup_CUSTOM.png`  
+Preserved as `maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/mafSurvGroup_CUSTOM.mcp.preserved.png`
+
+Observed plot statistics:
+`P-value: 0.423`, `HR: 1.15`  
+Groups: `TP53-mutated N=348`, `WT N=671`
+
+Exported R script:
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/plot_maf_survgroup_custom_TP53.R`
+
+Direct R execution status: success, `Rscript` exit status `0`  
+Direct output copied to:
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/mafSurvGroup_CUSTOM.direct_r.png`  
+Log:
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/plot_maf_survgroup_custom_TP53.direct_r.log`
+
+Direct R console output included:
+`Removed 217 duplicated variants`, `Removed 1 samples with NA's`, median survival `Mutant=843, N=348`; `WT=822, N=671`.
+
+Consistency assessment: consistent. The preserved MCP PNG and direct-R PNG are byte-identical, both `3000 x 2400`, with SHA-256:
+
+`375751f56bfd1394872c49cb5eb95c2caab725befe0f9cee56139f91c9375bb3`
+
+I also saved the validation summary at:
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/plot_maf_survgroup_custom_TP53.comparison.txt`

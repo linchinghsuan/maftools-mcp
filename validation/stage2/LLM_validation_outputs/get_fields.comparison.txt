@@ -1,0 +1,10 @@
+MCP output: maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/maf_fields.mcp.tsv
+Direct R output: maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/maf_fields.direct_r.tsv
+Exported R script: maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/get_fields_brca.R
+Rows including header: 24 for both outputs
+Data fields excluding header: 23 for both outputs
+Key column: Field
+Representative values: Hugo_Symbol, Chromosome, Start_Position, Tumor_Sample_Barcode, FILTER, Tumor_Sample_Barcode_min
+SHA-256 MCP: 9052444cf73fbc5a9304211257f2ae5c06babfb7185ee74f205525fe99d469dd
+SHA-256 direct R: 9052444cf73fbc5a9304211257f2ae5c06babfb7185ee74f205525fe99d469dd
+Diff result: no differences
