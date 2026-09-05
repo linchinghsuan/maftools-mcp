@@ -1,4 +1,4 @@
-Stage 2 Maftools-MCP validation: signature enrichment
+Stage 2 Maftools-MCP validation retry: signature enrichment
 
 Selected analytical tool:
 maftools-mcp signature_enrichment, wrapping maftools::signatureEnrichment
@@ -16,18 +16,18 @@ Successful after retrying with absolute path strings for the same requested inpu
 Observed MCP output:
 maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/signature_enrichment.png
 Preserved before direct R execution as:
-maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/signature_enrichment.mcp.preserved.retry.png
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/signature_enrichment.mcp.preserved.png
 Plot panels: Avg. signature exposure and Mutation load.
 Signature cluster sample sizes shown in plot/log: Signature_1=19, Signature_2=10, Signature_3=19, Signature_4=27, Signature_5=26, Signature_6=19.
 
 Exported R script:
-maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/signature_enrichment_brca_er_status_retry.R
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/signature_enrichment_brca_er_status.R
 
 Direct R execution status:
 Successful via Rscript.
-Log: maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/signature_enrichment.retry_direct_r.log
+Log: maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/signature_enrichment.direct_r.log
 Direct R output preserved as:
-maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/signature_enrichment.direct_r.retry.png
+maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/signature_enrichment.direct_r.png
 
 Consistency assessment:
 MCP-preserved PNG and direct-R PNG are byte-identical.

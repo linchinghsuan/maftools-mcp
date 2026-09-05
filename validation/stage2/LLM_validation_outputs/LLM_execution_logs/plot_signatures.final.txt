@@ -12,7 +12,7 @@ Observed MCP output:
 The plot contains six extracted mutational signature profiles and no sample contribution panel. Visible best matches were COSMIC_6, COSMIC_5, COSMIC_6, COSMIC_6, COSMIC_5, and COSMIC_20 with cosine similarities around `0.744-0.828`.
 
 Exported R script:
-`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/plot_signatures_profiles_no_contributions_retry.R`
+`maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/exported_r_scripts/plot_signatures_profiles_no_contributions.R`
 
 Direct R execution status: successful, `Rscript` exit code `0`. Log output was only:
 

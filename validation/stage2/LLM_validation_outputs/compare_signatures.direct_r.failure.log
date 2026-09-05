@@ -1,5 +1,0 @@
-input=maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs/extract_signatures__extractSignatures.rds
-sig_db=legacy
-output_dir=maftools_validation_data/LLM_Stage2_validation/LLM_validation_outputs
-file.exists(input)=FALSE
-error=cannot open the connection
