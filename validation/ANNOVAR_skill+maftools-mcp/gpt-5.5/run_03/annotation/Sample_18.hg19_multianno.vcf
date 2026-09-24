@@ -1,0 +1,119 @@
+##fileformat=VCFv4.1
+##FILTER=<ID=PASS,Description="All filters passed">
+##FILTER=<ID=REJECT,Description="Rejected as a confident somatic mutation">
+##FORMAT=<ID=AD,Number=.,Type=Integer,Description="Allelic depths for the ref and alt alleles in the order listed">
+##FORMAT=<ID=BQ,Number=A,Type=Float,Description="Average base quality for reads supporting alleles">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth (reads with MQ=255 or with bad mates are filtered)">
+##FORMAT=<ID=FA,Number=A,Type=Float,Description="Allele fraction of the alternate allele with regard to reference">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype Quality">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="Normalized, Phred-scaled likelihoods for genotypes as defined in the VCF specification">
+##FORMAT=<ID=SS,Number=1,Type=Integer,Description="Variant status relative to non-adjacent Normal,0=wildtype,1=germline,2=somatic,3=LOH,4=post-transcriptional modification,5=unknown">
+##INFO=<ID=DB,Number=0,Type=Flag,Description="dbSNP Membership">
+##INFO=<ID=MQ0,Number=1,Type=Integer,Description="Total Mapping Quality Zero Reads">
+##INFO=<ID=SOMATIC,Number=0,Type=Flag,Description="Somatic event">
+##INFO=<ID=VT,Number=1,Type=String,Description="Variant type, can be SNP, INS or DEL">
+##MuTect="analysis_type=MuTect input_file=[bamFiles/Sample_B18_dedup_reads.bam, bamFiles/Sample_P18_dedup_reads.bam] read_buffer_size=null phone_home=STANDARD gatk_key=null tag=NA read_filter=[] intervals=[bedFiles/S04380219_Padded.bed] excludeIntervals=null interval_set_rule=UNION interval_merging=ALL interval_padding=0 reference_sequence=ucsc.hg19.chrOnly.fasta nonDeterministicRandomSeed=false disableRandomization=false maxRuntime=-1 maxRuntimeUnits=MINUTES downsampling_type=BY_SAMPLE downsample_to_fraction=null downsample_to_coverage=1000 enable_experimental_downsampling=false baq=OFF baqGapOpenPenalty=40.0 performanceLog=null useOriginalQualities=false BQSR=null quantize_quals=0 disable_indel_quals=false emit_original_quals=false preserve_qscores_less_than=6 defaultBaseQualities=-1 validation_strictness=SILENT remove_program_records=false keep_program_records=false unsafe=null num_threads=4 num_cpu_threads_per_data_thread=1 num_io_threads=0 monitorThreadEfficiency=false num_bam_file_handles=null read_group_black_list=null pedigree=[] pedigreeString=[] pedigreeValidationType=STRICT allow_intervals_with_unindexed_bam=false generateShadowBCF=false logging_level=INFO log_to_file=null help=false noop=false enable_extended_output=false artifact_detection_mode=false tumor_sample_name=Sample_P18 bam_tumor_sample_name=null normal_sample_name=Sample_B18 force_output=false force_alleles=false only_passing_calls=false initial_tumor_lod=4.0 tumor_lod=6.3 fraction_contamination=0.02 minimum_mutation_cell_fraction=0.0 normal_lod=2.2 normal_artifact_lod=1.0 strand_artifact_lod=2.0 strand_artifact_power_threshold=0.9 dbsnp_normal_lod=5.5 somatic_classification_normal_power_threshold=0.95 minimum_normal_allele_fraction=0.0 tumor_f_pretest=0.005 min_qscore=5 gap_events_threshold=3 heavily_clipped_read_fraction=0.3 clipping_bias_pvalue_threshold=0.05 fraction_mapq0_threshold=0.5 pir_median_threshold=10.0 pir_mad_threshold=3.0 required_maximum_alt_allele_mapping_quality_score=20 max_alt_alleles_in_normal_count=2 max_alt_alleles_in_normal_qscore_sum=20 max_alt_allele_in_normal_fraction=0.03 power_constant_qscore=30 absolute_copy_number_data=null power_constant_af=0.30000001192092896 vcf=org.broadinstitute.sting.gatk.io.stubs.VariantContextWriterStub no_cmdline_in_header=org.broadinstitute.sting.gatk.io.stubs.VariantContextWriterStub sites_only=org.broadinstitute.sting.gatk.io.stubs.VariantContextWriterStub bcf=org.broadinstitute.sting.gatk.io.stubs.VariantContextWriterStub dbsnp=[] cosmic=[] normal_panel=[] coverage_20_q20_file=null power_file=null tumor_depth_file=null normal_depth_file=null filter_mismatching_base_and_quals=false"
+##contig=<ID=chrM,length=16571,assembly=hg19>
+##contig=<ID=chr1,length=249250621,assembly=hg19>
+##contig=<ID=chr2,length=243199373,assembly=hg19>
+##contig=<ID=chr3,length=198022430,assembly=hg19>
+##contig=<ID=chr4,length=191154276,assembly=hg19>
+##contig=<ID=chr5,length=180915260,assembly=hg19>
+##contig=<ID=chr6,length=171115067,assembly=hg19>
+##contig=<ID=chr7,length=159138663,assembly=hg19>
+##contig=<ID=chr8,length=146364022,assembly=hg19>
+##contig=<ID=chr9,length=141213431,assembly=hg19>
+##contig=<ID=chr10,length=135534747,assembly=hg19>
+##contig=<ID=chr11,length=135006516,assembly=hg19>
+##contig=<ID=chr12,length=133851895,assembly=hg19>
+##contig=<ID=chr13,length=115169878,assembly=hg19>
+##contig=<ID=chr14,length=107349540,assembly=hg19>
+##contig=<ID=chr15,length=102531392,assembly=hg19>
+##contig=<ID=chr16,length=90354753,assembly=hg19>
+##contig=<ID=chr17,length=81195210,assembly=hg19>
+##contig=<ID=chr18,length=78077248,assembly=hg19>
+##contig=<ID=chr19,length=59128983,assembly=hg19>
+##contig=<ID=chr20,length=63025520,assembly=hg19>
+##contig=<ID=chr21,length=48129895,assembly=hg19>
+##contig=<ID=chr22,length=51304566,assembly=hg19>
+##contig=<ID=chrX,length=155270560,assembly=hg19>
+##contig=<ID=chrY,length=59373566,assembly=hg19>
+##reference=file:///share/stor2a/MDACC/MDACC/apps/a002.Mutect.5.hg19chrOnly.normalParameters/ucsc.hg19.chrOnly.fasta
+##INFO=<ID=AC,Number=A,Type=Integer,Description="Allele count in genotypes">
+##INFO=<ID=AN,Number=1,Type=Integer,Description="Total number of alleles in called genotypes">
+##bcftools_viewVersion=1.3.1+htslib-1.3.1
+##bcftools_viewCommand=view -f PASS -s Sample_18 -o TUMOR/Sample_18.vcf Sample_18.vcf
+##INFO=<ID=ANNOVAR_DATE,Number=1,Type=String,Description="Flag the start of ANNOVAR annotation for one alternative allele">
+##INFO=<ID=Func.refGene,Number=.,Type=String,Description="Func.refGene annotation provided by ANNOVAR">
+##INFO=<ID=Gene.refGene,Number=.,Type=String,Description="Gene.refGene annotation provided by ANNOVAR">
+##INFO=<ID=GeneDetail.refGene,Number=.,Type=String,Description="GeneDetail.refGene annotation provided by ANNOVAR">
+##INFO=<ID=ExonicFunc.refGene,Number=.,Type=String,Description="ExonicFunc.refGene annotation provided by ANNOVAR">
+##INFO=<ID=AAChange.refGene,Number=.,Type=String,Description="AAChange.refGene annotation provided by ANNOVAR">
+##INFO=<ID=ALLELE_END,Number=0,Type=Flag,Description="Flag the end of ANNOVAR annotation for one alternative allele">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	Sample_18
+chr1	1102360	.	T	G	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=upstream;Gene.refGene=MIR200A,MIR200B;GeneDetail.refGene=dist\x3d124;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:13,7:13:20:0.35:2
+chr1	6695133	.	T	A	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=UTR3;Gene.refGene=DNAJC11,THAP3;GeneDetail.refGene=NM_018198:c.*602A>T\x3bNM_138350:c.*985T>A;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:129,5:33:134:0.037:2
+chr1	14151377	.	T	G	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=UTR3;Gene.refGene=PRDM2;GeneDetail.refGene=NM_001135610:c.*1698T>G,NM_012231:c.*1747T>G;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:127,5:37:132:0.038:2
+chr1	16950470	.	C	T	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=ncRNA_intronic;Gene.refGene=CROCCP2;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:7,4:36:11:0.364:2
+chr1	34052824	.	G	A	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intronic;Gene.refGene=CSMD2;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:144,5:35:149:0.034:2
+chr1	38078194	.	A	G	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=UTR3;Gene.refGene=RSPO1;GeneDetail.refGene=NM_001242909:c.*233T>C,NM_001242910:c.*233T>C,NM_001242908:c.*233T>C,NM_001038633:c.*233T>C;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:90,7:29:97:0.072:2
+chr1	57347353	.	C	A	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intronic;Gene.refGene=C8A;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:12,2:41:14:0.143:2
+chr1	100181380	.	G	A	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intronic;Gene.refGene=FRRS1;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:14,8:22:22:0.364:2
+chr1	153662586	.	C	G	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intronic;Gene.refGene=NPR1;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:8,2:38:10:0.2:2
+chr1	226034860	.	G	A	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=exonic;Gene.refGene=TMEM63A;GeneDetail.refGene=.;ExonicFunc.refGene=nonsynonymous_SNV;AAChange.refGene=TMEM63A:NM_014698:exon24:c.C2305T:p.P769S;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:92,4:35:96:0.042:2
+chr1	236766096	.	T	G	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intronic;Gene.refGene=HEATR1;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:8,5:15:13:0.385:2
+chr1	246830434	.	A	C	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=UTR3;Gene.refGene=CNST;GeneDetail.refGene=NM_152609:c.*1227A>C;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:86,5:40:91:0.055:2
+chr2	222435047	.	A	C	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intronic;Gene.refGene=EPHA4;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:10,6:37:16:0.375:2
+chr2	241076189	.	C	T	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=upstream;Gene.refGene=COPS9;GeneDetail.refGene=dist\x3d425;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:12,2:41:14:0.143:2
+chr3	11925226	.	G	A	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intergenic;Gene.refGene=TAMM41,SYN2;GeneDetail.refGene=dist\x3d36867\x3bdist\x3d120608;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:7,2:39:9:0.222:2
+chr3	41277040	.	C	T	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intronic;Gene.refGene=CTNNB1;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:6,6:38:12:0.5:2
+chr3	49723916	.	T	G	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=splicing;Gene.refGene=MST1;GeneDetail.refGene=NM_020998:exon8:c.848-2A>C;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:34,3:35:37:0.081:2
+chr3	49724011	.	G	T	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intronic;Gene.refGene=MST1;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:14,3:37:17:0.176:2
+chr3	52930199	.	T	C	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intronic;Gene.refGene=STIMATE,STIMATE-MUSTN1;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:43,4:36:47:0.085:2
+chr3	53218708	.	G	A	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intronic;Gene.refGene=PRKCD;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:9,3:26:13:0.25:2
+chr3	101240798	.	T	C	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=ncRNA_exonic;Gene.refGene=FAM172BP;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:116,6:37:122:0.049:2
+chr3	196462115	.	G	A	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=UTR3;Gene.refGene=PIGX;GeneDetail.refGene=NM_001166304:c.*1342G>A,NM_017861:c.*1342G>A;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:5,2:39:7:0.286:2
+chr4	184019468	.	C	T	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=ncRNA_exonic;Gene.refGene=WWC2-AS2;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:45,3:33:48:0.063:2
+chr5	1295158	.	G	T	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=UTR5;Gene.refGene=TERT;GeneDetail.refGene=NM_001193376:c.-54C>A,NM_198253:c.-54C>A;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:14,4:39:18:0.222:2
+chr6	28196007	.	G	A	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intronic;Gene.refGene=ZSCAN9;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:645,16:38:661:0.024:2
+chr6	32548632	.	T	A	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=exonic;Gene.refGene=HLA-DRB1;GeneDetail.refGene=.;ExonicFunc.refGene=nonsynonymous_SNV;AAChange.refGene=HLA-DRB1:NM_002124:exon4:c.A654T:p.R218S;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:76,5:38:81:0.062:2
+chr6	34502498	.	T	C	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=UTR3;Gene.refGene=PACSIN1;GeneDetail.refGene=NM_020804:c.*2191T>C,NM_001199583:c.*2191T>C;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:197,10:34:207:0.048:2
+chr6	131941944	.	A	T	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intronic;Gene.refGene=MED23;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:7,4:21:11:0.364:2
+chr6	151257995	.	C	T	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=exonic;Gene.refGene=MTHFD1L;GeneDetail.refGene=.;ExonicFunc.refGene=stopgain;AAChange.refGene=MTHFD1L:NM_001242767:exon12:c.C1315T:p.Q439X,MTHFD1L:NM_001242768:exon12:c.C1117T:p.Q373X,MTHFD1L:NM_001350486:exon12:c.C1114T:p.Q372X,MTHFD1L:NM_001350487:exon12:c.C982T:p.Q328X,MTHFD1L:NM_001350492:exon12:c.C985T:p.Q329X,MTHFD1L:NM_001350493:exon12:c.C985T:p.Q329X,MTHFD1L:NM_015440:exon12:c.C1312T:p.Q438X;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:83,4:35:87:0.046:2
+chr7	42005949	.	C	T	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=exonic;Gene.refGene=GLI3;GeneDetail.refGene=.;ExonicFunc.refGene=nonsynonymous_SNV;AAChange.refGene=GLI3:NM_000168:exon15:c.G2722A:p.E908K;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:102,5:34:107:0.047:2
+chr8	146017448	.	G	C	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=exonic;Gene.refGene=RPL8;GeneDetail.refGene=.;ExonicFunc.refGene=nonsynonymous_SNV;AAChange.refGene=RPL8:NM_001317782:exon1:c.C67G:p.R23G,RPL8:NM_000973:exon2:c.C67G:p.R23G,RPL8:NM_001317771:exon2:c.C67G:p.R23G,RPL8:NM_033301:exon2:c.C67G:p.R23G;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:216,8:36:224:0.036:2
+chr9	34370018	.	T	A	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=UTR3;Gene.refGene=MYORG;GeneDetail.refGene=NM_020702:c.*779A>T;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:30,3:37:33:0.091:2
+chr9	90534048	.	A	G	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=ncRNA_intronic;Gene.refGene=LOC497256;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:83,6:36:89:0.067:2
+chr9	107368027	.	A	G	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=upstream;Gene.refGene=OR13C2;GeneDetail.refGene=dist\x3d119;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:146,6:37:152:0.039:2
+chr10	33471763	.	A	G	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intronic;Gene.refGene=NRP1;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:18,5:35:23:0.217:2
+chr10	67829379	.	C	G	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intronic;Gene.refGene=CTNNA3;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:71,4:36:75:0.053:2
+chr11	2017709	.	C	G	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=ncRNA_intronic;Gene.refGene=H19;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:12,6:15:18:0.333:2
+chr11	61547319	.	G	A	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=exonic;Gene.refGene=MYRF;GeneDetail.refGene=.;ExonicFunc.refGene=synonymous_SNV;AAChange.refGene=MYRF:NM_001127392:exon17:c.G2253A:p.S751S,MYRF:NM_013279:exon17:c.G2226A:p.S742S;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:166,7:32:173:0.04:2
+chr11	65373366	.	G	A	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intronic;Gene.refGene=MAP3K11;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:313,9:36:322:0.028:2
+chr11	117263663	.	C	A	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intronic;Gene.refGene=CEP164;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:14,2:40:16:0.125:2
+chr12	284690	.	G	T	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=UTR3;Gene.refGene=IQSEC3;GeneDetail.refGene=NM_001170738:c.*491G>T;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:84,4:37:88:0.045:2
+chr12	12300220	.	C	T	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intronic;Gene.refGene=LRP6;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:44,3:35:47:0.064:2
+chr12	18238782	.	C	T	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intronic;Gene.refGene=RERGL;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:12,4:25:16:0.25:2
+chr12	65609716	.	C	T	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intronic;Gene.refGene=LEMD3;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:48,9:15:57:0.158:2
+chr12	100431520	.	T	C	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=exonic;Gene.refGene=UHRF1BP1L;GeneDetail.refGene=.;ExonicFunc.refGene=nonsynonymous_SNV;AAChange.refGene=UHRF1BP1L:NM_015054:exon21:c.A4289G:p.N1430S;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:274,8:37:282:0.028:2
+chr12	102063730	.	G	A	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intronic;Gene.refGene=MYBPC1;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:13,10:20:23:0.435:2
+chr12	112673143	.	A	C	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intronic;Gene.refGene=HECTD4;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:68,5:40:73:0.068:2
+chr12	118589094	.	G	A	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intronic;Gene.refGene=TAOK3;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:3,2:35:5:0.4:2
+chr12	132547096	.	G	A	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=exonic;Gene.refGene=EP400;GeneDetail.refGene=.;ExonicFunc.refGene=synonymous_SNV;AAChange.refGene=EP400:NM_015409:exon47:c.G8184A:p.Q2728Q;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:79,5:34:84:0.06:2
+chr13	49710621	.	T	A	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=exonic;Gene.refGene=FNDC3A;GeneDetail.refGene=.;ExonicFunc.refGene=nonsynonymous_SNV;AAChange.refGene=FNDC3A:NM_014923:exon4:c.T476A:p.I159N,FNDC3A:NM_001079673:exon6:c.T644A:p.I215N,FNDC3A:NM_001278438:exon6:c.T644A:p.I215N;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:281,10:37:291:0.034:2
+chr13	50236107	.	T	A	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intronic;Gene.refGene=EBPL;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:518,13:38:531:0.024:2
+chr13	94197727	.	A	G	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intronic;Gene.refGene=GPC6;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:232,8:39:240:0.033:2
+chr14	50824793	.	C	T	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intronic;Gene.refGene=CDKL1;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:55,5:26:60:0.083:2
+chr15	20465266	.	C	T	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intergenic;Gene.refGene=NONE,CHEK2P2;GeneDetail.refGene=dist\x3dNONE\x3bdist\x3d22731;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:29,5:36:34:0.147:2
+chr16	1312630	.	G	A	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intergenic;Gene.refGene=TPSD1,UBE2I;GeneDetail.refGene=dist\x3d3621\x3bdist\x3d46523;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:177,7:35:184:0.038:2
+chr16	24046946	.	T	G	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intronic;Gene.refGene=PRKCB;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:44,8:17:52:0.154:2
+chr16	32945481	.	G	A	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intergenic;Gene.refGene=SLC6A10P,TP53TG3;GeneDetail.refGene=dist\x3d49018\x3bdist\x3d260102;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:16,6:35:22:0.273:2
+chr18	43422409	.	A	T	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=UTR3;Gene.refGene=SIGLEC15;GeneDetail.refGene=NM_213602:c.*257A>T;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:45,4:34:49:0.082:2
+chr18	47787614	.	C	A	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intronic;Gene.refGene=CFAP53;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:19,7:18:26:0.269:2
+chr19	10227733	.	C	T	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intronic;Gene.refGene=EIF3G;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:95,4:36:99:0.04:2
+chr20	29630539	.	A	G	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=ncRNA_intronic;Gene.refGene=FRG1BP;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:59,6:39:65:0.092:2
+chr20	36628907	.	A	G	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intronic;Gene.refGene=TTI1;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:84,5:29:89:0.056:2
+chr20	36688068	.	A	G	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intronic;Gene.refGene=RPRD1B;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:7,9:37:16:0.563:2
+chr22	28492358	.	G	A	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=exonic;Gene.refGene=TTC28;GeneDetail.refGene=.;ExonicFunc.refGene=nonsynonymous_SNV;AAChange.refGene=TTC28:NM_001145418:exon11:c.C3586T:p.R1196W;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:36,3:39:39:0.077:2
+chr22	50018363	.	G	A	.	PASS	SOMATIC;VT=SNP;AC=1;AN=2;ANNOVAR_DATE=2022-08-02;Func.refGene=intronic;Gene.refGene=C22orf34;GeneDetail.refGene=.;ExonicFunc.refGene=.;AAChange.refGene=.;ALLELE_END	GT:AD:BQ:DP:FA:SS	0/1:196,7:37:204:0.034:2

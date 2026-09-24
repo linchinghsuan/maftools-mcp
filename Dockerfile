@@ -1,48 +1,16 @@
-# Supplied Docker recipe; only COPY paths adapted to this repository layout.
-# Existing packaged image is documented in docs/environment.md.
-FROM python:3.11-slim
+# Release image built by overlaying the public source onto the
+# author-packaged, immutable runtime image. The base digest fixes the complete
+# Python/R runtime, including R 4.5.0 and maftools 2.26.0.
+FROM lin97/maftools-mcp@sha256:2e3be5b768c9f77cbe942207025987fc4d39d4cc7a39563ea0fc159de9cf1b4b
 
-# =============================
-# OS dependencies
-# =============================
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    r-base \
-    r-base-dev \
-    libcurl4-openssl-dev \
-    libssl-dev \
-    libxml2-dev \
-    libffi-dev \
-    build-essential \
-    git \
- && rm -rf /var/lib/apt/lists/*
-
-# =============================
-# R dependencies
-# =============================
-RUN R -q -e "install.packages(c('BiocManager','remotes','R.utils'), repos='https://cloud.r-project.org')" \
- && R -q -e "install.packages(c('data.table','doParallel','foreach','mclust','NMF'), repos='https://cloud.r-project.org')" \
- && R -q -e "BiocManager::install('maftools', ask=FALSE, update=FALSE)" \
- && R -e "BiocManager::install('BSgenome', ask=FALSE)" \
- && R -q -e "stopifnot('maftools' %in% rownames(installed.packages())); packageVersion('maftools')" \
- && R -q -e "remotes::install_github(c('PoisonAlien/TCGAmutations','CCICB/TCGAgistic','CCICB/PCAWGmutations'), dependencies=TRUE, upgrade='never')" \
- && R -q -e "library(maftools); library(TCGAmutations); sessionInfo()"
-
-# =============================
-# Python dependencies
-# =============================
 WORKDIR /app
 ENV RPY2_CFFI_MODE=ABI
 
-COPY environment/docker-requirements.original.txt ./requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt \
- && python -m pip show fastmcp
-
-# =============================
-# MCP server
-# =============================
-COPY src/maftools_mcp/server.py ./server.py
+# Keep the runtime from the pinned base image and replace only the server
+# source with the version tracked in this repository.
+COPY src/maftools_mcp/server.py /app/server.py
 
 EXPOSE 8000
 
 ENTRYPOINT ["fastmcp", "run", "server.py"]
-CMD ["--transport","stdio"]
+CMD ["--transport", "stdio"]

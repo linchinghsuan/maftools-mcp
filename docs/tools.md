@@ -425,7 +425,7 @@ Draw two barplots side by side for cohort comparision:
 ## plot_lollipopPlot2
 
 ```python
-plot_lollipopPlot2(tcga_rds_path: str | None=None, user_maf_path: str | None=None, user_maf_path2: str | None=None, gene: str='', output_dir: str='outputs', AACol1: str | None=None, AACol2: str | None=None, labPosAngle: float=0, labPosSize: float=1.2, refSeqID: str | None=None, proteinID: str | None=None, colors: list[str] | None=None, alpha: float=1, axisTextSize: list[float] | None=None, pointSize: float=1.2, roundedRect: bool=True, showDomainLabel: bool=True, domainBorderCol: str='black', domainLabelSize: float=1.2, legendTxtSize: float=1.2, verbose: bool=True, img_width: int=2600, img_height: int=2000) -> Image
+plot_lollipopPlot2(tcga_rds_path: str | None=None, user_maf_path: str | None=None, user_maf_path2: str | None=None, gene: str='', output_dir: str='outputs', AACol1: str | None=None, AACol2: str | None=None, labPosAngle: float=0, labPosSize: float=1.2, refSeqID: str | None=None, proteinID: str | None=None, colors: list[str] | None=None, alpha: float=1, axisTextSize: list[float] | None=None, pointSize: float=1.2, roundedRect: bool=True, showDomainLabel: bool=True, domainBorderCol: str='black', domainLabelSize: float=1.2, legendTxtSize: float=1.2, verbose: bool=True, img_width: int=2600, img_height: int=2000, m1_label: int | list[int] | Literal["all"] | None=None, m2_label: int | list[int] | Literal["all"] | None=None, label_top_variant: bool=False) -> Image
 ```
 
 Generate a lollipopPlot2 comparing:
@@ -435,6 +435,19 @@ Generate a lollipopPlot2 comparing:
 **Implementation:** maftools::read.maf/readRDS + maftools::lollipopPlot2
 
 **Expected output:** A two-cohort lollipop plot comparing mutation positions for the selected gene across both input cohorts.
+
+`m1_label` and `m2_label` independently select amino-acid positions to label
+in the first and second cohorts. Each accepts a positive integer, a list of
+positive integers, `"all"`, or `None`/`[]` for no labels. In TCGA-versus-user
+mode, the first cohort is `tcga_rds_path` and the second is `user_maf_path`;
+in user-versus-user mode, they correspond to `user_maf_path` and
+`user_maf_path2`.
+
+Set `label_top_variant=true` to automatically label each cohort's most
+frequent protein change, including tied changes. The automatic mode cannot be
+combined with nonempty `m1_label` or `m2_label`. Counts are mutation records
+retained by maftools with usable amino-acid positions, not distinct-patient
+counts.
 
 **Output type:** Figure
 
@@ -1040,4 +1053,3 @@ conversion logic used during normal MCP execution.
 **Expected output:** An exported standalone R script containing package loading, input loading, explicit parameter settings, the corresponding native Maftools/R function call, and output-saving commands for the selected MCP tool.
 
 **Output type:** File
-

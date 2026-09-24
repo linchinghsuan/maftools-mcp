@@ -1,0 +1,3 @@
+{"type": "metadata", "timestamp": 1790134191388, "sessionID": "session_8294320d210f4f2b", "observed_tool_call_sequence": "load_tcga_data > export_r_script", "execution": "Fail", "failure_type": "incomplete outputs", "generated_output_files": "opencode_events.jsonl, Not retained — incomplete PNG/R output", "total_tokens": 289960, "record_source": "S4_table"}
+{"type": "tool_use", "timestamp": 1790134191389, "sessionID": "session_8294320d210f4f2b", "part": {"type": "tool", "tool": "load_tcga_data > export_r_script", "callID": "call_01", "state": {"status": "completed"}, "title": "OpenCode tool call"}}
+{"type": "step_finish", "timestamp": 1790134191390, "sessionID": "session_8294320d210f4f2b", "part": {"reason": "stop", "tokens": {"total": 289960}}}

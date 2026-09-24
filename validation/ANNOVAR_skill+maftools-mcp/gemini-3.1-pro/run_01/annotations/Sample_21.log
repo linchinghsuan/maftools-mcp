@@ -1,0 +1,23 @@
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_21.vcf > ./annotations/Sample_21.avinput>
+NOTICE: Finished reading 377 lines from VCF file
+NOTICE: A total of 330 locus in VCF file passed QC threshold, representing 330 SNPs (191 transitions and 139 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 330 SNP genotypes (191 transitions and 139 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl ./annotations/Sample_21.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile ./annotations/Sample_21 -protocol refGene -operation g -remove -polish -nastring . -otherinfo>
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile ./annotations/Sample_21.refGene -exonsort -nofirstcodondel ./annotations/Sample_21.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to ./annotations/Sample_21.refGene.variant_function, ./annotations/Sample_21.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 330 unique variants in 330 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 259 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  ./annotations/Sample_21.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out ./annotations/Sample_21.refGene.fa -newevf ./annotations/Sample_21.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to ./annotations/Sample_21.hg19_multianno.txt
+NOTICE: Reading from ./annotations/Sample_21.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to ./annotations/Sample_21.hg19_multianno.vcf

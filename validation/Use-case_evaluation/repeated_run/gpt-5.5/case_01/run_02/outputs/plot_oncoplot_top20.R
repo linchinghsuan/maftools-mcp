@@ -1,0 +1,77 @@
+# Auto-exported matching R script for Maftools-MCP plot_oncoplot validation.
+# MCP tool: plot_oncoplot
+# Underlying R/Maftools function: maftools::oncoplot
+# Effective MCP parameters:
+#   maf_path = "/Users/linqingxuan/maftools-mcp/Use-case_evaluation&repeated-run_performance/gpt-5.5/case_01/run_02/outputs/merged_vcf_cohort.maf"
+#   output_dir = "/Users/linqingxuan/maftools-mcp/Use-case_evaluation&repeated-run_performance/gpt-5.5/case_01/run_02/outputs"
+#   top = 20
+#   out_name = "top20_oncoplot.png"
+
+suppressPackageStartupMessages(library(maftools))
+
+maf <- maftools::read.maf("/Users/linqingxuan/maftools-mcp/Use-case_evaluation&repeated-run_performance/gpt-5.5/case_01/run_02/outputs/merged_vcf_cohort.maf")
+
+png("/Users/linqingxuan/maftools-mcp/Use-case_evaluation&repeated-run_performance/gpt-5.5/case_01/run_02/outputs/top20_oncoplot.png", width = 2600, height = 2000, res = 300)
+
+oncoplot(
+    maf = maf,
+    top = 20,
+    minMut = NULL,
+    genes = NULL,
+    altered = FALSE,
+    drawRowBar = TRUE,
+    drawColBar = TRUE,
+    leftBarData = NULL,
+    leftBarLims = NULL,
+    rightBarData = NULL,
+    rightBarLims = NULL,
+    topBarData = NULL,
+    logColBar = FALSE,
+    includeColBarCN = TRUE,
+    clinicalFeatures = NULL,
+    annotationColor = NULL,
+    annotationDat = NULL,
+    pathways = NULL,
+    selectedPathways = NULL,
+    draw_titv = FALSE,
+    showTumorSampleBarcodes = FALSE,
+    barcode_mar = 4,
+    barcodeSrt = 90,
+    gene_mar = 5,
+    anno_height = 1,
+    legend_height = 4,
+    sortByAnnotation = FALSE,
+    groupAnnotationBySize = TRUE,
+    annotationOrder = NULL,
+    sortByMutation = FALSE,
+    keepGeneOrder = FALSE,
+    GeneOrderSort = TRUE,
+    sampleOrder = NULL,
+    additionalFeature = NULL,
+    additionalFeaturePch = 20,
+    additionalFeatureCol = "gray70",
+    additionalFeatureCex = 0.9,
+    genesToIgnore = NULL,
+    removeNonMutated = TRUE,
+    fill = TRUE,
+    cohortSize = NULL,
+    colors = NULL,
+    bgCol = "#CCCCCC",
+    borderCol = "white",
+    annoBorderCol = NULL,
+    numericAnnoCol = NULL,
+    drawBox = FALSE,
+    fontSize = 0.8,
+    SampleNamefontSize = 1,
+    titleFontSize = 1.5,
+    legendFontSize = 1.2,
+    annotationFontSize = 1.2,
+    sepwd_genes = 0.5,
+    sepwd_samples = 0.25,
+    writeMatrix = FALSE,
+    colbar_pathway = FALSE,
+    showTitle = TRUE,
+    titleText = "Top 20 mutated genes"
+)
+
+dev.off()

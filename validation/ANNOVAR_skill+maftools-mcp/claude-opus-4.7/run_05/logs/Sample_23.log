@@ -1,0 +1,23 @@
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_23.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/claude-opus-4.7/run_05/annovar_out/Sample_23.avinput>
+NOTICE: Finished reading 301 lines from VCF file
+NOTICE: A total of 254 locus in VCF file passed QC threshold, representing 254 SNPs (131 transitions and 123 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 254 SNP genotypes (131 transitions and 123 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/claude-opus-4.7/run_05/annovar_out/Sample_23.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/claude-opus-4.7/run_05/annovar_out/Sample_23 -protocol refGene -operation g -remove -polish -nastring . -otherinfo>
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/claude-opus-4.7/run_05/annovar_out/Sample_23.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/claude-opus-4.7/run_05/annovar_out/Sample_23.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/claude-opus-4.7/run_05/annovar_out/Sample_23.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/claude-opus-4.7/run_05/annovar_out/Sample_23.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 254 unique variants in 254 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 210 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/claude-opus-4.7/run_05/annovar_out/Sample_23.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/claude-opus-4.7/run_05/annovar_out/Sample_23.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/claude-opus-4.7/run_05/annovar_out/Sample_23.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/claude-opus-4.7/run_05/annovar_out/Sample_23.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/claude-opus-4.7/run_05/annovar_out/Sample_23.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/claude-opus-4.7/run_05/annovar_out/Sample_23.hg19_multianno.vcf

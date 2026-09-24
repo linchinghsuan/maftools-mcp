@@ -1,0 +1,6 @@
+metric	value
+total_samples	50
+successful_samples	50
+error_samples	0
+input_variants_total	20963
+multianno_rows_total	20963

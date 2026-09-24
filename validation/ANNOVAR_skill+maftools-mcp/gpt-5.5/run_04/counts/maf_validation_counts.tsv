@@ -1,0 +1,9 @@
+metric	value
+maf_path	/Users/linqingxuan/maftools-mcp/ANNOVAR_test/gpt-5.5/run_04/maftools/run_04_cohort.maf
+maf_mutation_rows	4939
+maf_unique_samples	50
+maf_unique_genes	3767
+variant_classification_Missense_Mutation	4571
+variant_classification_Nonsense_Mutation	346
+variant_classification_Nonstop_Mutation	6
+variant_classification_Translation_Start_Site	16

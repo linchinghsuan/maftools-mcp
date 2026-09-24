@@ -4,16 +4,24 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "maftools-mcp"
-version = "0.1.0"
-description = "MCP server for R maftools with traceable validation materials"
+version = "1.1.0"
+description = "MCP server for R maftools"
 readme = "README.md"
 requires-python = ">=3.11,<3.12"
 license = {file = "LICENSE"}
 dependencies = [
-  "fastmcp @ git+https://github.com/jlowin/fastmcp.git@b3bce0c2312444f50863a9887fc3d46917bd8f71",
-  "mcp==1.20.0", "rpy2==3.6.4", "rpy2-rinterface==3.6.3",
-  "rpy2-robjects==3.6.3", "fastapi==0.121.0", "uvicorn==0.38.0", "pydantic==2.12.3"
+  "fastmcp==4.0.2",
+  "mcp==2.1.1",
+  "rpy2==3.6.7",
+  "rpy2-rinterface==3.6.6",
+  "rpy2-robjects==3.6.5",
+  "uvicorn==0.52.4",
+  "pydantic==2.13.5"
 ]
+
+[project.urls]
+Repository = "https://github.com/linchinghsuan/maftools-mcp"
+License = "https://github.com/linchinghsuan/maftools-mcp/blob/main/LICENSE"
 
 [project.scripts]
 maftools-mcp = "maftools_mcp.cli:main"

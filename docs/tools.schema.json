@@ -2122,7 +2122,7 @@
   {
     "name": "plot_lollipopPlot2",
     "title": null,
-    "description": "Generate a lollipopPlot2 comparing:\n  - TCGA vs User MAF (if tcga_rds_path provided)\n  - User vs User MAF (if user_maf_path2 provided)",
+    "description": "Generate a lollipopPlot2 comparing:\n  - TCGA vs User MAF (if tcga_rds_path provided)\n  - User vs User MAF (if user_maf_path2 provided)\n\nUse m1_label and m2_label to select amino-acid positions for labels. Each accepts a positive integer, a list of positive integers, \"all\", or null/[] for no labels. Set label_top_variant=true to automatically label each cohort's most frequent protein change, including ties. Automatic labeling cannot be combined with nonempty m1_label or m2_label.",
     "inputSchema": {
       "properties": {
         "tcga_rds_path": {
@@ -2285,6 +2285,60 @@
         "img_height": {
           "default": 2000,
           "type": "integer"
+        },
+        "m1_label": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 1
+            },
+            {
+              "items": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "type": "array"
+            },
+            {
+              "enum": [
+                "all"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "m2_label": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 1
+            },
+            {
+              "items": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "type": "array"
+            },
+            {
+              "enum": [
+                "all"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "label_top_variant": {
+          "default": false,
+          "type": "boolean"
         }
       },
       "type": "object"

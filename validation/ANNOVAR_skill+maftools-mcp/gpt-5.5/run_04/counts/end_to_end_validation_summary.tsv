@@ -1,0 +1,11 @@
+metric	value
+input_vcf_count	50
+annovar_successful_samples	50
+annovar_error_samples	0
+annovar_input_variants_total	20963
+annovar_multianno_rows_total	20963
+cohort_maf_mutation_rows	4939
+cohort_maf_unique_samples	50
+cohort_maf_unique_genes	3767
+oncoplot_png_exists	yes
+token_cost_info	not_available_from_current_API_tooling

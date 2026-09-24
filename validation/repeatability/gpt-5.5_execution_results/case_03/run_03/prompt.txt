@@ -1,7 +1,0 @@
-Load TCGA-BRCA data, stratify samples by TP53 mutation status, and evaluate differences in overall survival.
-
-Use the configured maftools-mcp MCP server tools. Save all generated outputs under ./outputs. If maftools-mcp tools are unavailable, stop and report that the run could not be completed through maftools-mcp.
-
-Use TCGA-BRCA as the cohort, TP53 mutation status as the stratification variable, and overall survival as the endpoint. Generate the expected survival comparison output files/figures under ./outputs.
-
-Also use maftools-mcp export_r_script to export the R script for the final survival analysis with the same parameters, saved under ./outputs with a .R filename, so the selected parameters can be verified from the generated script.

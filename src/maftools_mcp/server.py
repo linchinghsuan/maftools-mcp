@@ -6,6 +6,7 @@ from fastmcp.utilities.types import Image
 from typing import List
 from typing import Dict
 from typing import Any
+from typing import Literal
 import os
 import argparse
 import glob
@@ -1685,17 +1686,81 @@ def plot_lollipopPlot2(
     legendTxtSize: float = 1.2,
     verbose: bool = True,
     img_width: int = 2600,
-    img_height: int = 2000
+    img_height: int = 2000,
+    m1_label: int | list[int] | Literal["all"] | None = None,
+    m2_label: int | list[int] | Literal["all"] | None = None,
+    label_top_variant: bool = False
 ) -> Image:
     """
     Generate a lollipopPlot2 comparing:
       - TCGA vs User MAF (if tcga_rds_path provided)
       - User vs User MAF (if user_maf_path2 provided)
+
+    m1_label and m2_label independently select amino acid positions to label
+    in the first and second cohorts. Use an integer (248), a list ([248, 273]),
+    "all" for all mutated positions, or None/[] for no labels.
+    The first cohort is tcga_rds_path in TCGA mode, otherwise user_maf_path;
+    the second is user_maf_path in TCGA mode, otherwise user_maf_path2.
+    Labels show maftools' native amino acid changes, styled by labPosSize
+    and labPosAngle. These parameters do not automatically select hotspots
+    or add mutation counts; calculate the desired positions before calling.
+
+    Set label_top_variant=True to automatically label each cohort's most
+    frequent protein change (e.g. R248Q (n=12)), including every tied variant.
+    Counts are mutation records retained by maftools with a usable amino acid
+    position, grouped by protein change, not summed across different changes
+    at the same position and not distinct-patient counts. This uses the same
+    amino acid annotations as the plot. It cannot be combined with nonempty
+    m1_label/m2_label. Font size and angle still use labPosSize/labPosAngle.
     """
     import os
 
     if gene.strip() == "":
         return "❌ ERROR: You must specify a gene for lollipopPlot2."
+
+    def label_to_r(value, name):
+        if value is None or value == []:
+            return "NULL"
+        if value == "all":
+            return '"all"'
+        positions = value if isinstance(value, list) else [value]
+        if any(type(position) is not int or position < 1 for position in positions):
+            raise ValueError(f'{name} must be a positive integer, a list of positive integers, "all", or None.')
+        return "c(" + ",".join(str(position) for position in positions) + ")"
+
+    r_m1_label = label_to_r(m1_label, "m1_label")
+    r_m2_label = label_to_r(m2_label, "m2_label")
+    if label_top_variant and (r_m1_label != "NULL" or r_m2_label != "NULL"):
+        raise ValueError("label_top_variant cannot be combined with m1_label or m2_label; choose automatic or manual labels.")
+
+    # A local copy retains maftools' plotting behavior without modifying its
+    # namespace. Only label selection/text changes in automatic mode.
+    top_variant_r = ""
+    if label_top_variant:
+        r_m1_label = r_m2_label = '"all"'
+        top_variant_r = '''
+        top_variant_labels <- function(prot.snp.sumamry, labelPos = NULL,
+                                       collapsePosLabel = TRUE) {
+            d <- data.table::copy(data.table::as.data.table(prot.snp.sumamry))
+            if (nrow(d) == 0L) return(NULL)
+            required <- c("conv", "pos2", "count", "count2")
+            if (!all(required %in% names(d))) {
+                stop("Installed maftools has an incompatible label data format.")
+            }
+            variants <- d[, .(n = sum(count), count2 = max(count2)),
+                          by = .(conv, pos2)]
+            winners <- variants[n == max(n)]
+            data.table::setorder(winners, pos2, conv)
+            # Combine tied changes at the same coordinate into a multiline
+            # label so they are all visible instead of drawn over each other.
+            winners[, .(count2 = max(count2),
+                        conv = paste0(conv, " (n=", n, ")", collapse = "\\n")),
+                    by = pos2]
+        }
+        plot_env <- new.env(parent = environment(maftools::lollipopPlot2))
+        plot_env$label_pos <- top_variant_labels
+        environment(plot_fun) <- plot_env
+        '''
 
     os.makedirs(output_dir, exist_ok=True)
 
@@ -1736,9 +1801,12 @@ def plot_lollipopPlot2(
         { 'm1 <- maftools::read.maf("'+user_maf_path+'")' if mode=='user_vs_user' else '' }
         { 'm2 <- maftools::read.maf("'+user_maf_path2+'")' if mode=='user_vs_user' else '' }
 
+        plot_fun <- maftools::lollipopPlot2
+        {top_variant_r}
+
         png("{out_png}", width={img_width}, height={img_height}, res=300)
 
-        maftools::lollipopPlot2(
+        tryCatch(plot_fun(
             m1 = m1,
             m2 = m2,
             gene = "{gene}",
@@ -1748,6 +1816,9 @@ def plot_lollipopPlot2(
 
             m1_name = "{ 'TCGA' if mode=='tcga_vs_user' else 'Cohort1' }",
             m2_name = "{ 'User' if mode=='tcga_vs_user' else 'Cohort2' }",
+
+            m1_label = {r_m1_label},
+            m2_label = {r_m2_label},
 
             refSeqID = {r_refSeqID},
             proteinID = {r_proteinID},
@@ -1770,9 +1841,7 @@ def plot_lollipopPlot2(
             legendTxtSize = {legendTxtSize},
 
             verbose = {r_verbose}
-        )
-
-        dev.off()
+        ), finally = dev.off())
     """)
 
     return Image(path=out_png)

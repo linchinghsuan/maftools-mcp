@@ -1,0 +1,1300 @@
+Processing Sample_01
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_01.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_01.avinput>
+NOTICE: Finished reading 1118 lines from VCF file
+NOTICE: A total of 1071 locus in VCF file passed QC threshold, representing 1071 SNPs (578 transitions and 493 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 1071 SNP genotypes (578 transitions and 493 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_01.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_01 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_01.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_01.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_01.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_01.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 1071 unique variants in 1071 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 903 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_01.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_01.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_01.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_01.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_01.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_01.hg19_multianno.vcf
+Processing Sample_04
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_04.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_04.avinput>
+NOTICE: Finished reading 337 lines from VCF file
+NOTICE: A total of 290 locus in VCF file passed QC threshold, representing 290 SNPs (185 transitions and 105 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 290 SNP genotypes (185 transitions and 105 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_04.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_04 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_04.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_04.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_04.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_04.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 290 unique variants in 290 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 340 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_04.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_04.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_04.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_04.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_04.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_04.hg19_multianno.vcf
+Processing Sample_06
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_06.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_06.avinput>
+NOTICE: Finished reading 312 lines from VCF file
+NOTICE: A total of 265 locus in VCF file passed QC threshold, representing 265 SNPs (158 transitions and 107 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 265 SNP genotypes (158 transitions and 107 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_06.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_06 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_06.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_06.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_06.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_06.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 265 unique variants in 265 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 243 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_06.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_06.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_06.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_06.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_06.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_06.hg19_multianno.vcf
+Processing Sample_09
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_09.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_09.avinput>
+NOTICE: Finished reading 435 lines from VCF file
+NOTICE: A total of 388 locus in VCF file passed QC threshold, representing 388 SNPs (232 transitions and 156 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 388 SNP genotypes (232 transitions and 156 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_09.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_09 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_09.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_09.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_09.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_09.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 388 unique variants in 388 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 286 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_09.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_09.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_09.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_09.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_09.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_09.hg19_multianno.vcf
+Processing Sample_10
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_10.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_10.avinput>
+NOTICE: Finished reading 334 lines from VCF file
+NOTICE: A total of 287 locus in VCF file passed QC threshold, representing 287 SNPs (153 transitions and 134 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 287 SNP genotypes (153 transitions and 134 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_10.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_10 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_10.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_10.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_10.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_10.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 287 unique variants in 287 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 239 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_10.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_10.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_10.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_10.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_10.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_10.hg19_multianno.vcf
+Processing Sample_11
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_11.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_11.avinput>
+NOTICE: Finished reading 257 lines from VCF file
+NOTICE: A total of 210 locus in VCF file passed QC threshold, representing 210 SNPs (115 transitions and 95 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 210 SNP genotypes (115 transitions and 95 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_11.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_11 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_11.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_11.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_11.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_11.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 210 unique variants in 210 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 223 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_11.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_11.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_11.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_11.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_11.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_11.hg19_multianno.vcf
+Processing Sample_13
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_13.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_13.avinput>
+NOTICE: Finished reading 449 lines from VCF file
+NOTICE: A total of 402 locus in VCF file passed QC threshold, representing 402 SNPs (193 transitions and 209 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 402 SNP genotypes (193 transitions and 209 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_13.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_13 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_13.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_13.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_13.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_13.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 402 unique variants in 402 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 444 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_13.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_13.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_13.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_13.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_13.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_13.hg19_multianno.vcf
+Processing Sample_14
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_14.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_14.avinput>
+NOTICE: Finished reading 417 lines from VCF file
+NOTICE: A total of 370 locus in VCF file passed QC threshold, representing 370 SNPs (241 transitions and 129 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 370 SNP genotypes (241 transitions and 129 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_14.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_14 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_14.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_14.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_14.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_14.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 370 unique variants in 370 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 347 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_14.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_14.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_14.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_14.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_14.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_14.hg19_multianno.vcf
+Processing Sample_15
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_15.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_15.avinput>
+NOTICE: Finished reading 220 lines from VCF file
+NOTICE: A total of 173 locus in VCF file passed QC threshold, representing 173 SNPs (115 transitions and 58 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 173 SNP genotypes (115 transitions and 58 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_15.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_15 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_15.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_15.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_15.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_15.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 173 unique variants in 173 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 132 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_15.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_15.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_15.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_15.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_15.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_15.hg19_multianno.vcf
+Processing Sample_16
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_16.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_16.avinput>
+NOTICE: Finished reading 2962 lines from VCF file
+NOTICE: A total of 2915 locus in VCF file passed QC threshold, representing 2915 SNPs (1529 transitions and 1386 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 2915 SNP genotypes (1529 transitions and 1386 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_16.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_16 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_16.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_16.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_16.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_16.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 2915 unique variants in 2915 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 2627 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_16.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_16.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_16.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_16.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_16.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_16.hg19_multianno.vcf
+Processing Sample_18
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_18.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_18.avinput>
+NOTICE: Finished reading 112 lines from VCF file
+NOTICE: A total of 65 locus in VCF file passed QC threshold, representing 65 SNPs (40 transitions and 25 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 65 SNP genotypes (40 transitions and 25 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_18.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_18 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_18.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_18.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_18.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_18.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 65 unique variants in 65 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 23 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_18.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_18.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_18.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_18.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_18.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_18.hg19_multianno.vcf
+Processing Sample_19
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_19.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_19.avinput>
+NOTICE: Finished reading 352 lines from VCF file
+NOTICE: A total of 305 locus in VCF file passed QC threshold, representing 305 SNPs (179 transitions and 126 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 305 SNP genotypes (179 transitions and 126 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_19.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_19 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_19.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_19.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_19.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_19.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 305 unique variants in 305 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 316 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_19.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_19.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_19.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_19.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_19.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_19.hg19_multianno.vcf
+Processing Sample_21
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_21.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_21.avinput>
+NOTICE: Finished reading 377 lines from VCF file
+NOTICE: A total of 330 locus in VCF file passed QC threshold, representing 330 SNPs (191 transitions and 139 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 330 SNP genotypes (191 transitions and 139 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_21.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_21 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_21.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_21.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_21.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_21.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 330 unique variants in 330 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 259 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_21.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_21.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_21.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_21.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_21.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_21.hg19_multianno.vcf
+Processing Sample_22
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_22.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_22.avinput>
+NOTICE: Finished reading 418 lines from VCF file
+NOTICE: A total of 371 locus in VCF file passed QC threshold, representing 371 SNPs (190 transitions and 181 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 371 SNP genotypes (190 transitions and 181 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_22.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_22 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_22.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_22.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_22.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_22.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 371 unique variants in 371 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 395 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_22.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_22.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_22.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_22.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_22.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_22.hg19_multianno.vcf
+Processing Sample_23
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_23.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_23.avinput>
+NOTICE: Finished reading 301 lines from VCF file
+NOTICE: A total of 254 locus in VCF file passed QC threshold, representing 254 SNPs (131 transitions and 123 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 254 SNP genotypes (131 transitions and 123 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_23.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_23 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_23.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_23.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_23.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_23.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 254 unique variants in 254 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 210 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_23.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_23.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_23.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_23.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_23.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_23.hg19_multianno.vcf
+Processing Sample_25
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_25.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_25.avinput>
+NOTICE: Finished reading 358 lines from VCF file
+NOTICE: A total of 311 locus in VCF file passed QC threshold, representing 311 SNPs (152 transitions and 159 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 311 SNP genotypes (152 transitions and 159 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_25.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_25 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_25.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_25.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_25.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_25.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 311 unique variants in 311 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 168 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_25.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_25.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_25.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_25.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_25.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_25.hg19_multianno.vcf
+Processing Sample_26
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_26.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_26.avinput>
+NOTICE: Finished reading 358 lines from VCF file
+NOTICE: A total of 311 locus in VCF file passed QC threshold, representing 311 SNPs (195 transitions and 116 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 311 SNP genotypes (195 transitions and 116 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_26.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_26 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_26.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_26.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_26.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_26.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 311 unique variants in 311 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 262 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_26.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_26.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_26.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_26.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_26.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_26.hg19_multianno.vcf
+Processing Sample_28
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_28.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_28.avinput>
+NOTICE: Finished reading 174 lines from VCF file
+NOTICE: A total of 127 locus in VCF file passed QC threshold, representing 127 SNPs (70 transitions and 57 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 127 SNP genotypes (70 transitions and 57 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_28.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_28 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_28.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_28.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_28.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_28.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 127 unique variants in 127 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 74 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_28.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_28.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_28.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_28.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_28.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_28.hg19_multianno.vcf
+Processing Sample_29
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_29.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_29.avinput>
+NOTICE: Finished reading 264 lines from VCF file
+NOTICE: A total of 217 locus in VCF file passed QC threshold, representing 217 SNPs (136 transitions and 81 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 217 SNP genotypes (136 transitions and 81 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_29.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_29 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_29.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_29.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_29.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_29.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 217 unique variants in 217 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 191 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_29.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_29.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_29.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_29.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_29.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_29.hg19_multianno.vcf
+Processing Sample_30
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_30.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_30.avinput>
+NOTICE: Finished reading 260 lines from VCF file
+NOTICE: A total of 213 locus in VCF file passed QC threshold, representing 213 SNPs (152 transitions and 61 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 213 SNP genotypes (152 transitions and 61 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_30.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_30 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_30.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_30.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_30.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_30.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 213 unique variants in 213 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 212 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_30.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_30.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_30.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_30.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_30.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_30.hg19_multianno.vcf
+Processing Sample_31
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_31.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_31.avinput>
+NOTICE: Finished reading 283 lines from VCF file
+NOTICE: A total of 236 locus in VCF file passed QC threshold, representing 236 SNPs (140 transitions and 96 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 236 SNP genotypes (140 transitions and 96 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_31.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_31 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_31.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_31.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_31.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_31.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 236 unique variants in 236 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 265 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_31.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_31.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_31.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_31.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_31.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_31.hg19_multianno.vcf
+Processing Sample_32
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_32.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_32.avinput>
+NOTICE: Finished reading 549 lines from VCF file
+NOTICE: A total of 502 locus in VCF file passed QC threshold, representing 502 SNPs (328 transitions and 174 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 502 SNP genotypes (328 transitions and 174 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_32.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_32 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_32.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_32.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_32.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_32.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 502 unique variants in 502 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 508 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_32.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_32.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_32.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_32.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_32.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_32.hg19_multianno.vcf
+Processing Sample_35
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_35.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_35.avinput>
+NOTICE: Finished reading 430 lines from VCF file
+NOTICE: A total of 383 locus in VCF file passed QC threshold, representing 383 SNPs (243 transitions and 140 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 383 SNP genotypes (243 transitions and 140 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_35.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_35 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_35.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_35.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_35.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_35.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 383 unique variants in 383 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 568 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_35.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_35.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_35.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_35.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_35.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_35.hg19_multianno.vcf
+Processing Sample_36
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_36.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_36.avinput>
+NOTICE: Finished reading 605 lines from VCF file
+NOTICE: A total of 558 locus in VCF file passed QC threshold, representing 558 SNPs (295 transitions and 263 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 558 SNP genotypes (295 transitions and 263 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_36.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_36 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_36.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_36.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_36.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_36.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 558 unique variants in 558 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 523 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_36.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_36.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_36.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_36.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_36.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_36.hg19_multianno.vcf
+Processing Sample_37
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_37.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_37.avinput>
+NOTICE: Finished reading 268 lines from VCF file
+NOTICE: A total of 221 locus in VCF file passed QC threshold, representing 221 SNPs (132 transitions and 89 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 221 SNP genotypes (132 transitions and 89 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_37.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_37 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_37.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_37.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_37.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_37.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 221 unique variants in 221 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 124 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_37.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_37.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_37.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_37.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_37.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_37.hg19_multianno.vcf
+Processing Sample_38
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_38.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_38.avinput>
+NOTICE: Finished reading 488 lines from VCF file
+NOTICE: A total of 441 locus in VCF file passed QC threshold, representing 441 SNPs (263 transitions and 178 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 441 SNP genotypes (263 transitions and 178 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_38.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_38 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_38.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_38.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_38.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_38.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 441 unique variants in 441 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 522 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_38.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_38.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_38.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_38.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_38.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_38.hg19_multianno.vcf
+Processing Sample_39
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_39.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_39.avinput>
+NOTICE: Finished reading 511 lines from VCF file
+NOTICE: A total of 464 locus in VCF file passed QC threshold, representing 464 SNPs (267 transitions and 197 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 464 SNP genotypes (267 transitions and 197 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_39.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_39 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_39.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_39.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_39.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_39.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 464 unique variants in 464 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 534 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_39.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_39.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_39.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_39.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_39.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_39.hg19_multianno.vcf
+Processing Sample_40
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_40.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_40.avinput>
+NOTICE: Finished reading 676 lines from VCF file
+NOTICE: A total of 629 locus in VCF file passed QC threshold, representing 629 SNPs (345 transitions and 284 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 629 SNP genotypes (345 transitions and 284 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_40.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_40 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_40.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_40.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_40.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_40.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 629 unique variants in 629 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 510 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_40.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_40.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_40.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_40.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_40.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_40.hg19_multianno.vcf
+Processing Sample_41
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_41.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_41.avinput>
+NOTICE: Finished reading 428 lines from VCF file
+NOTICE: A total of 381 locus in VCF file passed QC threshold, representing 381 SNPs (211 transitions and 170 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 381 SNP genotypes (211 transitions and 170 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_41.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_41 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_41.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_41.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_41.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_41.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 381 unique variants in 381 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 298 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_41.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_41.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_41.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_41.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_41.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_41.hg19_multianno.vcf
+Processing Sample_42
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_42.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_42.avinput>
+NOTICE: Finished reading 420 lines from VCF file
+NOTICE: A total of 373 locus in VCF file passed QC threshold, representing 373 SNPs (212 transitions and 161 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 373 SNP genotypes (212 transitions and 161 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_42.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_42 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_42.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_42.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_42.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_42.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 373 unique variants in 373 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 413 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_42.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_42.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_42.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_42.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_42.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_42.hg19_multianno.vcf
+Processing Sample_43
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_43.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_43.avinput>
+NOTICE: Finished reading 263 lines from VCF file
+NOTICE: A total of 216 locus in VCF file passed QC threshold, representing 216 SNPs (145 transitions and 71 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 216 SNP genotypes (145 transitions and 71 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_43.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_43 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_43.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_43.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_43.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_43.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 216 unique variants in 216 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 250 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_43.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_43.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_43.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_43.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_43.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_43.hg19_multianno.vcf
+Processing Sample_44
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_44.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_44.avinput>
+NOTICE: Finished reading 333 lines from VCF file
+NOTICE: A total of 286 locus in VCF file passed QC threshold, representing 286 SNPs (172 transitions and 114 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 286 SNP genotypes (172 transitions and 114 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_44.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_44 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_44.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_44.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_44.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_44.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 286 unique variants in 286 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 298 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_44.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_44.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_44.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_44.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_44.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_44.hg19_multianno.vcf
+Processing Sample_45
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_45.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_45.avinput>
+NOTICE: Finished reading 503 lines from VCF file
+NOTICE: A total of 456 locus in VCF file passed QC threshold, representing 456 SNPs (308 transitions and 148 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 456 SNP genotypes (308 transitions and 148 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_45.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_45 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_45.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_45.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_45.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_45.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 456 unique variants in 456 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 446 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_45.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_45.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_45.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_45.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_45.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_45.hg19_multianno.vcf
+Processing Sample_46
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_46.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_46.avinput>
+NOTICE: Finished reading 308 lines from VCF file
+NOTICE: A total of 261 locus in VCF file passed QC threshold, representing 261 SNPs (145 transitions and 116 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 261 SNP genotypes (145 transitions and 116 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_46.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_46 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_46.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_46.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_46.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_46.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 261 unique variants in 261 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 168 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_46.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_46.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_46.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_46.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_46.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_46.hg19_multianno.vcf
+Processing Sample_47
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_47.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_47.avinput>
+NOTICE: Finished reading 253 lines from VCF file
+NOTICE: A total of 206 locus in VCF file passed QC threshold, representing 206 SNPs (141 transitions and 65 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 206 SNP genotypes (141 transitions and 65 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_47.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_47 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_47.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_47.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_47.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_47.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 206 unique variants in 206 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 225 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_47.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_47.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_47.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_47.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_47.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_47.hg19_multianno.vcf
+Processing Sample_48
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_48.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_48.avinput>
+NOTICE: Finished reading 714 lines from VCF file
+NOTICE: A total of 667 locus in VCF file passed QC threshold, representing 667 SNPs (404 transitions and 263 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 667 SNP genotypes (404 transitions and 263 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_48.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_48 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_48.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_48.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_48.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_48.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 667 unique variants in 667 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 574 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_48.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_48.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_48.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_48.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_48.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_48.hg19_multianno.vcf
+Processing Sample_49
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_49.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_49.avinput>
+NOTICE: Finished reading 303 lines from VCF file
+NOTICE: A total of 256 locus in VCF file passed QC threshold, representing 256 SNPs (153 transitions and 103 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 256 SNP genotypes (153 transitions and 103 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_49.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_49 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_49.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_49.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_49.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_49.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 256 unique variants in 256 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 189 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_49.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_49.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_49.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_49.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_49.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_49.hg19_multianno.vcf
+Processing Sample_50
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_50.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_50.avinput>
+NOTICE: Finished reading 410 lines from VCF file
+NOTICE: A total of 363 locus in VCF file passed QC threshold, representing 363 SNPs (245 transitions and 118 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 363 SNP genotypes (245 transitions and 118 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_50.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_50 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_50.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_50.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_50.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_50.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 363 unique variants in 363 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 396 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_50.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_50.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_50.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_50.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_50.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_50.hg19_multianno.vcf
+Processing Sample_51
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_51.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_51.avinput>
+NOTICE: Finished reading 370 lines from VCF file
+NOTICE: A total of 323 locus in VCF file passed QC threshold, representing 323 SNPs (156 transitions and 167 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 323 SNP genotypes (156 transitions and 167 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_51.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_51 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_51.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_51.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_51.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_51.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 323 unique variants in 323 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 263 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_51.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_51.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_51.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_51.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_51.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_51.hg19_multianno.vcf
+Processing Sample_52
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_52.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_52.avinput>
+NOTICE: Finished reading 310 lines from VCF file
+NOTICE: A total of 263 locus in VCF file passed QC threshold, representing 263 SNPs (170 transitions and 93 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 263 SNP genotypes (170 transitions and 93 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_52.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_52 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_52.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_52.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_52.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_52.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 263 unique variants in 263 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 257 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_52.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_52.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_52.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_52.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_52.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_52.hg19_multianno.vcf
+Processing Sample_54
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_54.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_54.avinput>
+NOTICE: Finished reading 523 lines from VCF file
+NOTICE: A total of 476 locus in VCF file passed QC threshold, representing 476 SNPs (283 transitions and 193 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 476 SNP genotypes (283 transitions and 193 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_54.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_54 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_54.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_54.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_54.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_54.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 476 unique variants in 476 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 412 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_54.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_54.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_54.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_54.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_54.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_54.hg19_multianno.vcf
+Processing Sample_55
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_55.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_55.avinput>
+NOTICE: Finished reading 1079 lines from VCF file
+NOTICE: A total of 1032 locus in VCF file passed QC threshold, representing 1032 SNPs (569 transitions and 463 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 1032 SNP genotypes (569 transitions and 463 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_55.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_55 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_55.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_55.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_55.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_55.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 1032 unique variants in 1032 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 994 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_55.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_55.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_55.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_55.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_55.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_55.hg19_multianno.vcf
+Processing Sample_56
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_56.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_56.avinput>
+NOTICE: Finished reading 477 lines from VCF file
+NOTICE: A total of 430 locus in VCF file passed QC threshold, representing 430 SNPs (276 transitions and 154 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 430 SNP genotypes (276 transitions and 154 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_56.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_56 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_56.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_56.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_56.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_56.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 430 unique variants in 430 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 372 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_56.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_56.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_56.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_56.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_56.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_56.hg19_multianno.vcf
+Processing Sample_57
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_57.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_57.avinput>
+NOTICE: Finished reading 457 lines from VCF file
+NOTICE: A total of 410 locus in VCF file passed QC threshold, representing 410 SNPs (225 transitions and 185 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 410 SNP genotypes (225 transitions and 185 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_57.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_57 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_57.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_57.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_57.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_57.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 410 unique variants in 410 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 290 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_57.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_57.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_57.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_57.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_57.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_57.hg19_multianno.vcf
+Processing Sample_58
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_58.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_58.avinput>
+NOTICE: Finished reading 428 lines from VCF file
+NOTICE: A total of 381 locus in VCF file passed QC threshold, representing 381 SNPs (250 transitions and 131 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 381 SNP genotypes (250 transitions and 131 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_58.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_58 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_58.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_58.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_58.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_58.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 381 unique variants in 381 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 340 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_58.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_58.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_58.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_58.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_58.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_58.hg19_multianno.vcf
+Processing Sample_59
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_59.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_59.avinput>
+NOTICE: Finished reading 593 lines from VCF file
+NOTICE: A total of 546 locus in VCF file passed QC threshold, representing 546 SNPs (322 transitions and 224 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 546 SNP genotypes (322 transitions and 224 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_59.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_59 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_59.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_59.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_59.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_59.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 546 unique variants in 546 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 466 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_59.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_59.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_59.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_59.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_59.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_59.hg19_multianno.vcf
+Processing Sample_61
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_61.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_61.avinput>
+NOTICE: Finished reading 335 lines from VCF file
+NOTICE: A total of 288 locus in VCF file passed QC threshold, representing 288 SNPs (154 transitions and 134 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 288 SNP genotypes (154 transitions and 134 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_61.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_61 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_61.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_61.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_61.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_61.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 288 unique variants in 288 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 341 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_61.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_61.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_61.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_61.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_61.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_61.hg19_multianno.vcf
+Processing Sample_62
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_62.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_62.avinput>
+NOTICE: Finished reading 441 lines from VCF file
+NOTICE: A total of 394 locus in VCF file passed QC threshold, representing 394 SNPs (216 transitions and 178 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 394 SNP genotypes (216 transitions and 178 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_62.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_62 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_62.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_62.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_62.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_62.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 394 unique variants in 394 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 267 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_62.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_62.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_62.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_62.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_62.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_62.hg19_multianno.vcf
+Processing Sample_63
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_63.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_63.avinput>
+NOTICE: Finished reading 504 lines from VCF file
+NOTICE: A total of 457 locus in VCF file passed QC threshold, representing 457 SNPs (295 transitions and 162 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 457 SNP genotypes (295 transitions and 162 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_63.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_63 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_63.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_63.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_63.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_63.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 457 unique variants in 457 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 302 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_63.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_63.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_63.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_63.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_63.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_63.hg19_multianno.vcf
+Processing Sample_64
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_64.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_64.avinput>
+NOTICE: Finished reading 236 lines from VCF file
+NOTICE: A total of 189 locus in VCF file passed QC threshold, representing 189 SNPs (114 transitions and 75 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 189 SNP genotypes (114 transitions and 75 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_64.avinput /Users/linqingxuan/annovar/annovar/humandb -buildver hg19 -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_64 -protocol refGene -operation g -remove -nastring . -otherinfo>
+NOTICE: the --polish argument is set ON automatically (use --nopolish to change this behavior)
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_64.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_64.avinput /Users/linqingxuan/annovar/annovar/humandb>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_64.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_64.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 189 unique variants in 189 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 126 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_64.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_64.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_64.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_64.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_64.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gemini-3.1-pro/run_02/annovar_out/Sample_64.hg19_multianno.vcf

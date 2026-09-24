@@ -1,0 +1,4 @@
+cohort	protein_variant	position	count	mutation_classes	is_tied_maximum
+TCGA-HNSC	R175H	175	12	Missense_Mutation	TRUE
+TCGA-HNSC	R248Q	248	12	Missense_Mutation	TRUE
+OSCC	R150W	150	4	Missense_Mutation	TRUE

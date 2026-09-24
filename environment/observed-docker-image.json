@@ -1,11 +1,11 @@
 {
-  "role": "Existing image observed on 2026-09-05; does not match manuscript environment",
-  "id": "sha256:2e3be5b768c9f77cbe942207025987fc4d39d4cc7a39563ea0fc159de9cf1b4b",
+  "role": "Author-packaged Docker image used as the delivery environment",
+  "id": "sha256:d7dc8ed2ea12c1a9ee9e60a4f304ab056a53e5cfa1d4780871603ed875ef2b86",
   "tags": [
     "lin97/maftools-mcp:v.1.1.0"
   ],
   "repo_digests": [
-    "lin97/maftools-mcp@sha256:2e3be5b768c9f77cbe942207025987fc4d39d4cc7a39563ea0fc159de9cf1b4b"
+    "lin97/maftools-mcp@sha256:d7dc8ed2ea12c1a9ee9e60a4f304ab056a53e5cfa1d4780871603ed875ef2b86"
   ],
   "architecture": "arm64",
   "os": "linux",
@@ -28,7 +28,7 @@
     "PCAWGmutations": "0.0.0.9000",
     "BSgenome": "1.78.0"
   },
-  "container_server_sha256": "dada96deed122c3e224c4bf71c3b796a92ba400f432e441e714fbaab13fd8cca",
-  "included_server_sha256": "dada96deed122c3e224c4bf71c3b796a92ba400f432e441e714fbaab13fd8cca",
+  "container_server_sha256": "bac8e459d210b983a3eadc14a10958927e9a1f62c48add749d37d286ae5829dc",
+  "included_server_sha256": "bac8e459d210b983a3eadc14a10958927e9a1f62c48add749d37d286ae5829dc",
   "server_source_matches": true
 }

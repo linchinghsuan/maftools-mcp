@@ -1,0 +1,4 @@
+Cohort	Gene	Protein_Variant	Amino_Acid_Position	Mutation_Count
+TCGA-HNSC	TP53	R175H	175	12
+TCGA-HNSC	TP53	R248Q	248	12
+OSCC	TP53	R150W	150	4

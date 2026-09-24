@@ -1,0 +1,25 @@
+
+NOTICE: Running with system command <convert2annovar.pl  -includeinfo -allsample -withfreq -format vcf4 /Users/linqingxuan/maftools-mcp/ANNOVAR_test/VCFs/Sample_13.vcf > /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gpt-5.5/run_03/annotation/Sample_13.avinput>
+NOTICE: Finished reading 449 lines from VCF file
+NOTICE: A total of 402 locus in VCF file passed QC threshold, representing 402 SNPs (193 transitions and 209 transversions) and 0 indels/substitutions
+NOTICE: Finished writing allele frequencies based on 402 SNP genotypes (193 transitions and 209 transversions) and 0 indels/substitutions for 1 samples
+
+NOTICE: Running with system command </Users/linqingxuan/annovar/annovar/table_annovar.pl /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gpt-5.5/run_03/annotation/Sample_13.avinput /Users/linqingxuan/annovar/annovar/humandb -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gpt-5.5/run_03/annotation/Sample_13 -buildver hg19 -protocol refGene -operation g -remove -polish -nastring . -thread 1 -otherinfo>
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gpt-5.5/run_03/annotation/Sample_13.refGene -exonsort -nofirstcodondel /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gpt-5.5/run_03/annotation/Sample_13.avinput /Users/linqingxuan/annovar/annovar/humandb -thread 1>
+NOTICE: Output files are written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gpt-5.5/run_03/annotation/Sample_13.refGene.variant_function, /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gpt-5.5/run_03/annotation/Sample_13.refGene.exonic_variant_function
+NOTICE: the queryfile /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gpt-5.5/run_03/annotation/Sample_13.avinput contains 804 lines
+NOTICE: threading is disabled for gene-based annotation on file with less than 1000000 input lines
+NOTICE: Reading gene annotation from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt ... Done with 78239 transcripts (including 18578 without coding sequence annotation) for 28293 unique genes
+NOTICE: Processing next batch with 402 unique variants in 402 input lines
+NOTICE: Reading FASTA sequences from /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa ... Done with 444 sequences
+WARNING: A total of 465 sequences will be ignored due to lack of correct ORF annotation
+
+NOTICE: Running with system command <coding_change.pl  /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gpt-5.5/run_03/annotation/Sample_13.refGene.exonic_variant_function.orig /Users/linqingxuan/annovar/annovar/humandb/hg19_refGene.txt /Users/linqingxuan/annovar/annovar/humandb/hg19_refGeneMrna.fa -alltranscript -out /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gpt-5.5/run_03/annotation/Sample_13.refGene.fa -newevf /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gpt-5.5/run_03/annotation/Sample_13.refGene.exonic_variant_function>
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gpt-5.5/run_03/annotation/Sample_13.hg19_multianno.txt
+NOTICE: Reading from /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gpt-5.5/run_03/annotation/Sample_13.hg19_multianno.txt
+-----------------------------------------------------------------
+NOTICE: VCF output is written to /Users/linqingxuan/maftools-mcp/ANNOVAR_test/gpt-5.5/run_03/annotation/Sample_13.hg19_multianno.vcf

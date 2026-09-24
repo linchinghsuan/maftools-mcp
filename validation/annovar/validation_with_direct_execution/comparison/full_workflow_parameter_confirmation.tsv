@@ -1,4 +1,0 @@
-stage	evidence	parameters	status
-ANNOVAR Skill rerun	ANNOVAR_test/validation_with_direct_execution/logs/annovar_commands.log	table_annovar.pl; input=VCFs/*.vcf; humandb=annovar/humandb; -buildver hg19; -protocol refGene; -operation g; -remove; -polish; -vcfinput; -nastring .	confirmed and executed
-export_r_script merge	ANNOVAR_test/validation_with_direct_execution/logs/merge_annovar_to_maf_reference_from_rerun_annovar.R	annovar_files=full_reference_validation/annovar_outputs/*.hg19_multianno.txt; refBuild=hg19; table=refGene; ens2hugo=TRUE; sep=tab; sampleAnno=NULL; basename=merged	confirmed and executed
-export_r_script oncoplot	ANNOVAR_test/validation_with_direct_execution/logs/plot_oncoplot_reference_from_rerun_annovar.R	maf_path=full_reference_validation/reference_outputs/merged.maf; top=20; output=oncoplot.png; img_width=2600; img_height=2000; img_res=300	confirmed and executed
