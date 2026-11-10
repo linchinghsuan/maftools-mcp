@@ -64,6 +64,13 @@ materials are provided for review and provenance; ANNOVAR itself and restricted
 third-party data or databases are not redistributed.
 
 
+## Citation
+
+Ching-Hsuan Lin, Chi-Ching Lee, Sin-Hong Shih, Cheng-Chi Yang, Mu-Yun Xu,
+Yuan-Ming Yeh, Po-Jung Huang. Maftools-MCP: A Model Context Protocol–enabled
+Framework for LLM–driven Somatic Mutation Analysis. *Bioinformatics Advances*.
+2026; vbag336. [https://doi.org/10.1093/bioadv/vbag336](https://doi.org/10.1093/bioadv/vbag336)
+
 ## License
 
 Maftools-MCP code is available under the [MIT License](LICENSE). R, maftools,
